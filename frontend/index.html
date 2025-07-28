@@ -351,7 +351,9 @@
         }
 
         function finalizeAgentMessage(container, content) {
-            container.innerHTML = content;
+            // 使用正则表达式移除所有被大括号包裹的内容，包括大括号本身
+            const cleanedContent = content.replace(/{[^}]*}/g, '');
+            container.innerHTML = cleanedContent;
         }
         
         function setButtonState(isSending) {
