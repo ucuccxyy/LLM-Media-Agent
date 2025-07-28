@@ -24,6 +24,13 @@
 
 要在一个新的环境中部署本项目，请遵循以下步骤。
 
+### 前提条件
+
+- **Docker & Docker Compose**: 你的系统需要安装 Docker 和 Docker Compose。
+- **Ollama 服务**: 本项目**不包含** Ollama 的部署。你需要预先在你的主机或另一台服务器上**自行安装并运行 Ollama**。
+  - 请参考 [Ollama 官方网站](https://ollama.com/) 进行安装。
+  - 安装后，请确保 Ollama 服务正在运行。
+
 ### 1. 克隆项目
 
 首先，将本项目从 GitHub 克隆到你的本地或服务器上：
@@ -33,41 +40,34 @@ git clone https://github.com/ucuccxyy/LLMagent.git
 cd LLMagent
 ```
 
-### 2. 启动基础服务
+### 2. 启动基础媒体服务
 
-本项目依赖于 Ollama 和其他媒体服务。项目内已包含一个 `docker-compose.yml` 文件来简化这个过程。
+项目内已包含一个 `docker-compose.yml` 文件来简化 Radarr, Sonarr 等服务的启动。
 
 ```bash
-# 进入 docker 目录并启动所有服务
-# -d 参数让服务在后台运行
-cd media_agent/docker
-docker compose up -d
+# 运行启动脚本
+./start_media_services.sh
 ```
 这个命令会启动：
-- Ollama
 - Radarr
 - Sonarr
 - qBittorrent
 - Jackett
-- Prowlarr
 
 **注意**: 初次启动时，Docker 会下载所有服务的镜像，可能需要一些时间。
 
 ### 3. 配置环境变量
 
-Agent 需要知道如何连接到这些服务。
+Agent 需要知道如何连接到所有这些服务。
 
 ```bash
-# 回到项目根目录
-cd ../..
-
 # 复制环境变量模板文件
 cp media_agent/.env.example .env
 ```
 然后，你需要编辑这个新的 `.env` 文件，填入正确的信息。
 
-- **OLLAMA_HOST**: Ollama 服务的地址，如果在本机运行通常是 `http://localhost:11434`。
-- **OLLAMA_MODEL**: 你希望使用的模型名称，例如 `qwen2:7b`。请确保这个模型已经在 Ollama 中通过 `ollama pull qwen2:7b` 拉取。
+- **OLLAMA_HOST**: 你独立运行的 Ollama 服务的地址。如果在本机运行，通常是 `http://localhost:11434`。
+- **OLLAMA_MODEL**: 你希望 Agent 使用的模型名称。请确保这个模型已经通过 `ollama pull <model_name>` 命令在你的 Ollama 服务中成功拉取。
 - **RADARR_URL/SONARR_URL/QBITTORRENT_URL**: 相应服务的地址。
 - **RADARR_API_KEY/SONARR_API_KEY**: 你需要登录 Radarr/Sonarr 的网页界面，在 `Settings` -> `General` 中找到并复制 API 密钥。
 - **QBITTORRENT_USER/QBITTORRENT_PASSWORD**: qBittorrent 的登录用户名和密码。
@@ -125,7 +125,7 @@ pip install -r requirements.txt
 | 变量 | 说明 | 示例 |
 |---|---|---|
 | `OLLAMA_HOST` | Ollama 服务的完整 URL | `http://localhost:11434` |
-| `OLLAMA_MODEL`| 要使用的 LLM 模型名称 | `qwen2:7b` |
+| `OLLAMA_MODEL`| 要使用的 LLM 模型名称 (需已在 Ollama 中拉取) | `qwen2:7b` |
 | `RADARR_URL` | Radarr 服务的 URL | `http://localhost:7878` |
 | `RADARR_API_KEY`| Radarr 的 API Key | `your_radarr_api_key` |
 | `SONARR_URL` | Sonarr 服务的 URL | `http://localhost:8989` |
