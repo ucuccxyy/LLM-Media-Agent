@@ -5,6 +5,7 @@ import time
 import logging
 from langchain_core.agents import AgentAction, AgentFinish, AgentStep
 from langchain_core.messages import AIMessage, HumanMessage, AIMessageChunk
+from uuid import uuid4
 
 # We need to import the necessary components to initialize our agent
 from media_agent.core.agent import MediaAgent
@@ -50,80 +51,55 @@ def get_agent() -> MediaAgent:
 def convert_chunk_to_dict(chunk):
     """Converts a LangChain stream chunk to a JSON-serializable dictionary."""
     
-    # Case 0: Final output in a dictionary with 'output' key
+    # The new streaming format gives us dictionaries at each step.
+    if isinstance(chunk, dict) and 'messages' in chunk and chunk['messages']:
+        message = chunk['messages'][0]
+        if isinstance(message, AIMessageChunk):
+            # Case 1: This is a thinking step or part of the final answer
+            if message.content:
+                return {"type": "thinking_step", "data": message.content}
+            
+            # Case 2: The agent has decided to use a tool.
+            # This is the most complex part, as args are streamed.
+            # We will return a standardized 'tool_run' event.
+            if hasattr(message, 'tool_call_chunks') and message.tool_call_chunks:
+                tool_call_chunk = message.tool_call_chunks[0]
+                # Let's build the full tool call object from the chunks
+                args_str = tool_call_chunk.get('args', '{}')
+                try:
+                    args_dict = json.loads(args_str)
+                except json.JSONDecodeError:
+                    args_dict = {} # Handle partially streamed JSON
+
+                logging.info(f"Detected tool_call_chunk: {tool_call_chunk}")
+                return {
+                    "type": "tool_run",
+                    "data": {
+                        "tool_name": tool_call_chunk['name'],
+                        "tool_input": args_dict,
+                        "tool_call_id": tool_call_chunk['id']
+                    }
+                }
+
+    # Case 3: A tool's output has been received.
+    if isinstance(chunk, dict) and 'steps' in chunk and chunk['steps']:
+        step = chunk['steps'][0]
+        if isinstance(step, AgentStep):
+            logging.info(f"Detected AgentStep (tool result) for tool '{step.action.tool}'.")
+            return {
+                "type": "tool_result",
+                "data": {
+                    "tool_name": step.action.tool,
+                    "observation": step.observation,
+                    "tool_call_id": step.action.tool_call_id
+                }
+            }
+
+    # Case 4: The agent has finished its work and is giving the final output.
     if isinstance(chunk, dict) and 'output' in chunk:
         output = chunk['output']
         logging.info(f"Detected final output dictionary: {output}")
         return {"type": "final_output", "data": {"output": output}}
-    
-    # The new streaming format gives us dictionaries at each step.
-    # We need to inspect the contents of the dictionary to see what's inside.
-    
-    # Case 1: A "final" answer is being streamed token by token.
-    # It's inside the 'messages' list as an AIMessageChunk.
-    if isinstance(chunk, dict) and 'messages' in chunk and chunk['messages'] and isinstance(chunk['messages'][0], AIMessageChunk):
-        message_chunk = chunk['messages'][0]
-        
-        # This is a thinking step or part of the final answer
-        if message_chunk.content:
-            logging.info(f"Detected content chunk: {message_chunk.content}")
-            return {"type": "thinking_step", "data": message_chunk.content}
-        
-        # This is the agent deciding to use a tool.
-        # Note: The 'args' are often streamed as a partial JSON string.
-        if hasattr(message_chunk, 'tool_call_chunks') and message_chunk.tool_call_chunks:
-            tool_call_chunk = message_chunk.tool_call_chunks[0]
-            logging.info(f"Detected tool_call_chunk: {tool_call_chunk}")
-            return {
-                "type": "tool_call",
-                "tool_name": tool_call_chunk['name'],
-                "tool_input_chunk": tool_call_chunk['args'] 
-            }
-
-    # Case 1.5: Final output in messages list as AIMessage
-    if isinstance(chunk, dict) and 'messages' in chunk and chunk['messages'] and isinstance(chunk['messages'][0], AIMessage):
-        message = chunk['messages'][0]
-        if message.content:
-            logging.info(f"Detected final AIMessage: {message.content}")
-            return {"type": "final_output", "data": {"output": message.content}}
-
-    # Case 2: Direct AgentAction object (alternative format)
-    if isinstance(chunk, AgentAction):
-        logging.info(f"Detected AgentAction for tool '{chunk.tool}'.")
-        return {
-            "type": "tool_run", 
-            "tool_name": chunk.tool, 
-            "tool_input": chunk.tool_input
-        }
-
-    # Case 3: A tool's output has been received.
-    # This is an AgentStep object inside the 'steps' list.
-    if isinstance(chunk, dict) and 'steps' in chunk and chunk['steps'] and isinstance(chunk['steps'][0], AgentStep):
-        step = chunk['steps'][0]
-        logging.info(f"Detected AgentStep (tool result) for tool '{step.action.tool}'.")
-        return {
-            "type": "tool_result",
-            "tool_name": step.action.tool,
-            "observation": step.observation
-        }
-
-    # Case 4: The agent has finished its work.
-    # This is an AgentFinish object inside the 'messages' list.
-    if isinstance(chunk, dict) and 'messages' in chunk and chunk['messages'] and isinstance(chunk['messages'][0], AgentFinish):
-        finish = chunk['messages'][0]
-        logging.info("Detected AgentFinish.")
-        return {
-            "type": "final_output",
-            "data": finish.return_values
-        }
-    
-    # Case 5: Direct AgentFinish object (alternative format)
-    if isinstance(chunk, AgentFinish):
-        logging.info("Detected direct AgentFinish.")
-        return {
-            "type": "final_output",
-            "data": chunk.return_values
-        }
         
     logging.warning(f"Unhandled or empty chunk of type {type(chunk)}: {chunk}")
     return None
@@ -139,6 +115,9 @@ def stream():
 
     agent = get_agent()
     history = get_session_history(session_id)
+    
+    # IMPORTANT: Add the user's message to history *before* calling the agent
+    history.add_user_message(message_text)
     
     agent_input = {
         "input": message_text,
@@ -156,15 +135,38 @@ def stream():
                 converted_chunk = convert_chunk_to_dict(chunk)
                 if converted_chunk:
                     logging.info(f"Streaming chunk: {json.dumps(converted_chunk)}")
-                    if converted_chunk.get('type') == 'final_output':
-                        final_answer_data = converted_chunk.get('data', {})
-                        if isinstance(final_answer_data, dict):
-                            final_answer = final_answer_data.get('output')
+                    
+                    chunk_type = converted_chunk.get("type")
+                    chunk_data = converted_chunk.get("data", {})
 
-                    yield f"data: {json.dumps(converted_chunk)}\n\n"
+                    if chunk_type == 'tool_run':
+                        # The agent has decided to run a tool. Save it to history.
+                        history.add_ai_tool_call_message({
+                            "name": chunk_data['tool_name'],
+                            "args": chunk_data['tool_input'],
+                            "id": chunk_data['tool_call_id']
+                        })
+                        yield f"data: {json.dumps(converted_chunk)}\n\n"
+
+                    elif chunk_type == 'tool_result':
+                        # The tool has finished running. Save the result.
+                        history.add_tool_result_message(
+                            chunk_data['tool_name'], 
+                            chunk_data['observation'], 
+                            chunk_data['tool_call_id']
+                        )
+                        yield f"data: {json.dumps(converted_chunk)}\n\n"
+                    
+                    elif chunk_type == 'final_output':
+                        if isinstance(chunk_data, dict):
+                            final_answer = chunk_data.get('output')
+                        yield f"data: {json.dumps(converted_chunk)}\n\n"
+
+                    elif chunk_type == 'thinking_step':
+                        yield f"data: {json.dumps(converted_chunk)}\n\n"
+
                     time.sleep(0.01)
             
-            history.add_user_message(message_text)
             if final_answer:
                 history.add_ai_message(final_answer)
             else:

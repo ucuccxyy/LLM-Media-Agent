@@ -7,7 +7,7 @@ import os
 from typing import Dict, Any, List, Union
 
 from langchain.agents import create_tool_calling_agent, AgentExecutor
-from langchain.prompts import ChatPromptTemplate
+from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import tool, BaseTool
 from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
 from uuid import uuid4
@@ -121,11 +121,14 @@ class MediaAgent:
 1.  **Complete Execution**: You must complete all steps in the user's request. If a user asks to search and then download, you must search before downloading.
 2.  **Factual Reporting**: Your final answer must be based on the information returned by the tools. If content already exists or an error occurs, report it truthfully.
 3.  **Confident Decision Making**: Your primary goal is to successfully complete the user's request without unnecessary questions.
-    *   **Act decisively**: After searching, examine the **first** result. If its title is a clear, case-insensitive match for what the user requested, you **MUST** ignore all other items in the list and proceed with the download immediately. For instance, if the user asks for "the boys" and the first result is "The Boys" (even if other results like "Boys" or "The Boy" are present), you must treat it as a perfect match and download it.
-    *   **Ask only when necessary**: Only ask for clarification if the first result is clearly different from the user's request. For example, if the user requests "The Lord of the Rings" and the result is "The Lord of the Rings: The Rings of Power", you should ask for confirmation.
-    *   **Handle Ambiguity**: If the search returns multiple relevant but non-perfect matches, you **MUST** list the top results for the user to choose from. For example, a search for "Lord of the Rings" might return all three movies in the trilogy.
+    *   **Act decisively**: After searching, examine the **first** result. If its title is a clear, case-insensitive match for what the user requested, you **MUST** ignore all other items in the list and proceed with the download immediately. For instance, if the user asks for "series_a" and the first result is "Series_A" (even if other results like "Series B" or "The Series A" are present), you must treat it as a perfect match and download it.
+    *   **Ask only when necessary**: Only ask for clarification if the first result is clearly different from the user's request. For example, if the user requests "Movie B" and the result is "Movie B: The Sequel", you should ask for confirmation.
+    *   **Handle Ambiguity**: If the search returns multiple relevant but non-perfect matches, you **MUST** list the top results for the user to choose from. For example, a search for "Movie C" might return all three movies in the trilogy.
 4.  **Action Confirmation**: After a successful `download_movie` or `download_series` call, you **MUST** consider the task complete. **Do not** use any queue-checking tools for verification. Immediately report to the user that the item has been added and the system is searching for it.
-5.  **Prevent Loops**: If a search fails to find a result 2 times in a row, stop and report the failure.
+5.  **Search and Retry Logic**: You may encounter issues with non-English titles. Follow this logic strictly:
+    *   **First Attempt**: Always perform the search as requested.
+    *   **Chinese Title Retry**: If the first search was for a title in Chinese and it failed, you **MUST** immediately try to search for the *exact same Chinese title* a second time. This is a mandatory retry.
+    *   **Give Up**: If the search fails for a non-Chinese title, or if the second attempt for a Chinese title also fails, you must stop and report the failure. Do not attempt to search more than twice for the same request.
 6.  **Output Format**: Adhere strictly to this format.
     *   **Tool Calls**: When you need to call a tool, your response **MUST** contain *only* the tool call object. Do not include any other text, commentary, or explanation in your response.
     *   **Final Answers**: When the task is complete, you are asking a question, or reporting a failure, your response **MUST** be plain, natural language.
@@ -138,13 +141,13 @@ class MediaAgent:
         # Scenario 1: Successful end-to-end task (download and verify) - General Case
         search_call_1_id = "tool_call_search_1"
         example_messages.extend([
-            HumanMessage(content="Please find the show 'Breaking Bad' and download seasons 1 and 2 for me."),
+            HumanMessage(content="Please find the show 'TV Show A' and download seasons 1 and 2 for me."),
             AIMessage(
                 content="",
-                tool_calls=[{"name": "search_series", "args": {"query": "breaking bad"}, "id": search_call_1_id}]
+                tool_calls=[{"name": "search_series", "args": {"query": "TV Show A"}, "id": search_call_1_id}]
             ),
             ToolMessage(
-                content="Found the following series:\n  - Title: Breaking Bad...",
+                content="Found the following series:\n  - Title: TV Show A...",
                 tool_call_id=search_call_1_id
             )
         ])
@@ -158,19 +161,19 @@ class MediaAgent:
                 content="Successfully added the series to Sonarr...",
                 tool_call_id=download_call_1_id
             ),
-            AIMessage(content="Alright, I've found 'Breaking Bad' and added the download tasks for seasons 1 and 2. The system is now searching for the episodes to download.")
+            AIMessage(content="Alright, I've found 'TV Show A' and added the download tasks for seasons 1 and 2. The system is now searching for the episodes to download.")
         ])
 
         # Scenario 1.5: Confident download for case-insensitive match ("the boys" example)
         search_call_boys_id = "tool_call_search_boys"
         example_messages.extend([
-            HumanMessage(content="Please help me search for and download season 1 of the TV show 'the boys'"),
+            HumanMessage(content="Please help me search for and download season 1 of the TV show 'tv show b'"),
             AIMessage(
                 content="",
-                tool_calls=[{"name": "search_series", "args": {"query": "the boys"}, "id": search_call_boys_id}]
+                tool_calls=[{"name": "search_series", "args": {"query": "tv show b"}, "id": search_call_boys_id}]
             ),
             ToolMessage(
-                content="Found the following series:\n  - Title: The Boys, Year: 2019, TVDB ID: 355567\n  - Title: Boys, Year: 2022, TVDB ID: 423151\n  - Title: The Boys (1993), Year: 1993, TVDB ID: 77590",
+                content="Found the following series:\n  - Title: TV Show B, Year: 2019, TVDB ID: 355567\n  - Title: Show B, Year: 2022, TVDB ID: 423151\n  - Title: TV Show B (1993), Year: 1993, TVDB ID: 77590",
                 tool_call_id=search_call_boys_id
             )
         ])
@@ -184,19 +187,19 @@ class MediaAgent:
                 content="Successfully added the series to Sonarr...",
                 tool_call_id=download_call_boys_id
             ),
-            AIMessage(content="Alright, I've found 'The Boys' and added the download task for season 1. The system is now searching for the episode to download.")
+            AIMessage(content="Alright, I've found 'TV Show B' and added the download task for season 1. The system is now searching for the episode to download.")
         ])
 
         # Scenario 1.6: Download all seasons example
         search_call_all_id = "tool_call_search_all"
         example_messages.extend([
-            HumanMessage(content="I want to download all seasons of 'Game of Thrones'"),
+            HumanMessage(content="I want to download all seasons of 'TV Show C'"),
             AIMessage(
                 content="",
-                tool_calls=[{"name": "search_series", "args": {"query": "Game of Thrones"}, "id": search_call_all_id}]
+                tool_calls=[{"name": "search_series", "args": {"query": "TV Show C"}, "id": search_call_all_id}]
             ),
             ToolMessage(
-                content="Found the following series:\n  - Title: Game of Thrones, Year: 2011, TVDB ID: 121361\n  - Title: Game of Thrones: The Last Watch, Year: 2019, TVDB ID: 365888",
+                content="Found the following series:\n  - Title: TV Show C, Year: 2011, TVDB ID: 121361\n  - Title: TV Show C: The Last Watch, Year: 2019, TVDB ID: 365888",
                 tool_call_id=search_call_all_id
             )
         ])
@@ -210,28 +213,28 @@ class MediaAgent:
                 content="Successfully added the series to Sonarr and started searching for all seasons...",
                 tool_call_id=download_call_all_id
             ),
-            AIMessage(content="Great! I've found 'Game of Thrones' and set up the download for all seasons. The system is now searching for the episodes.")
+            AIMessage(content="Great! I've found 'TV Show C' and set up the download for all seasons. The system is now searching for the episodes.")
         ])
 
         # Scenario 2: Search result does not exactly match, requires user confirmation
         search_call_2_id = "tool_call_search_2"
         example_messages.extend([
-            HumanMessage(content="Help me download season 1 of 'The Lord of the Rings'"),
+            HumanMessage(content="Help me download season 1 of 'Movie Trilogy A'"),
             AIMessage(
                 content="",
-                tool_calls=[{"name": "search_series", "args": {"query": "The Lord of the Rings"}, "id": search_call_2_id}]
+                tool_calls=[{"name": "search_series", "args": {"query": "Movie Trilogy A"}, "id": search_call_2_id}]
             ),
             ToolMessage(
-                content="Found the following series: Title: The Lord of the Rings: The Rings of Power, Year: 2022, TVDB ID: 367506 ...",
+                content="Found the following series: Title: Movie Trilogy A: The Spinoff Series, Year: 2022, TVDB ID: 367506 ...",
                 tool_call_id=search_call_2_id
             ),
-            AIMessage(content="I found a series called 'The Lord of the Rings: The Rings of Power,' which seems to be the most relevant result for 'The Lord of the Rings.' Would you like me to download the first season of this show?")
+            AIMessage(content="I found a series called 'Movie Trilogy A: The Spinoff Series,' which seems to be the most relevant result for 'Movie Trilogy A.' Would you like me to download the first season of this show?")
         ])
 
         # Scenario 2 Follow-up: User confirms and agent downloads
         download_call_2_id = "tool_call_download_2"
         example_messages.extend([
-            HumanMessage(content="是的，帮我下载这部电影。"),
+            HumanMessage(content="是的，帮我下载这部剧。"),
             AIMessage(
                 content="",
                 tool_calls=[{"name": "download_series", "args": {"tvdb_id": 367506, "seasons": [1]}, "id": download_call_2_id}]
@@ -240,34 +243,34 @@ class MediaAgent:
                 content="Successfully added the series to Sonarr...",
                 tool_call_id=download_call_2_id
             ),
-            AIMessage(content="好的，我已经将《指环王：力量之戒》第一季加入了下载队列，系统现在会开始寻找资源。")
+            AIMessage(content="好的，我已经将《电影三部曲A：衍生剧》第一季加入了下载队列，系统现在会开始寻找资源。")
         ])
 
         # Scenario 2.2: Ambiguous search with multiple results
         search_call_lotr_id = "tool_call_search_lotr"
         example_messages.extend([
-            HumanMessage(content="我要下载电影'指环王'"),
+            HumanMessage(content="我要下载电影'电影三部曲A'"),
             AIMessage(
                 content="",
-                tool_calls=[{"name": "search_movie", "args": {"query": "指环王"}, "id": search_call_lotr_id}]
+                tool_calls=[{"name": "search_movie", "args": {"query": "电影三部曲A"}, "id": search_call_lotr_id}]
             ),
             ToolMessage(
-                content="搜索到以下电影:\n  - 标题: The Lord of the Rings: The Fellowship of the Ring, 年份: 2001, TMDB ID: 120\n  - 标题: The Lord of the Rings: The Two Towers, 年份: 2002, TMDB ID: 121\n  - 标题: The Lord of the Rings: The Return of the King, 年份: 2003, TMDB ID: 122",
+                content="搜索到以下电影:\n  - 标题: 电影三部曲A：第一部, 年份: 2001, TMDB ID: 120\n  - 标题: 电影三部曲A：第二部, 年份: 2002, TMDB ID: 121\n  - 标题: 电影三部曲A：第三部, 年份: 2003, TMDB ID: 122",
                 tool_call_id=search_call_lotr_id
             ),
-            AIMessage(content="我找到了多部与'指环王'相关的电影，请问您具体想下载哪一部？\n- 指环王1：护戒使者 (2001)\n- 指环王2：双塔奇兵 (2002)\n- 指环王3：王者无敌 (2003)")
+            AIMessage(content="我找到了多部与'电影三部曲A'相关的电影，请问您具体想下载哪一部？\n- 电影三部曲A：第一部 (2001)\n- 电影三部曲A：第二部 (2002)\n- 电影三部曲A：第三部 (2003)")
         ])
 
         # Scenario 2.5: Successfully download special episodes
         search_call_special_id = "tool_call_search_special"
         example_messages.extend([
-            HumanMessage(content="帮我下载'better call saul'的特别节目"),
+            HumanMessage(content="帮我下载'电视剧D'的特别节目"),
             AIMessage(
                 content="",
-                tool_calls=[{"name": "search_series", "args": {"query": "better call saul"}, "id": search_call_special_id}]
+                tool_calls=[{"name": "search_series", "args": {"query": "电视剧D"}, "id": search_call_special_id}]
             ),
             ToolMessage(
-                content="搜索到以下电视剧: 标题: Better Call Saul, 年份: 2015, TVDB ID: 273181 ...",
+                content="搜索到以下电视剧: 标题: 电视剧D, 年份: 2015, TVDB ID: 273181 ...",
                 tool_call_id=search_call_special_id
             ),
             AIMessage(
@@ -307,34 +310,34 @@ class MediaAgent:
         # Scenario 4: Search for a movie only
         search_call_4_id = "tool_call_search_4"
         example_messages.extend([
-            HumanMessage(content="Help me see if there is a movie called 'Interstellar'"),
+            HumanMessage(content="Help me see if there is a movie called 'Movie E'"),
             AIMessage(
                 content="",
-                tool_calls=[{"name": "search_movie", "args": {"query": "Interstellar"}, "id": search_call_4_id}]
+                tool_calls=[{"name": "search_movie", "args": {"query": "Movie E"}, "id": search_call_4_id}]
             ),
             ToolMessage(
-                content="Found the following movie: Title: Interstellar, Year: 2014, TMDB ID: 157336 ...",
+                content="Found the following movie: Title: Movie E, Year: 2014, TMDB ID: 157336 ...",
                 tool_call_id=search_call_4_id
             ),
-            AIMessage(content="Found the movie 'Interstellar' from 2014.")
+            AIMessage(content="Found the movie 'Movie E' from 2014.")
         ])
 
         # Scenario 5: User requests an unsupported action (downloading an episode)
         example_messages.extend([
-            HumanMessage(content="帮我下载《黑镜》第五季第二集。"),
-            AIMessage(content="很抱歉，我无法下载特定的单集。我只能按季下载。需要我为您下载《黑镜》第五季的整季吗？")
+            HumanMessage(content="帮我下载《电视剧F》第五季第二集。"),
+            AIMessage(content="很抱歉，我无法下载特定的单集。我只能按季下载。需要我为您下载《电视剧F》第五季的整季吗？")
         ])
 
         # Scenario 6: User requests an unsupported action (deleting a movie)
         example_messages.extend([
-            HumanMessage(content="请帮我删除电影资料库里的《教父》。"),
+            HumanMessage(content="请帮我删除电影资料库里的《电影G》。"),
             AIMessage(content="对不起，我没有删除媒体文件的功能。")
         ])
 
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
         ] + example_messages + [
-            ("system", "Here is the user's input. Please refer to the example scenarios for tool calls and responses."),
+            MessagesPlaceholder(variable_name="chat_history"),
             ("human", "{input}"),
             ("placeholder", "{agent_scratchpad}"),
         ])
