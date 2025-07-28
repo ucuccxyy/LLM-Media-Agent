@@ -41,7 +41,7 @@ cd LLMagent
 # 进入 docker 目录并启动所有服务
 # -d 参数让服务在后台运行
 cd media_agent/docker
-docker-compose up -d
+docker compose up -d
 ```
 这个命令会启动：
 - Ollama
@@ -102,8 +102,7 @@ pip install -r requirements.txt
 - **启动所有服务**:
   ```bash
   # 启动 Radarr, Sonarr 等
-  cd media_agent/docker
-  docker-compose up -d
+  ./start_media_services.sh
 
   # 启动 Agent API
   cd ../..
@@ -116,13 +115,7 @@ pip install -r requirements.txt
   ./stop_api.sh
 
   # 停止 Docker 服务
-  cd media_agent/docker
-  docker-compose down
-  ```
-
-- **查看日志**:
-  ```bash
-  tail -f media_agent/logs/api.log
+  ./stop_media_services.sh
   ```
 
 ## 环境变量说明
@@ -137,6 +130,6 @@ pip install -r requirements.txt
 | `RADARR_API_KEY`| Radarr 的 API Key | `your_radarr_api_key` |
 | `SONARR_URL` | Sonarr 服务的 URL | `http://localhost:8989` |
 | `SONARR_API_KEY`| Sonarr 的 API Key | `your_sonarr_api_key` |
-| `QBITTORRENT_URL`| qBittorrent 服务的 URL | `http://localhost:8080` |
+| `QBITTORRENT_URL`| qBittorrent 服务的 URL | `http://localhost:8081` |
 | `QBITTORRENT_USER`| qBittorrent 的用户名 | `admin` |
-| `QBITTORRENT_PASSWORD`| qBittorrent 的密码 | `adminadmin` | 
+| `QBITTORRENT_PASSWORD`| qBittorrent 的密码 | `123456` | 
