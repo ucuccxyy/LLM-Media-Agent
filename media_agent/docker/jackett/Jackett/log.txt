@@ -1764,3 +1764,36 @@
 2025-07-28 14:28:38.5082 Info Torznab search in TheRARBG for Breaking Bad S03 => Found 29 releases [173ms]
 2025-07-28 14:28:40.6382 Info Torznab search in TheRARBG for Breaking Bad S04 => Found 27 releases [303ms]
 2025-07-28 14:28:42.4860 Info Torznab search in TheRARBG for Breaking Bad S05 => Found 41 releases [151ms]
+2025-07-28 14:42:15.8489 Info Torznab search in TheRARBG => Found 50 releases (from cache) [0ms]
+2025-07-28 14:42:15.8494 Info Torznab search in 1337x => Found 20 releases (from cache) [0ms]
+2025-07-28 14:54:46.1263 Info Torznab search in TheRARBG => Found 50 releases [276ms]
+2025-07-28 14:54:52.7213 Info Torznab search in 1337x => Found 20 releases [6871ms]
+2025-07-28 14:57:46.0578 Info Torznab search in TheRARBG => Found 50 releases [111ms]
+2025-07-28 14:57:52.7437 Info Torznab search in 1337x => Found 20 releases [6797ms]
+2025-07-28 15:54:15.5274 Info Starting Jackett v0.22.2185
+2025-07-28 15:54:15.9681 Info Environment version: 8.0.18 (/app/Jackett/)
+2025-07-28 15:54:15.9744 Info OS version: Unix 6.8.0.1027 (64bit OS) (64bit process)
+2025-07-28 15:54:15.9768 Info Jackett variant: CoreLinuxMuslAmdx64
+2025-07-28 15:54:15.9768 Info File /etc/issue: Welcome to Alpine Linux 3.22
+2025-07-28 15:54:15.9773 Info Running in Docker: Yes (image build: v0.22.2185-ls100)
+2025-07-28 15:54:15.9773 Info ThreadPool MaxThreads: 32767 workerThreads, 1000 completionPortThreads
+2025-07-28 15:54:15.9773 Info App config/log directory: /config/Jackett
+2025-07-28 15:54:15.9800 Info Using proxy: Disabled
+2025-07-28 15:54:15.9800 Info Using FlareSolverr: No
+2025-07-28 15:54:15.9812 Info Using HTTP Client: HttpWebClient2
+2025-07-28 15:54:15.9842 Info Loading Native indexers ...
+2025-07-28 15:54:16.0128 Info Loaded 76 Native indexers.
+2025-07-28 15:54:16.0147 Info Loading Cardigann indexers from: /config/cardigann/definitions/, /etc/xdg/cardigan/definitions/, /app/Jackett/Definitions
+2025-07-28 15:54:18.5542 Info Loaded 518 Cardigann indexers.
+2025-07-28 15:54:18.5546 Info Loaded 594 indexers in total
+2025-07-28 15:54:18.5610 Info Adding aggregate indexer ('all' indexer) ...
+2025-07-28 15:54:18.5656 Info Adding filter indexer ('type:public' indexer) ...
+2025-07-28 15:54:18.5656 Info Adding filter indexer ('type:private' indexer) ...
+2025-07-28 15:54:18.5656 Info Adding filter indexer ('type:semi-public' indexer) ...
+2025-07-28 15:54:18.7124 Info Jackett startup finished in 3.397 s
+2025-07-28 15:54:47.5062 Info Torznab search in TheRARBG => Found 50 releases [248ms]
+2025-07-28 15:54:47.5062 Info Torznab search in TheRARBG => Found 50 releases [385ms]
+2025-07-28 15:54:53.7990 Info Torznab search in 1337x => Found 20 releases [6549ms]
+2025-07-28 15:54:54.0937 Info Torznab search in 1337x => Found 20 releases [6975ms]
+2025-07-28 16:10:17.3009 Info Torznab search in TheRARBG => Found 50 releases (from cache) [1ms]
+2025-07-28 16:10:17.3022 Info Torznab search in 1337x => Found 20 releases (from cache) [2ms]

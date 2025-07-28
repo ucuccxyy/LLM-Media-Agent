@@ -28,7 +28,7 @@ class InMemoryHistory(BaseChatMessageHistory):
     def add_tool_result_message(self, tool_name: str, result: str, tool_call_id: str):
         """Adds a tool's result to the history."""
         self.add_messages([ToolMessage(content=result, name=tool_name, tool_call_id=tool_call_id)])
-        
+
     def clear(self) -> None:
         self.messages = []
 

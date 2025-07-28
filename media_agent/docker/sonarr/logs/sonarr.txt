@@ -53,3 +53,43 @@
 2025-07-28 14:28:42.7|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Breaking Bad S05 1080p BluRay x265 RARBG ORARBG
 2025-07-28 14:28:42.8|Info|EpisodeSearchService|Completed search for 62 episodes. 5 reports downloaded.
 2025-07-28 14:29:52.1|Warn|MediaCoverMapper|File /config/MediaCover/28/poster.jpg not found
+2025-07-28 14:42:15.8|Info|RssSyncService|Starting RSS Sync
+2025-07-28 14:42:15.8|Info|DownloadDecisionMaker|Processing 70 releases
+2025-07-28 14:42:15.9|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0
+2025-07-28 14:57:45.9|Info|RssSyncService|Starting RSS Sync
+2025-07-28 14:57:46.0|Warn|Torznab|Indexer RARBG rss sync didn't cover the period between 07/28/2025 06:00:47 and 07/28/2025 06:31:36 UTC. Search may be required.
+2025-07-28 14:57:52.7|Info|DownloadDecisionMaker|Processing 70 releases
+2025-07-28 14:57:52.8|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0
+2025-07-28 15:54:15.6|Info|Bootstrap|Starting Sonarr - /app/sonarr/bin/Sonarr - Version 4.0.15.2941
+2025-07-28 15:54:15.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-07-28 15:54:15.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-07-28 15:54:16.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-07-28 15:54:16.2|Info|MigrationController|*** Migrating data source=/config/sonarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-28 15:54:16.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-28 15:54:16.3|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-28 15:54:16.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-28 15:54:16.3|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-28 15:54:16.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0455881s
+2025-07-28 15:54:16.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-28 15:54:16.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.047545s
+2025-07-28 15:54:16.3|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-28 15:54:16.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-28 15:54:16.4|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-28 15:54:16.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-28 15:54:16.4|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-28 15:54:16.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0012762s
+2025-07-28 15:54:16.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-28 15:54:16.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0014674s
+2025-07-28 15:54:16.8|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:8989
+2025-07-28 15:54:17.1|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-07-28 15:54:17.1|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-07-28 15:54:17.1|Info|Microsoft.Hosting.Lifetime|Content root path: /app/sonarr/bin
+2025-07-28 15:54:17.2|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-07-28 15:54:17.8|Error|LocalizationService|Missing translation/culture resource: /app/sonarr/bin/Localization/Core/zh.json
+2025-07-28 15:54:47.1|Info|SceneMappingService|Updating Scene mappings
+2025-07-28 15:54:47.1|Info|RssSyncService|Starting RSS Sync
+2025-07-28 15:54:53.8|Info|DownloadDecisionMaker|Processing 70 releases
+2025-07-28 15:54:55.1|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0
+2025-07-28 16:10:17.2|Info|RssSyncService|Starting RSS Sync
+2025-07-28 16:10:17.3|Info|DownloadDecisionMaker|Processing 70 releases
+2025-07-28 16:10:17.4|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0

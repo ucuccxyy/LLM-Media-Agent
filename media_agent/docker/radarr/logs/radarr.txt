@@ -6303,3 +6303,36 @@ database or disk is full
 2025-07-28 14:24:15.6|Info|RssSyncService|Starting RSS Sync
 2025-07-28 14:24:15.6|Info|DownloadDecisionMaker|Processing 70 releases
 2025-07-28 14:24:15.8|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0
+2025-07-28 14:54:45.8|Info|RssSyncService|Starting RSS Sync
+2025-07-28 14:54:46.1|Warn|Torznab|Indexer RARBG rss sync didn't cover the period between 07/28/2025 04:37:38 and 07/28/2025 06:34:36 UTC. Search may be required.
+2025-07-28 14:54:52.7|Info|DownloadDecisionMaker|Processing 70 releases
+2025-07-28 14:54:52.9|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0
+2025-07-28 15:54:15.4|Info|Bootstrap|Starting Radarr - /app/radarr/bin/Radarr - Version 5.26.2.10099
+2025-07-28 15:54:15.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-07-28 15:54:15.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-07-28 15:54:15.8|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-07-28 15:54:16.0|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-28 15:54:16.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-28 15:54:16.1|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-28 15:54:16.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-28 15:54:16.1|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-28 15:54:16.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0446329s
+2025-07-28 15:54:16.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-28 15:54:16.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0465314s
+2025-07-28 15:54:16.2|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-28 15:54:16.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-28 15:54:16.2|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-28 15:54:16.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-28 15:54:16.2|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-28 15:54:16.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0012412s
+2025-07-28 15:54:16.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-28 15:54:16.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0014617s
+2025-07-28 15:54:16.5|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:7878
+2025-07-28 15:54:16.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2025-07-28 15:54:16.9|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-07-28 15:54:16.9|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-07-28 15:54:16.9|Info|Microsoft.Hosting.Lifetime|Content root path: /app/radarr/bin
+2025-07-28 15:54:17.0|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-07-28 15:54:46.9|Info|RssSyncService|Starting RSS Sync
+2025-07-28 15:54:54.1|Info|DownloadDecisionMaker|Processing 70 releases
+2025-07-28 15:54:54.7|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0

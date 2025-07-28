@@ -83,7 +83,7 @@ def run_api_mode():
 
 
     logging.info("--- Starting Media Agent in API mode ---")
-
+    
     try:
         settings = Settings()
         settings.load_from_env()
