@@ -351,8 +351,8 @@
         }
 
         function finalizeAgentMessage(container, content) {
-            // 使用正则表达式移除所有被大括号包裹的内容，包括大括号本身
-            const cleanedContent = content.replace(/{[^}]*}/g, '');
+            // 这个正则表达式会查找并移除字符串末尾的、可能跨越多行的完整JSON对象
+            const cleanedContent = content.replace(/{\s*"name":\s*"[^"]*"\s*,\s*"parameters":\s*{[^}]*}}\s*$/g, '').trim();
             container.innerHTML = cleanedContent;
         }
         

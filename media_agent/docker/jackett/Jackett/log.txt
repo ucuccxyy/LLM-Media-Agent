@@ -1797,3 +1797,83 @@
 2025-07-28 15:54:54.0937 Info Torznab search in 1337x => Found 20 releases [6975ms]
 2025-07-28 16:10:17.3009 Info Torznab search in TheRARBG => Found 50 releases (from cache) [1ms]
 2025-07-28 16:10:17.3022 Info Torznab search in 1337x => Found 20 releases (from cache) [2ms]
+2025-07-28 16:13:10.7604 Error Jackett.Common.IndexerException: Exception (1337x): Challenge detected but FlareSolverr is not configured
+
+[v0.22.2185.0] Jackett.Common.IndexerException: Exception (1337x): Challenge detected but FlareSolverr is not configured
+ ---> FlareSolverrSharp.Exceptions.FlareSolverrException: Challenge detected but FlareSolverr is not configured
+   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 180
+   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 188
+   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 617
+   at Jackett.Common.Indexers.Definitions.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/Definitions/CardigannIndexer.cs:line 1563
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 378
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 403
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 816
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 437
+
+2025-07-28 16:13:10.9249 Info Torznab search in TheRARBG => Found 50 releases [259ms]
+2025-07-28 16:14:37.7957 Error Jackett.Common.IndexerException: Exception (1337x): Challenge detected but FlareSolverr is not configured
+
+[v0.22.2185.0] Jackett.Common.IndexerException: Exception (1337x): Challenge detected but FlareSolverr is not configured
+ ---> FlareSolverrSharp.Exceptions.FlareSolverrException: Challenge detected but FlareSolverr is not configured
+   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 180
+   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 188
+   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 617
+   at Jackett.Common.Indexers.Definitions.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/Definitions/CardigannIndexer.cs:line 1563
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 378
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 403
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 816
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 437
+
+2025-07-28 16:14:37.9900 Info Torznab search in TheRARBG => Found 50 releases [208ms]
+2025-07-28 16:16:08.7176 Info Test search in TheRARBG => Found 50 releases [215ms]
+2025-07-28 16:16:14.3551 Info Test search in 1337x => Found 80 releases [6786ms]
+2025-07-28 16:25:17.1340 Info Torznab search in TheRARBG => Found 50 releases (from cache) [0ms]
+2025-07-28 16:25:17.1345 Info Torznab search in 1337x => Found 20 releases (from cache) [0ms]
+2025-07-28 16:25:47.3898 Info Torznab search in TheRARBG => Found 50 releases (from cache) [0ms]
+2025-07-28 16:25:47.3898 Info Torznab search in 1337x => Found 20 releases (from cache) [0ms]
+2025-07-28 16:27:37.8048 Error Jackett.Common.IndexerException: Exception (1337x): Challenge detected but FlareSolverr is not configured
+
+[v0.22.2185.0] Jackett.Common.IndexerException: Exception (1337x): Challenge detected but FlareSolverr is not configured
+ ---> FlareSolverrSharp.Exceptions.FlareSolverrException: Challenge detected but FlareSolverr is not configured
+   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 180
+   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 188
+   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 617
+   at Jackett.Common.Indexers.Definitions.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/Definitions/CardigannIndexer.cs:line 1563
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 378
+   --- End of inner exception stack trace ---
+   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 403
+   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 816
+   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 437
+
+2025-07-28 16:27:38.0312 Info Torznab search in TheRARBG for Juego de Tronos S01 => Found 0 releases [326ms]
+2025-07-28 16:27:39.8909 Info Torznab search in TheRARBG for Il trono di spade S01 => Found 10 releases [187ms]
+2025-07-28 16:27:41.8467 Info Torznab search in TheRARBG for Game of Thrones Das Lied von Eis und Feuer S01 => Found 0 releases [144ms]
+2025-07-28 16:27:43.8973 Info Torznab search in TheRARBG for Game of Thrones S01 => Found 50 releases [195ms]
+2025-07-28 16:27:45.8566 Info Torznab search in TheRARBG for Juego de Tronos S02 => Found 0 releases [154ms]
+2025-07-28 16:27:47.8475 Info Torznab search in TheRARBG for Il trono di spade S02 => Found 10 releases [144ms]
+2025-07-28 16:27:49.8652 Info Torznab search in TheRARBG for Game of Thrones Das Lied von Eis und Feuer S02 => Found 0 releases [163ms]
+2025-07-28 16:27:51.8775 Info Torznab search in TheRARBG for Game of Thrones S02 => Found 50 releases [174ms]
+2025-07-28 16:27:53.8430 Info Torznab search in TheRARBG for Juego de Tronos S03 => Found 0 releases [140ms]
+2025-07-28 16:27:55.8466 Info Torznab search in TheRARBG for Il trono di spade S03 => Found 7 releases [144ms]
+2025-07-28 16:27:57.8465 Info Torznab search in TheRARBG for Game of Thrones Das Lied von Eis und Feuer S03 => Found 0 releases [142ms]
+2025-07-28 16:27:59.8596 Info Torznab search in TheRARBG for Game of Thrones S03 => Found 50 releases [156ms]
+2025-07-28 16:28:01.8478 Info Torznab search in TheRARBG for Juego de Tronos S04 => Found 0 releases [144ms]
+2025-07-28 16:28:03.8573 Info Torznab search in TheRARBG for Il trono di spade S04 => Found 7 releases [154ms]
+2025-07-28 16:28:05.8484 Info Torznab search in TheRARBG for Game of Thrones Das Lied von Eis und Feuer S04 => Found 0 releases [145ms]
+2025-07-28 16:28:07.8771 Info Torznab search in TheRARBG for Game of Thrones S04 => Found 50 releases [174ms]
+2025-07-28 16:28:09.8478 Info Torznab search in TheRARBG for Juego de Tronos S05 => Found 0 releases [143ms]
+2025-07-28 16:28:11.8474 Info Torznab search in TheRARBG for Il trono di spade S05 => Found 6 releases [145ms]
+2025-07-28 16:28:13.9182 Info Torznab search in TheRARBG for Game of Thrones Das Lied von Eis und Feuer S05 => Found 0 releases [215ms]
+2025-07-28 16:28:15.8569 Info Torznab search in TheRARBG for Game of Thrones S05 => Found 50 releases [153ms]
+2025-07-28 16:28:17.8528 Info Torznab search in TheRARBG for Juego de Tronos S06 => Found 0 releases [150ms]
+2025-07-28 16:28:19.8614 Info Torznab search in TheRARBG for Il trono di spade S06 => Found 9 releases [157ms]
+2025-07-28 16:28:21.8439 Info Torznab search in TheRARBG for Game of Thrones Das Lied von Eis und Feuer S06 => Found 0 releases [142ms]
+2025-07-28 16:28:23.8745 Info Torznab search in TheRARBG for Game of Thrones S06 => Found 50 releases [172ms]

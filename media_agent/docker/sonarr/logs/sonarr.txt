@@ -93,3 +93,63 @@
 2025-07-28 16:10:17.2|Info|RssSyncService|Starting RSS Sync
 2025-07-28 16:10:17.3|Info|DownloadDecisionMaker|Processing 70 releases
 2025-07-28 16:10:17.4|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0
+2025-07-28 16:25:47.3|Info|RssSyncService|Starting RSS Sync
+2025-07-28 16:25:47.4|Info|DownloadDecisionMaker|Processing 70 releases
+2025-07-28 16:25:47.5|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0
+2025-07-28 16:27:37.0|Info|AddSeriesService|Adding Series [121361][Game of Thrones] Path: [/tv/Game of Thrones]
+2025-07-28 16:27:37.0|Info|RefreshSeriesService|Updating Game of Thrones
+2025-07-28 16:27:37.1|Info|RefreshEpisodeService|Starting episode info refresh for: [121361][Game of Thrones]
+2025-07-28 16:27:37.1|Info|RefreshEpisodeService|Finished episode refresh for series: [121361][Game of Thrones].
+2025-07-28 16:27:37.2|Info|MediaCoverService|Downloading Banner for [121361][Game of Thrones] https://artworks.thetvdb.com/banners/graphical/121361-g19.jpg
+2025-07-28 16:27:37.2|Warn|DiskScanService|Series' root folder (/tv) is empty.
+2025-07-28 16:27:37.2|Info|SeriesScannedHandler|[Game of Thrones] was recently added, performing post-add actions
+2025-07-28 16:27:37.2|Info|MediaCoverService|Downloading Poster for [121361][Game of Thrones] https://artworks.thetvdb.com/banners/posters/121361-4.jpg
+2025-07-28 16:27:37.2|Info|MediaCoverService|Downloading Fanart for [121361][Game of Thrones] https://artworks.thetvdb.com/banners/fanart/original/121361-19.jpg
+2025-07-28 16:27:37.2|Info|MediaCoverService|Downloading Clearlogo for [121361][Game of Thrones] https://artworks.thetvdb.com/banners/v4/series/121361/clearlogo/611b47b766d38.png
+2025-07-28 16:27:37.6|Info|EpisodeSearchService|Performing search for 73 episodes
+2025-07-28 16:27:37.6|Info|ReleaseSearchService|Searching indexers for [Game of Thrones : S01]. 2 active indexers
+2025-07-28 16:27:37.8|Info|MetadataService|Series folder does not exist, skipping metadata image creation
+2025-07-28 16:27:37.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://18.205.18.246:9117/api/v2.0/indexers/1337x/results/torznab/api?t=tvsearch&cat=5000,5030,5040,5070,5080,100074,100075&extended=1&apikey=(removed)&offset=0&limit=100&q=Juego%20de%20Tronos&season=1: 400.BadRequest (2097 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="900" description="Jackett.Common.IndexerException: Exception (1337x): Challenge detected but FlareSolverr is not configured&#xA; ---&gt; FlareSolverrSharp.Exceptions.FlareSolverrException: Challenge detected but FlareSolverr is not configured&#xA;   at FlareSolverrSharp.ClearanceHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)&#xA;   at System.Net.Http.HttpClient.&lt;SendAsync&gt;g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)&#xA;   at Jackett.Common.Utils.Clients.HttpWebClient2.Run(WebRequest webRequest) in ./Jackett.Common/Utils/Clients/HttpWebClient2.cs:line 180&#xA;   at Jackett.Common.Utils.Clients.WebClient.GetResultAsync(WebRequest request) in ./Jackett.Common/Utils/Clients/WebClient.cs:line 188&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.RequestWithCookiesAsync(String url, String cookieOverride, RequestType method, String referer, IEnumerable`1 data, Dictionary`2 headers, String rawbody, Nullable`1 emulateBrowser) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 617&#xA;   at Jackett.Common.Indexers.Definitions.CardigannIndexer.PerformQuery(TorznabQuery query) in ./Jackett.Common/Indexers/Definitions/CardigannIndexer.cs:line 1563&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 378&#xA;   --- End of inner exception stack trace ---&#xA;   at Jackett.Common.Indexers.BaseIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 403&#xA;   at Jackett.Common.Indexers.BaseWebIndexer.ResultsForQuery(TorznabQuery query, Boolean isMetaIndexer) in ./Jackett.Common/Indexers/BaseIndexer.cs:line 816&#xA;   at Jackett.Server.Controllers.ResultsController.Torznab(TorznabRequest request) in ./Jackett.Server/Controllers/ResultsController.cs:line 437" />
+2025-07-28 16:27:37.8|Warn|Torznab|1337x HTTP request failed: [400:BadRequest] [GET] at [http://18.205.18.246:9117/api/v2.0/indexers/1337x/results/torznab/api?t=tvsearch&cat=5000,5030,5040,5070,5080,100074,100075&extended=1&apikey=(removed)&offset=0&limit=100&q=Juego%20de%20Tronos&season=1]
+2025-07-28 16:27:43.9|Info|DownloadDecisionMaker|Processing 60 releases
+2025-07-28 16:27:44.4|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game Of Thrones S01 Season 1 1080p 5 1Ch BluRay ReEnc DeeJayAhmed LittleFairyRG
+2025-07-28 16:27:44.4|Info|ReleaseSearchService|Searching indexers for [Game of Thrones : S02]. 1 active indexers
+2025-07-28 16:27:51.9|Info|DownloadDecisionMaker|Processing 60 releases
+2025-07-28 16:27:52.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game of Thrones S02 Complete 1080p 10bit Bluray ORG Hindi 2 0 E
+2025-07-28 16:27:52.2|Info|ReleaseSearchService|Searching indexers for [Game of Thrones : S03]. 1 active indexers
+2025-07-28 16:27:59.8|Info|DownloadDecisionMaker|Processing 56 releases
+2025-07-28 16:28:00.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game Of Thrones S03 Season 3 1080p 5.1Ch BluRay ReEnc-DeeJayAhmed [LittleFairyRG]
+2025-07-28 16:28:00.2|Info|ReleaseSearchService|Searching indexers for [Game of Thrones : S04]. 1 active indexers
+2025-07-28 16:28:07.9|Info|DownloadDecisionMaker|Processing 55 releases
+2025-07-28 16:28:08.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game of Thrones S04 1080p BluRay 10bit HEVC 6CH 11.5GB - MkvCage
+2025-07-28 16:28:08.2|Info|ReleaseSearchService|Searching indexers for [Game of Thrones : S05]. 1 active indexers
+2025-07-28 16:28:15.8|Info|DownloadDecisionMaker|Processing 56 releases
+2025-07-28 16:28:16.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game of Thrones S05 Complete 1080p 10bit Bluray ORG Hindi 2 0 E
+2025-07-28 16:28:16.2|Info|ReleaseSearchService|Searching indexers for [Game of Thrones : S06]. 1 active indexers
+2025-07-28 16:28:23.8|Info|DownloadDecisionMaker|Processing 59 releases
+2025-07-28 16:28:24.0|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game Of Thrones S06e07 Mux 1080p H264 Ita Ac3 Eng Ac3 5 1 Subs DLMux by Fratposa
+2025-07-28 16:28:24.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game of Thrones S06E09 1080p HDTV x264 BATV rarbg
+2025-07-28 16:28:24.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game Of Thrones S06e10 Mux 1080p H264 Ita Ac3 Eng Ac3 5 1 Subs DLMux by Fratposa
+2025-07-28 16:28:24.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game of Thrones S06E02 720p HDTV x264 FLEET EZTV
+2025-07-28 16:28:24.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game Of Thrones S06E04 iNTERNAL 720p HDTV x264 TURBO EZTV
+2025-07-28 16:28:24.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game of Thrones S06E06 720p HDTV x264 AVS EZTV
+2025-07-28 16:28:24.1|Info|DownloadService|Report sent to qBittorrent. Indexer RARBG. Game of Thrones S06E08 720p HDTV x264 AVS eztv mkv
+2025-07-28 16:28:24.1|Error|EpisodeSearchService|Unable to search for episodes in season 7 of [29]
+
+[v4.0.15.2941] NzbDrone.Core.Datastore.ModelNotFoundException: Series with ID 29 does not exist
+   at NzbDrone.Core.Datastore.BasicRepository`1.Get(Int32 id) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 104
+   at NzbDrone.Core.Tv.SeriesService.GetSeries(Int32 seriesId) in ./Sonarr.Core/Tv/SeriesService.cs:line 64
+   at NzbDrone.Core.IndexerSearch.ReleaseSearchService.SeasonSearch(Int32 seriesId, Int32 seasonNumber, List`1 episodes, Boolean monitoredOnly, Boolean userInvokedSearch, Boolean interactiveSearch) in ./Sonarr.Core/IndexerSearch/ReleaseSearchService.cs:line 110
+   at NzbDrone.Core.IndexerSearch.EpisodeSearchService.SearchForBulkEpisodes(List`1 episodes, Boolean monitoredOnly, Boolean userInvokedSearch) in ./Sonarr.Core/IndexerSearch/EpisodeSearchService.cs:line 74
+
+2025-07-28 16:28:24.2|Error|EpisodeSearchService|Unable to search for episodes in season 8 of [29]
+
+[v4.0.15.2941] NzbDrone.Core.Datastore.ModelNotFoundException: Series with ID 29 does not exist
+   at NzbDrone.Core.Datastore.BasicRepository`1.Get(Int32 id) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 104
+   at NzbDrone.Core.Tv.SeriesService.GetSeries(Int32 seriesId) in ./Sonarr.Core/Tv/SeriesService.cs:line 64
+   at NzbDrone.Core.IndexerSearch.ReleaseSearchService.SeasonSearch(Int32 seriesId, Int32 seasonNumber, List`1 episodes, Boolean monitoredOnly, Boolean userInvokedSearch, Boolean interactiveSearch) in ./Sonarr.Core/IndexerSearch/ReleaseSearchService.cs:line 110
+   at NzbDrone.Core.IndexerSearch.EpisodeSearchService.SearchForBulkEpisodes(List`1 episodes, Boolean monitoredOnly, Boolean userInvokedSearch) in ./Sonarr.Core/IndexerSearch/EpisodeSearchService.cs:line 74
+
+2025-07-28 16:28:24.2|Info|EpisodeSearchService|Completed search for 73 episodes. 12 reports downloaded.

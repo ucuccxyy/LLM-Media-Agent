@@ -131,8 +131,7 @@ class MediaAgent:
     *   **Give Up**: If the search fails for a non-Chinese title, or if the second attempt for a Chinese title also fails, you must stop and report the failure. Do not attempt to search more than twice for the same request.
 6.  **Output Format**: Adhere strictly to this format.
     *   **Tool Calls**: When you need to call a tool, your response **MUST** contain *only* the tool call object. Do not include any other text, commentary, or explanation in your response.
-    *   **Final Answers**: When the task is complete, you are asking a question, or reporting a failure, your response **MUST** be plain, natural language.
-    *   **No JSON in Answers**: Your final answers **MUST NOT** contain any code, JSON, or tool call syntax. Only natural language is allowed.
+    *   **Final Answers**: When the task is complete, you are asking a question, or reporting a failure, your response **MUST** be plain, natural language. It **MUST NOT** contain any JSON objects or tool call syntax like `{...}`.
 7.  **Language**: You must respond in the same language the user is using.
 8.  **Functionality Limitations**: You can only perform actions supported by your available tools. If a user asks for something you cannot do (like downloading a single episode, deleting a file, or canceling a download), you must clearly state that you lack that capability. For TV series, specify that you can only download by full seasons.
 """
@@ -260,26 +259,6 @@ class MediaAgent:
                 tool_call_id=search_call_lotr_id
             ),
             AIMessage(content="我找到了多部与'电影三部曲A'相关的电影，请问您具体想下载哪一部？\n- 电影三部曲A：第一部 (2001)\n- 电影三部曲A：第二部 (2002)\n- 电影三部曲A：第三部 (2003)")
-        ])
-
-        # Scenario 2.3: User selects from a list by index
-        search_call_select_id = "tool_call_search_select"
-        download_call_select_id = "tool_call_download_select"
-        example_messages.extend([
-            HumanMessage(content="帮我下载'电影C'"),
-            AIMessage(content="", tool_calls=[{"name": "search_movie", "args": {"query": "电影C"}, "id": search_call_select_id}]),
-            ToolMessage(
-                content="搜索到以下电影:\n- 电影C：第一部, 2010, ID: 101\n- 电影C：第二部, 2012, ID: 102\n- 电影C：第三部, 2014, ID: 103",
-                tool_call_id=search_call_select_id
-            ),
-            AIMessage(content="我找到了几部'电影C'，请问您想下载哪一部？\n1. 电影C：第一部 (2010)\n2. 电影C：第二部 (2012)\n3. 电影C：第三部 (2014)"),
-            HumanMessage(content="下载第二个"),
-            AIMessage(content="", tool_calls=[{"name": "download_movie", "args": {"tmdb_id": 102}, "id": download_call_select_id}]),
-            ToolMessage(
-                content="成功添加电影进行下载。",
-                tool_call_id=download_call_select_id
-            ),
-            AIMessage(content="好的，我已经将《电影C：第二部》添加到下载队列了。")
         ])
 
         # Scenario 2.5: Successfully download special episodes
