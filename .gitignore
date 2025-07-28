@@ -1,0 +1,16 @@
+venv/
+
+__pycache__/
+*.pyc
+
+.idea/
+.vscode/
+.DS_Store
+
+.env
+
+media_agent/pids/
+media_agent/logs/
+media_agent/data/
+*.log
+api.pid

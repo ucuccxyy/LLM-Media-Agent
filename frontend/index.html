@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Agent</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1c1c1e;
+            color: #f2f2f7;
+        }
+        #app-container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        #left-panel {
+            width: 260px;
+            background-color: #2c2c2e;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #3a3a3c;
+        }
+        #left-panel h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #c7c7cc;
+            border-bottom: 1px solid #3a3a3c;
+            padding-bottom: 10px;
+        }
+        #service-links a {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #3a3a3c;
+            color: #f2f2f7;
+            transition: background-color 0.2s;
+        }
+        #service-links a .icon {
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+        #service-links a:hover {
+            background-color: #4a4a4c;
+        }
+        #new-chat-button {
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            margin-top: auto;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #007aff;
+            color: white;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        #new-chat-button:hover {
+            background-color: #0056b3;
+        }
+        #chat-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        #chat-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #3a3a3c;
+            background-color: #2c2c2e;
+        }
+        #chat-header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        #chat-box {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .message-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        .message {
+            max-width: 80%;
+            padding: 12px 18px;
+            border-radius: 18px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        .user-message {
+            align-self: flex-end;
+        }
+        .user-message .message {
+            background-color: #007aff;
+            color: white;
+        }
+        .agent-message {
+            align-self: flex-start;
+        }
+        .agent-message .message {
+            background-color: #3a3a3c;
+            color: #f2f2f7;
+        }
+        .thinking-bubble, .error-message {
+            font-style: italic;
+            color: #999;
+        }
+        .error-message {
+            color: #ff8a80;
+        }
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            background-color: #222;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "monospace";
+            font-size: 0.9em;
+        }
+        #input-area {
+            padding: 15px 20px;
+            border-top: 1px solid #3a3a3c;
+            background-color: #2c2c2e;
+        }
+        #message-form {
+            display: flex;
+            background-color: #3a3a3c;
+            border-radius: 22px;
+            padding: 5px;
+            align-items: center;
+        }
+        #message-input {
+            flex-grow: 1;
+            border: none;
+            background: transparent;
+            padding: 10px 15px;
+            font-size: 1rem;
+            color: #f2f2f7;
+        }
+        #message-input:focus {
+            outline: none;
+        }
+        #send-button {
+            background: #007aff;
+            color: white;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        #send-button:disabled {
+            background-color: #555;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div id="app-container">
+        <div id="left-panel">
+            <h2>Services</h2>
+            <div id="service-links">
+                <!-- Links will be dynamically inserted here -->
+            </div>
+            <button id="new-chat-button">
+                <span class="icon">+</span> New Chat
+            </button>
+        </div>
+        <div id="chat-container">
+            <header id="chat-header">
+                <h1>Media Agent</h1>
+            </header>
+            <main id="chat-box"></main>
+            <footer id="input-area">
+                <form id="message-form">
+                    <input type="text" id="message-input" placeholder="Ask me to find a movie or a series..." autocomplete="off">
+                    <button type="submit" id="send-button">➤</button>
+                </form>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // --- Global variables and setup ---
+        const chatBox = document.getElementById('chat-box');
+        const messageInput = document.getElementById('message-input');
+        const sendButton = document.getElementById('send-button');
+        const messageForm = document.getElementById('message-form');
+        let currentEventSource = null;
+        let sessionId = localStorage.getItem('sessionId') || generateSessionId();
+
+        console.log(`Initial Session ID: ${sessionId}`);
+
+        function generateSessionId() {
+            const newId = `session-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+            localStorage.setItem('sessionId', newId);
+            console.log(`New Session ID generated: ${newId}`);
+            return newId;
+        }
+
+        function setupServiceLinks() {
+            const serviceLinksContainer = document.getElementById('service-links');
+            const hostname = window.location.hostname;
+            const services = {
+                'Radarr': { url: `http://${hostname}:7878`, icon: '🎬' },
+                'Sonarr': { url: `http://${hostname}:8989`, icon: '📺' },
+                'qBittorrent': { url: `http://${hostname}:8081`, icon: '🔽' },
+                'Jackett': { url: `http://${hostname}:9117`, icon: '🔍' },
+            };
+            serviceLinksContainer.innerHTML = '';
+            for (const [name, service] of Object.entries(services)) {
+                const link = document.createElement('a');
+                link.href = service.url;
+                link.target = '_blank';
+                link.innerHTML = `<span class="icon">${service.icon}</span> ${name}`;
+                serviceLinksContainer.appendChild(link);
+            }
+        }
+        setupServiceLinks();
+
+        // --- Main message sending logic ---
+        function handleSend() {
+            const message = messageInput.value.trim();
+            if (!message || sendButton.disabled) return;
+
+            appendMessage('user', message);
+            messageInput.value = '';
+            setButtonState(true);
+
+            const agentMessageContainer = createMessageContainer('agent');
+            
+            let agentThought = '';
+            let toolCalls = {};
+            let finalOutputReceived = false;
+            
+            const url = `/api/v1/stream?session_id=${sessionId}&message=${encodeURIComponent(message)}`;
+            const eventSource = new EventSource(url);
+            currentEventSource = eventSource;
+
+            eventSource.onmessage = function(event) {
+                if (currentEventSource !== eventSource) { 
+                    eventSource.close();
+                    return;
+                }
+                const chunk = JSON.parse(event.data);
+                parseStreamChunk(chunk, agentMessageContainer);
+            };
+
+            eventSource.onerror = function(err) {
+                console.error("EventSource failed:", err);
+                if (currentEventSource === eventSource) {
+                    const errorText = '与Agent的连接中断。请检查控制台或后端日志。';
+                    finalizeAgentMessage(agentMessageContainer, `<span class="error-message">${errorText}</span>`);
+                    setButtonState(false);
+                }
+                eventSource.close();
+            };
+
+            function parseStreamChunk(chunk, container) {
+                // This function uses the state variables defined in handleSend's scope
+                switch (chunk.type) {
+                    case 'status':
+                        updateAgentMessage(container, '<span class="thinking-bubble">思考中...</span>');
+                        break;
+                    case 'thinking_step':
+                        agentThought = chunk.data.replace(/\n/g, '<br>');
+                        updateAgentMessage(container, agentThought);
+                        break;
+                    case 'tool_call':
+                        const toolName = chunk.tool_name;
+                        if (!toolCalls[toolName]) toolCalls[toolName] = { args: "" };
+                        toolCalls[toolName].args += chunk.tool_input_chunk;
+                        let toolDisplay = "正在准备工具...\n";
+                        for (const [name, call] of Object.entries(toolCalls)) {
+                           toolDisplay += `\`${name}\` ( ${call.args} )\n`;
+                        }
+                        updateAgentMessage(container, agentThought + '<br>' + toolDisplay.replace(/\n/g, '<br>'));
+                        break;
+                    case 'tool_result':
+                        const observation = chunk.observation.replace(/\n/g, '<br>');
+                        const toolResultText = `<strong>工具 \`${chunk.tool_name}\` 返回结果:</strong><br><pre>${observation}</pre>`;
+                        agentThought = toolResultText; 
+                        updateAgentMessage(container, agentThought);
+                        toolCalls = {};
+                        break;
+                    case 'final_output':
+                        const finalOutput = chunk.data && chunk.data.output ? chunk.data.output.replace(/\n/g, '<br>') : "任务已完成。";
+                        finalizeAgentMessage(container, finalOutput);
+                        finalOutputReceived = true;
+                        break;
+                    case 'stream_end':
+                        if (!finalOutputReceived) {
+                            finalizeAgentMessage(container, "Agent的响应意外结束。");
+                        }
+                        setButtonState(false);
+                        eventSource.close();
+                        break;
+                    case 'error':
+                        const errorMessage = `出现错误: ${chunk.message}`;
+                        finalizeAgentMessage(container, `<span class="error-message">${errorMessage}</span>`);
+                        setButtonState(false);
+                        eventSource.close();
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        // --- UI Helper Functions ---
+        function createMessageContainer(role) {
+            const container = document.createElement('div');
+            container.className = `message-container ${role}-message`;
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message';
+            container.appendChild(messageDiv);
+            chatBox.appendChild(container);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            return messageDiv;
+        }
+        
+        function appendMessage(role, content) {
+            const container = createMessageContainer(role);
+            container.innerHTML = content.replace(/\n/g, '<br>');
+        }
+
+        function updateAgentMessage(container, content) {
+            container.innerHTML = content;
+        }
+
+        function finalizeAgentMessage(container, content) {
+            container.innerHTML = content;
+        }
+        
+        function setButtonState(isSending) {
+            sendButton.disabled = isSending;
+            sendButton.textContent = isSending ? '■' : '➤';
+        }
+
+        // --- Event Listeners ---
+        document.getElementById('new-chat-button').addEventListener('click', () => {
+            chatBox.innerHTML = '';
+            if (currentEventSource) {
+                currentEventSource.close();
+                currentEventSource = null;
+            }
+            sessionId = generateSessionId();
+            setButtonState(false);
+        });
+        
+        messageForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            handleSend();
+        });
+        
+    </script>
+</body>
+</html> 

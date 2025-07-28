@@ -1,0 +1,1743 @@
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Pane amore e (1955)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Pane amore e 1955 WEB 360p XviD AC3-Bifra' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5.1 x265-E' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5.1 x265-E'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Flashdance - 1983 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: E
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5.1 x265-E'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Flashdance (1983)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5.1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'We Were Soldiers 2002 2160p UHD BluRay REMUX DV HDR HEVC DTS HD MA 5 1-TRiToN' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'We Were Soldiers 2002 2160p UHD BluRay REMUX DV HDR HEVC DTS HD MA 5 1-TRiToN'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. We Were Soldiers - 2002 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: TRiToN
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'We Were Soldiers 2002 2160p UHD BluRay REMUX DV HDR HEVC DTS HD MA 5 1-TRiToN'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'We Were Soldiers (2002)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'We Were Soldiers 2002 2160p UHD BluRay REMUX DV HDR HEVC DTS HD MA 5 1-TRiToN' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Back to the Future Part III - 1990 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: FraMeSToR
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Back to the Future Part III (1990)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Back to the Future Part II - 1989 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: FraMeSToR
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Back to the Future Part II (1989)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC 2 0-CiNEPHiLES' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC 2 0-CiNEPHiLES'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Back to the Future - 1985 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: CiNEPHiLES
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC 2 0-CiNEPHiLES'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Back to the Future (1985)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC 2 0-CiNEPHiLES' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5.1 x265-E' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5.1 x265-E'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Cloverfield - 2008 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: E
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5.1 x265-E'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Cloverfield (2008)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5.1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Lassiter (1984) 1080p x265 ita eng ac3 [GoZeR]' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Lassiter (1984) 1080p x265 ita eng ac3 [GoZeR]'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Lassiter - 1984 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: GoZeR
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Lassiter (1984) 1080p x265 ita eng ac3 [GoZeR]'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Lassiter (1984)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Lassiter (1984) 1080p x265 ita eng ac3 [GoZeR]' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Fright Night - 1985 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: E
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Fright Night (1985)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG ITA-moviesbyrizzo' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG ITA-moviesbyrizzo'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Crimson Tide - 1995 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: moviesbyrizzo
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: English, Italian
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG ITA-moviesbyrizzo'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: HDTV-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Crimson Tide (1995)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG ITA-moviesbyrizzo' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p XviD AC3-Bifra' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p XviD AC3-Bifra'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Guardia guardia scelta brigadiere e maresciallo - 1956 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: Bifra
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p XviD AC3-Bifra'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Guardia guardia scelta brigadiere e maresciallo (1956)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p XviD AC3-Bifra' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Racconti romani (1955) WEB 360p XviD AC3   Bifra' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Racconti romani (1955) WEB 360p XviD AC3   Bifra'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Racconti romani - 1955 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Racconti romani (1955) WEB 360p XviD AC3   Bifra'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Racconti romani (1955)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Racconti romani (1955) WEB 360p XviD AC3   Bifra' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'The Yakuza (1974) 1080p x264 ita eng ac3 sub ita eng [GoZeR]' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'The Yakuza (1974) 1080p x264 ita eng ac3 sub ita eng [GoZeR]'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. The Yakuza - 1974 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: GoZeR
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'The Yakuza (1974) 1080p x264 ita eng ac3 sub ita eng [GoZeR]'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'The Yakuza (1974)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'The Yakuza (1974) 1080p x264 ita eng ac3 sub ita eng [GoZeR]' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265-E' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265-E'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Hancock - 2008 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: E
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265-E'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Hancock (2008)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP+Atmos-KiNGDOM' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP+Atmos-KiNGDOM'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Lethal Weapon - 1987 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: KiNGDOM
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP+Atmos-KiNGDOM'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: Directors Cut
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Lethal Weapon (1987)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP+Atmos-KiNGDOM' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Danger Danger 2021 720p WEB-DL x264 Dual Audio Hindi DD 2.0 English DDP 2.0 Exclusive By Dr-STAR' from '1337x'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Danger Danger 2021 720p WEB-DL x264 Dual Audio Hindi DD 2.0 English DDP 2.0 Exclusive By Dr-STAR'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Danger Danger - 2021 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: STAR
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: English, Hindi
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Danger Danger 2021 720p WEB-DL x264 Dual Audio Hindi DD 2.0 English DDP 2.0 Exclusive By Dr-STAR'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: WEBDL-720p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Danger Danger (2021)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Danger Danger 2021 720p WEB-DL x264 Dual Audio Hindi DD 2.0 English DDP 2.0 Exclusive By Dr-STAR' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Back in Action 2025 1080p WEBRip x265 HEVC 10Bit DDP5 1 UKBand' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Back in Action 2025 1080p WEBRip x265 HEVC 10Bit DDP5 1 UKBand'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Back in Action - 2025 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Back in Action 2025 1080p WEBRip x265 HEVC 10Bit DDP5 1 UKBand'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Back in Action (2025)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Back in Action 2025 1080p WEBRip x265 HEVC 10Bit DDP5 1 UKBand' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5 1 x265' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5 1 x265'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. The Lost Boys - 1987 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5 1 x265'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'The Lost Boys (1987)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5 1 x265' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Pane amore e 1955 WEB 360p XviD AC3 Bifra' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Pane amore e 1955 WEB 360p XviD AC3 Bifra'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Pane amore e - 1955 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Pane amore e 1955 WEB 360p XviD AC3 Bifra'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Pane amore e (1955)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Pane amore e 1955 WEB 360p XviD AC3 Bifra' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5 1 x265' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5 1 x265'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Flashdance - 1983 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5 1 x265'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Flashdance (1983)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5 1 x265' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'A.Brother.and.7.Siblings.2025.720p.WEB.H264-SYLiX' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'A.Brother.and.7.Siblings.2025.720p.WEB.H264-SYLiX'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. A Brother and 7 Siblings - 2025 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: SYLiX
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'A.Brother.and.7.Siblings.2025.720p.WEB.H264-SYLiX'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: WEBDL-720p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'A Brother and 7 Siblings (2025)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'A.Brother.and.7.Siblings.2025.720p.WEB.H264-SYLiX' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Happy Gilmore 1996 1080p 10bit BluRay 6CH X265 HEVC-PSA' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Happy Gilmore 1996 1080p 10bit BluRay 6CH X265 HEVC-PSA'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Happy Gilmore - 1996 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: PSA
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Happy Gilmore 1996 1080p 10bit BluRay 6CH X265 HEVC-PSA'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Happy Gilmore (1996)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Happy Gilmore 1996 1080p 10bit BluRay 6CH X265 HEVC-PSA' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Back to the Future Part III - 1990 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Back to the Future Part III (1990)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Back to the Future Part II - 1989 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Back to the Future Part II (1989)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Back to the Future - 1985 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Back to the Future (1985)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5 1 x265 E' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5 1 x265 E'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Cloverfield - 2008 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5 1 x265 E'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Cloverfield (2008)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5 1 x265 E' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Maargan (2025) 1080p WEBRip 5.1-WORLD' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Maargan (2025) 1080p WEBRip 5.1-WORLD'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Maargan - 2025 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: WORLD
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Maargan (2025) 1080p WEBRip 5.1-WORLD'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Maargan (2025)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Maargan (2025) 1080p WEBRip 5.1-WORLD' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Behind Enemy Lines 2001 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Behind Enemy Lines 2001 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Behind Enemy Lines - 2001 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Behind Enemy Lines 2001 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.0|Debug|ParsingService|No matching movie for titles 'Behind Enemy Lines (2001)'
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Release 'Behind Enemy Lines 2001 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.0|Debug|DownloadDecisionMaker|Processing release 'Volcano 1997 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 09:30:26.0|Debug|Parser|Parsing string 'Volcano 1997 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.0|Debug|Parser|Movie Parsed. Volcano - 1997 
+2025-07-28 09:30:26.0|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 09:30:26.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.0|Debug|QualityParser|Trying to parse quality for 'Volcano 1997 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.0|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.0|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Volcano (1997)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Volcano 1997 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Just Wright 2010 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Just Wright 2010 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Just Wright - 2010 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Just Wright 2010 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Just Wright (2010)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Just Wright 2010 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Mirrors 2008 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Mirrors 2008 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Mirrors - 2008 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Mirrors 2008 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Mirrors (2008)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Mirrors 2008 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'High Crimes 2002 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'High Crimes 2002 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. High Crimes - 2002 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'High Crimes 2002 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'High Crimes (2002)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'High Crimes 2002 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Inside (2024) 1080p WEBRip x265 10bit 5.1-LAMA' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Inside (2024) 1080p WEBRip x265 10bit 5.1-LAMA'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Inside - 2024 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: LAMA
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Inside (2024) 1080p WEBRip x265 10bit 5.1-LAMA'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Inside (2024)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Inside (2024) 1080p WEBRip x265 10bit 5.1-LAMA' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'The Wild Parrots Of Telegraph Hill (2003) 1080p BluRay 5.1-LAMA' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'The Wild Parrots Of Telegraph Hill (2003) 1080p BluRay 5.1-LAMA'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. The Wild Parrots Of Telegraph Hill - 2003 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: LAMA
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'The Wild Parrots Of Telegraph Hill (2003) 1080p BluRay 5.1-LAMA'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'The Wild Parrots Of Telegraph Hill (2003)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'The Wild Parrots Of Telegraph Hill (2003) 1080p BluRay 5.1-LAMA' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Marley and Me 2008 1080p DSNP WEB-DL H264-GPRS' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Marley and Me 2008 1080p DSNP WEB-DL H264-GPRS'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Marley and Me - 2008 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Marley and Me 2008 1080p DSNP WEB-DL H264-GPRS'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Marley and Me (2008)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Marley and Me 2008 1080p DSNP WEB-DL H264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'The.Phoenician.Scheme.2025.2160p.UHD.BluRay.REMUX.DV.P7.HDR.MULTi.Atmos.H265-BTM' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'The.Phoenician.Scheme.2025.2160p.UHD.BluRay.REMUX.DV.P7.HDR.MULTi.Atmos.H265-BTM'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. The Phoenician Scheme - 2025 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: BTM
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'The.Phoenician.Scheme.2025.2160p.UHD.BluRay.REMUX.DV.P7.HDR.MULTi.Atmos.H265-BTM'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'The Phoenician Scheme (2025)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'The.Phoenician.Scheme.2025.2160p.UHD.BluRay.REMUX.DV.P7.HDR.MULTi.Atmos.H265-BTM' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'The Fantastic Four First Steps 2025 1080p HDCAM V2 x264-RW' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'The Fantastic Four First Steps 2025 1080p HDCAM V2 x264-RW'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. The Fantastic Four First Steps - 2025 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: RW
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'The Fantastic Four First Steps 2025 1080p HDCAM V2 x264-RW'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: CAM v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'The Fantastic Four First Steps (2025)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'The Fantastic Four First Steps 2025 1080p HDCAM V2 x264-RW' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Lassiter 1984 1080p x265 ita eng ac3 GoZeR' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Lassiter 1984 1080p x265 ita eng ac3 GoZeR'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Lassiter - 1984 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Lassiter 1984 1080p x265 ita eng ac3 GoZeR'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Lassiter (1984)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Lassiter 1984 1080p x265 ita eng ac3 GoZeR' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Fright Night - 1985 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: BR-DISK v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Fright Night (1985)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Crimson Tide - 1995 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: English
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: HDTV-2160p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Crimson Tide (1995)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Guardia guardia scelta brigadiere e maresciallo - 1956 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Guardia guardia scelta brigadiere e maresciallo (1956)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Racconti romani 1955 WEB 360p XviD AC3 Bifra' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Racconti romani 1955 WEB 360p XviD AC3 Bifra'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Racconti romani - 1955 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Racconti romani 1955 WEB 360p XviD AC3 Bifra'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Racconti romani (1955)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Racconti romani 1955 WEB 360p XviD AC3 Bifra' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Pane amore e 1955 WEB 360p XviD MP3 Bifra' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Pane amore e 1955 WEB 360p XviD MP3 Bifra'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Pane amore e - 1955 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Pane amore e 1955 WEB 360p XviD MP3 Bifra'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Pane amore e (1955)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Pane amore e 1955 WEB 360p XviD MP3 Bifra' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Madagascar 2005 1080p BluRay x265-YAWNTiC' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Madagascar 2005 1080p BluRay x265-YAWNTiC'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Madagascar - 2005 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: YAWNTiC
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Madagascar 2005 1080p BluRay x265-YAWNTiC'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Madagascar (2005)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Madagascar 2005 1080p BluRay x265-YAWNTiC' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'The Yakuza 1974 1080p x264 ita eng ac3 sub ita eng GoZeR' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'The Yakuza 1974 1080p x264 ita eng ac3 sub ita eng GoZeR'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. The Yakuza - 1974 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'The Yakuza 1974 1080p x264 ita eng ac3 sub ita eng GoZeR'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'The Yakuza (1974)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'The Yakuza 1974 1080p x264 ita eng ac3 sub ita eng GoZeR' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Hancock - 2008 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: BR-DISK v1
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Hancock (2008)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP Atmos KiNG' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP Atmos KiNG'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Lethal Weapon - 1987 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP Atmos KiNG'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: Directors Cut
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Lethal Weapon (1987)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP Atmos KiNG' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Danger Danger 2021 720p WEB DL x264 Dual Audio Hindi DD 2' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Danger Danger 2021 720p WEB DL x264 Dual Audio Hindi DD 2'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Danger Danger - 2021 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Hindi
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Danger Danger 2021 720p WEB DL x264 Dual Audio Hindi DD 2'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-720p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Danger Danger (2021)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Danger Danger 2021 720p WEB DL x264 Dual Audio Hindi DD 2' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Sunday in the Park with George 1986 DVDRip XviD SAPHiRE CT' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Sunday in the Park with George 1986 DVDRip XviD SAPHiRE CT'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Sunday in the Park with George - 1986 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Sunday in the Park with George 1986 DVDRip XviD SAPHiRE CT'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: DVD v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Sunday in the Park with George (1986)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Sunday in the Park with George 1986 DVDRip XviD SAPHiRE CT' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'The Adventures of Pluto Nash Pluto Nash 2002 WEBDL 1080p H264' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'The Adventures of Pluto Nash Pluto Nash 2002 WEBDL 1080p H264'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. The Adventures of Pluto Nash Pluto Nash - 2002 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'The Adventures of Pluto Nash Pluto Nash 2002 WEBDL 1080p H264'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'The Adventures of Pluto Nash Pluto Nash (2002)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'The Adventures of Pluto Nash Pluto Nash 2002 WEBDL 1080p H264' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'The Book Of Eli 2010 UPS BluRay 2160p HDR10 DV HEVC DTS HD MA 5' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'The Book Of Eli 2010 UPS BluRay 2160p HDR10 DV HEVC DTS HD MA 5'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. The Book Of Eli - 2010 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'The Book Of Eli 2010 UPS BluRay 2160p HDR10 DV HEVC DTS HD MA 5'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: BR-DISK v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'The Book Of Eli (2010)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'The Book Of Eli 2010 UPS BluRay 2160p HDR10 DV HEVC DTS HD MA 5' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Victor Victoria 1982 2160p SDR 4K ENG ITA 6 2GB multisub movie' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Victor Victoria 1982 2160p SDR 4K ENG ITA 6 2GB multisub movie'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Victor Victoria - 1982 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: English, Italian
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Victor Victoria 1982 2160p SDR 4K ENG ITA 6 2GB multisub movie'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: HDTV-2160p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Victor Victoria (1982)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Victor Victoria 1982 2160p SDR 4K ENG ITA 6 2GB multisub movie' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release '99 Moons 2022 1080p H265 iTA Ger AC3 Sub NUiTA MIRCrew' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string '99 Moons 2022 1080p H265 iTA Ger AC3 Sub NUiTA MIRCrew'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. 99 Moons - 2022 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Italian, German
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for '99 Moons 2022 1080p H265 iTA Ger AC3 Sub NUiTA MIRCrew'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles '99 Moons (2022)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release '99 Moons 2022 1080p H265 iTA Ger AC3 Sub NUiTA MIRCrew' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'The Godfather Part II 1974 1080p PTV WEB-DL AAC 2 0 H 264-PiRaTeS' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'The Godfather Part II 1974 1080p PTV WEB-DL AAC 2 0 H 264-PiRaTeS'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. The Godfather Part II - 1974 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: PiRaTeS
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'The Godfather Part II 1974 1080p PTV WEB-DL AAC 2 0 H 264-PiRaTeS'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'The Godfather Part II (1974)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'The Godfather Part II 1974 1080p PTV WEB-DL AAC 2 0 H 264-PiRaTeS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Dark River 2017 1080p AMZN WEB-DL DDP 5 1 H 264-OnlyWeb' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Dark River 2017 1080p AMZN WEB-DL DDP 5 1 H 264-OnlyWeb'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Dark River - 2017 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: OnlyWeb
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Dark River 2017 1080p AMZN WEB-DL DDP 5 1 H 264-OnlyWeb'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Dark River (2017)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Dark River 2017 1080p AMZN WEB-DL DDP 5 1 H 264-OnlyWeb' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Faith in the Flames The Nichole Jolly Story 2025 1080p AMZN WEB-DL DDP5 1 H' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Faith in the Flames The Nichole Jolly Story 2025 1080p AMZN WEB-DL DDP5 1 H'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Faith in the Flames The Nichole Jolly Story - 2025 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Faith in the Flames The Nichole Jolly Story 2025 1080p AMZN WEB-DL DDP5 1 H'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Faith in the Flames The Nichole Jolly Story (2025)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Faith in the Flames The Nichole Jolly Story 2025 1080p AMZN WEB-DL DDP5 1 H' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'The Stepfather 1987 4K HDR DV 2160p BDRip Ita Eng x265 NAHOM' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'The Stepfather 1987 4K HDR DV 2160p BDRip Ita Eng x265 NAHOM'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. The Stepfather - 1987 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'The Stepfather 1987 4K HDR DV 2160p BDRip Ita Eng x265 NAHOM'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'The Stepfather (1987)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'The Stepfather 1987 4K HDR DV 2160p BDRip Ita Eng x265 NAHOM' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Along Came Polly 2004 1080p x264 ita eng ac3 sub ita nueng GoZ' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Along Came Polly 2004 1080p x264 ita eng ac3 sub ita nueng GoZ'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Along Came Polly - 2004 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Along Came Polly 2004 1080p x264 ita eng ac3 sub ita nueng GoZ'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Along Came Polly (2004)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Along Came Polly 2004 1080p x264 ita eng ac3 sub ita nueng GoZ' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Nobody 2021 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Nobody 2021 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Nobody - 2021 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Nobody 2021 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Nobody (2021)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Nobody 2021 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Day of the Fight 2024 1080p BluRay x265 10bit EAC3 5 1 r00t' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Day of the Fight 2024 1080p BluRay x265 10bit EAC3 5 1 r00t'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Day of the Fight - 2024 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Day of the Fight 2024 1080p BluRay x265 10bit EAC3 5 1 r00t'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Day of the Fight (2024)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Day of the Fight 2024 1080p BluRay x265 10bit EAC3 5 1 r00t' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Dragon The Bruce Lee Story 1993 1080p x265 ita eng ac3 sub ita' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Dragon The Bruce Lee Story 1993 1080p x265 ita eng ac3 sub ita'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Dragon The Bruce Lee Story - 1993 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Dragon The Bruce Lee Story 1993 1080p x265 ita eng ac3 sub ita'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Dragon The Bruce Lee Story (1993)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Dragon The Bruce Lee Story 1993 1080p x265 ita eng ac3 sub ita' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Whiplash 2014 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x26' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Whiplash 2014 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x26'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Whiplash - 2014 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Whiplash 2014 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x26'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: BR-DISK v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Whiplash (2014)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Whiplash 2014 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x26' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Bilal A New Breed Of Hero (2015) [Cartoon] BluRay H264 DolbyD 5.1 + nickarad' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Bilal A New Breed Of Hero (2015) [Cartoon] BluRay H264 DolbyD 5.1 + nickarad'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Bilal A New Breed Of Hero - 2015 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Bilal A New Breed Of Hero (2015) [Cartoon] BluRay H264 DolbyD 5.1 + nickarad'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: Bluray-720p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Bilal A New Breed Of Hero (2015)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Bilal A New Breed Of Hero (2015) [Cartoon] BluRay H264 DolbyD 5.1 + nickarad' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'The Babysitter Killer Queen 2020 WEB DL 2160p HDR10 HEVC DTS HD M' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'The Babysitter Killer Queen 2020 WEB DL 2160p HDR10 HEVC DTS HD M'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. The Babysitter Killer Queen - 2020 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'The Babysitter Killer Queen 2020 WEB DL 2160p HDR10 HEVC DTS HD M'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: WEBDL-2160p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'The Babysitter Killer Queen (2020)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'The Babysitter Killer Queen 2020 WEB DL 2160p HDR10 HEVC DTS HD M' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Thelma (2024) - edited, 1080p' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Thelma (2024) - edited, 1080p'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Thelma - 2024 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Thelma (2024) - edited, 1080p'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Thelma (2024)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Thelma (2024) - edited, 1080p' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Processing release 'Madagascar (2005) 1080p' from 'RARBG'
+2025-07-28 09:30:26.1|Debug|Parser|Parsing string 'Madagascar (2005) 1080p'
+2025-07-28 09:30:26.1|Debug|Parser|Movie Parsed. Madagascar - 2005 
+2025-07-28 09:30:26.1|Debug|Parser|Release Group parsed: 
+2025-07-28 09:30:26.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:30:26.1|Debug|QualityParser|Trying to parse quality for 'Madagascar (2005) 1080p'
+2025-07-28 09:30:26.1|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 09:30:26.1|Debug|Parser|Edition parsed: 
+2025-07-28 09:30:26.1|Debug|ParsingService|No matching movie for titles 'Madagascar (2005)'
+2025-07-28 09:30:26.1|Debug|DownloadDecisionMaker|Release 'Madagascar (2005) 1080p' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 09:30:26.1|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0
+2025-07-28 09:30:26.1|Debug|PendingReleaseService|Removing failed releases from pending
+2025-07-28 09:33:48.9|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 09:38:49.0|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 09:43:49.0|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 09:45:58.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:58.1|Debug|Api|[GET] /api/v3/movie: 200.OK (2 ms)
+2025-07-28 09:45:58.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:58.1|Debug|Api|[GET] /api/v3/tag: 200.OK (0 ms)
+2025-07-28 09:45:58.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:58.1|Debug|Api|[GET] /api/v3/customFilter: 200.OK (0 ms)
+2025-07-28 09:45:58.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:58.1|Debug|Api|[GET] /api/v3/collection: 200.OK (1 ms)
+2025-07-28 09:45:58.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:58.2|Debug|Api|[GET] /api/v3/localization/language: 200.OK (0 ms)
+2025-07-28 09:45:58.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:58.5|Debug|Api|[GET] /api/v3/qualityprofile: 200.OK (1 ms)
+2025-07-28 09:45:59.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:59.0|Debug|Api|[GET] /api/v3/language: 200.OK (0 ms)
+2025-07-28 09:45:59.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:59.1|Debug|Api|[GET] /api/v3/importlist: 200.OK (0 ms)
+2025-07-28 09:45:59.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:59.1|Debug|Api|[GET] /api/v3/config/ui: 200.OK (0 ms)
+2025-07-28 09:45:59.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:59.1|Debug|Api|[GET] /api/v3/indexerFlag: 200.OK (0 ms)
+2025-07-28 09:45:59.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:45:59.9|Debug|Api|[GET] /api/v3/localization: 200.OK (3 ms)
+2025-07-28 09:46:00.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:46:00.1|Debug|Api|[GET] /api/v3/system/status: 200.OK (0 ms)
+2025-07-28 09:46:01.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:46:01.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:46:01.4|Debug|Api|[GET] /api/v3/health: 200.OK (24 ms)
+2025-07-28 09:46:01.4|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (30 ms)
+2025-07-28 09:46:01.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-28 09:46:01.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:46:01.8|Debug|Api|[GET] /api/v3/queue/status: 200.OK (0 ms)
+2025-07-28 09:46:02.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-28 09:46:19.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:46:19.9|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 09:46:19.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:46:19.9|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:46:20.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:46:20.8|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:46:20.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:46:20.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 09:46:50.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:46:50.4|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:47:20.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:47:20.7|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:47:20.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:47:20.9|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:47:21.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:47:21.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:47:22.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:47:22.8|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:47:49.9|Debug|InstallUpdateService|Checking for updates
+2025-07-28 09:47:49.9|Debug|InstallUpdateService|No update available
+2025-07-28 09:47:50.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:47:50.7|Debug|Api|[GET] /api/v3/health: 200.OK (1 ms)
+2025-07-28 09:47:52.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:47:52.2|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:47:53.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:47:53.7|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:48:09.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:09.8|Debug|Api|[GET] /api/v3/movieFile?movieId=20: 200.OK (1 ms)
+2025-07-28 09:48:09.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:09.8|Debug|Api|[GET] /api/v3/extraFile?movieId=20: 200.OK (1 ms)
+2025-07-28 09:48:09.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:09.8|Debug|Api|[GET] /api/v3/qualityprofile/schema: 200.OK (0 ms)
+2025-07-28 09:48:09.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:09.8|Debug|Api|[GET] /api/v3/credit?movieId=20: 200.OK (4 ms)
+2025-07-28 09:48:09.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:09.8|Debug|Api|[GET] /api/v3/language: 200.OK (0 ms)
+2025-07-28 09:48:10.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:10.7|Debug|Api|[GET] /api/v3/queue/details?movieId=20: 200.OK (1 ms)
+2025-07-28 09:48:10.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:10.7|Debug|Api|[GET] /api/v3/importlist/schema: 200.OK (2 ms)
+2025-07-28 09:48:13.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:14.0|Debug|Parser|Parsing string 'Interstellar 2014 IMAX UHD Blu Ray 2160p DV HEVC TrueHD 7 1 Atmos'
+2025-07-28 09:48:14.0|Debug|Parser|Movie Parsed. Interstellar - 2014 
+2025-07-28 09:48:14.0|Debug|Parser|Release Group parsed: 
+2025-07-28 09:48:14.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 09:48:14.0|Debug|QualityParser|Trying to parse quality for 'Interstellar 2014 IMAX UHD Blu Ray 2160p DV HEVC TrueHD 7 1 Atmos'
+2025-07-28 09:48:14.0|Debug|Parser|Quality parsed: BR-DISK v1
+2025-07-28 09:48:14.0|Debug|Parser|Edition parsed: IMAX
+2025-07-28 09:48:14.0|Debug|ParsingService|No matching movie for titles 'Interstellar (2014)'
+2025-07-28 09:48:14.0|Debug|AggregateLanguages|Unable to aggregate languages, using parsed values: Unknown
+2025-07-28 09:48:14.1|Debug|ImportListExclusionService|Adding 1 deleted movies to import list exclusions.
+2025-07-28 09:48:14.1|Info|MovieService|Deleted movie [Interstellar (2014)][tt0816692, 157336]
+2025-07-28 09:48:14.1|Debug|Api|[DELETE] /api/v3/movie/20?deleteFiles=true&addImportExclusion=true: 200.OK (438 ms)
+2025-07-28 09:48:15.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:15.8|Debug|Api|[GET] /api/v3/movie: 200.OK (2 ms)
+2025-07-28 09:48:16.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:16.4|Debug|Api|[GET] /api/v3/queue/details?movieId=20: 200.OK (1 ms)
+2025-07-28 09:48:16.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:16.4|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:48:20.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:20.0|Debug|Api|[GET] /api/v3/health: 200.OK (0 ms)
+2025-07-28 09:48:50.0|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 09:48:52.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:52.2|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:48:52.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:52.2|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:48:53.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:53.1|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:48:53.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:53.3|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:48:54.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:48:54.0|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:50:21.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:50:21.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:50:22.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:50:22.1|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:50:22.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:50:22.7|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:50:22.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:50:22.9|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:51:52.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:51:52.0|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:51:52.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:51:52.4|Debug|Api|[GET] /api/v3/command: 200.OK (3 ms)
+2025-07-28 09:51:53.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:51:53.2|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:51:53.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:51:53.3|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:51:54.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:51:54.2|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:53:23.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:53:23.2|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:53:23.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:53:23.6|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:53:24.2|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:53:24.2|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 09:53:24.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:53:24.5|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:53:51.4|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 09:53:52.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:53:52.5|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:54:52.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:54:52.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:54:53.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:54:53.4|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:54:53.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:54:53.8|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:54:54.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:54:54.7|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:56:22.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:56:22.4|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:56:23.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:56:23.4|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:56:23.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:56:23.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 09:56:24.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:56:24.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:56:52.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:56:52.9|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:57:22.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:57:22.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:57:23.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:57:23.9|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:57:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:57:24.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 09:57:24.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:57:24.9|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:58:51.9|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 09:58:53.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:58:53.1|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:58:53.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:58:53.3|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 09:58:54.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:58:54.1|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 09:58:54.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:58:54.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 09:58:55.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 09:58:55.1|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:00:23.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:00:23.4|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 10:00:23.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:00:23.7|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:00:24.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:00:24.3|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:00:24.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:00:24.7|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:00:52.4|Error|TaskExtensions|Task Error
+
+[v5.26.2.10099] code = Full (13), message = System.Data.SQLite.SQLiteException (0x800007FF): database or disk is full
+database or disk is full
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1142
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1125
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Radarr.Core/Datastore/BasicRepository.cs:line 188
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(TModel model) in ./Radarr.Core/Datastore/BasicRepository.cs:line 151
+   at NzbDrone.Core.Messaging.Commands.CommandQueueManager.Push[TCommand](TCommand command, CommandPriority priority, CommandTrigger trigger) in ./Radarr.Core/Messaging/Commands/CommandQueueManager.cs:line 140
+   at NzbDrone.Core.Jobs.Scheduler.ExecuteCommands() in ./Radarr.Core/Jobs/Scheduler.cs:line 42
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback 2025-07-28 10:01:10.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:10.0|Debug|Api|[GET] /api/v3/localization/language: 200.OK (1 ms)
+2025-07-28 10:01:10.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:10.1|Debug|Api|[GET] /api/v3/movie: 200.OK (2 ms)
+2025-07-28 10:01:10.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:10.1|Debug|Api|[GET] /api/v3/tag: 200.OK (0 ms)
+2025-07-28 10:01:10.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:10.1|Debug|Api|[GET] /api/v3/customFilter: 200.OK (0 ms)
+2025-07-28 10:01:10.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:10.1|Debug|Api|[GET] /api/v3/collection: 200.OK (1 ms)
+2025-07-28 10:01:11.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:11.0|Debug|Api|[GET] /api/v3/language: 200.OK (0 ms)
+2025-07-28 10:01:11.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:11.1|Debug|Api|[GET] /api/v3/config/ui: 200.OK (0 ms)
+2025-07-28 10:01:11.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:11.1|Debug|Api|[GET] /api/v3/importlist: 200.OK (0 ms)
+2025-07-28 10:01:11.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:11.1|Debug|Api|[GET] /api/v3/indexerFlag: 200.OK (0 ms)
+2025-07-28 10:01:11.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:11.1|Debug|Api|[GET] /api/v3/qualityprofile: 200.OK (1 ms)
+2025-07-28 10:01:11.1|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:11.1|Debug|Api|[GET] /api/v3/system/status: 200.OK (1 ms)
+2025-07-28 10:01:11.9|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:11.9|Debug|Api|[GET] /api/v3/localization: 200.OK (3 ms)
+2025-07-28 10:01:13.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:13.4|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 10:01:13.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:13.4|Debug|Api|[GET] /api/v3/queue/status: 200.OK (0 ms)
+2025-07-28 10:01:13.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:13.4|Debug|Api|[GET] /api/v3/health: 200.OK (0 ms)
+2025-07-28 10:01:13.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-28 10:01:14.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-28 10:01:22.6|Info|RssSyncService|Starting RSS Sync
+2025-07-28 10:01:22.6|Debug|FetchAndParseRssService|Available indexers 2
+2025-07-28 10:01:22.6|Debug|Torznab|Downloading Feed http://18.205.18.246:9117/api/v2.0/indexers/1337x/results/torznab/api?t=movie&cat=2000,2010,2030,2040,2045,2060,2070,100001,100002,100003,100004,100054,100055,100066,100073&extended=1&apikey=(removed)&offset=0&limit=100
+2025-07-28 10:01:22.6|Debug|Torznab|Downloading Feed http://18.205.18.246:9117/api/v2.0/indexers/therarbg/results/torznab/api?t=movie&cat=2000,100467&extended=1&apikey=(removed)&offset=0&limit=100
+2025-07-28 10:01:22.9|Debug|FetchAndParseRssService|Found 70 reports
+2025-07-28 10:01:22.9|Info|DownloadDecisionMaker|Processing 70 releases
+2025-07-28 10:01:22.9|Debug|DownloadDecisionMaker|Processing release '10 Cloverfield Lane 2016  UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E' from '1337x'
+2025-07-28 10:01:22.9|Debug|Parser|Parsing string '10 Cloverfield Lane 2016  UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E'
+2025-07-28 10:01:22.9|Debug|Parser|Movie Parsed. 10 Cloverfield Lane - 2016 
+2025-07-28 10:01:22.9|Debug|Parser|Release Group parsed: E
+2025-07-28 10:01:22.9|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:22.9|Debug|QualityParser|Trying to parse quality for '10 Cloverfield Lane 2016  UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E'
+2025-07-28 10:01:22.9|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:22.9|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:22.9|Debug|ParsingService|No matching movie for titles '10 Cloverfield Lane (2016)'
+2025-07-28 10:01:22.9|Debug|DownloadDecisionMaker|Release '10 Cloverfield Lane 2016  UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:22.9|Debug|DownloadDecisionMaker|Processing release 'My Sassy Girl aka Yeopgijeogin geunyeo 2001 1080p Bluray AV1 Opus-NeoNyx343' from '1337x'
+2025-07-28 10:01:22.9|Debug|Parser|Parsing string 'My Sassy Girl aka Yeopgijeogin geunyeo 2001 1080p Bluray AV1 Opus-NeoNyx343'
+2025-07-28 10:01:22.9|Debug|Parser|Movie Parsed. My Sassy Girl aka Yeopgijeogin geunyeo - 2001 
+2025-07-28 10:01:22.9|Debug|Parser|Release Group parsed: NeoNyx343
+2025-07-28 10:01:22.9|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:22.9|Debug|QualityParser|Trying to parse quality for 'My Sassy Girl aka Yeopgijeogin geunyeo 2001 1080p Bluray AV1 Opus-NeoNyx343'
+2025-07-28 10:01:22.9|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:01:22.9|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:22.9|Debug|ParsingService|No matching movie for titles 'My Sassy Girl aka Yeopgijeogin geunyeo, My Sassy Girl, Yeopgijeogin geunyeo (2001)'
+2025-07-28 10:01:22.9|Debug|DownloadDecisionMaker|Release 'My Sassy Girl aka Yeopgijeogin geunyeo 2001 1080p Bluray AV1 Opus-NeoNyx343' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:22.9|Debug|DownloadDecisionMaker|Processing release 'Back in Action [2025] 1080p WEBRip x265 HEVC 10Bit DDP 5.1 (UKBandit)' from '1337x'
+2025-07-28 10:01:22.9|Debug|Parser|Parsing string 'Back in Action [2025] 1080p WEBRip x265 HEVC 10Bit DDP 5.1 (UKBandit)'
+2025-07-28 10:01:22.9|Debug|Parser|Movie Parsed. Back in Action - 2025 
+2025-07-28 10:01:22.9|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:22.9|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:22.9|Debug|QualityParser|Trying to parse quality for 'Back in Action [2025] 1080p WEBRip x265 HEVC 10Bit DDP 5.1 (UKBandit)'
+2025-07-28 10:01:22.9|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 10:01:22.9|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:22.9|Debug|ParsingService|No matching movie for titles 'Back in Action (2025)'
+2025-07-28 10:01:22.9|Debug|DownloadDecisionMaker|Release 'Back in Action [2025] 1080p WEBRip x265 HEVC 10Bit DDP 5.1 (UKBandit)' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:22.9|Debug|DownloadDecisionMaker|Processing release 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5.1 x265-E' from '1337x'
+2025-07-28 10:01:22.9|Debug|Parser|Parsing string 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5.1 x265-E'
+2025-07-28 10:01:22.9|Debug|Parser|Movie Parsed. The Lost Boys - 1987 
+2025-07-28 10:01:22.9|Debug|Parser|Release Group parsed: E
+2025-07-28 10:01:22.9|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:22.9|Debug|QualityParser|Trying to parse quality for 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5.1 x265-E'
+2025-07-28 10:01:22.9|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:22.9|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'The Lost Boys (1987)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5.1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Pane amore e 1955 WEB 360p XviD AC3-Bifra' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Pane amore e 1955 WEB 360p XviD AC3-Bifra'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Pane amore e - 1955 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: Bifra
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Pane amore e 1955 WEB 360p XviD AC3-Bifra'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Pane amore e (1955)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Pane amore e 1955 WEB 360p XviD AC3-Bifra' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5.1 x265-E' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5.1 x265-E'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Flashdance - 1983 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: E
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5.1 x265-E'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Flashdance (1983)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5.1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'We Were Soldiers 2002 2160p UHD BluRay REMUX DV HDR HEVC DTS HD MA 5 1-TRiToN' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'We Were Soldiers 2002 2160p UHD BluRay REMUX DV HDR HEVC DTS HD MA 5 1-TRiToN'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. We Were Soldiers - 2002 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: TRiToN
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'We Were Soldiers 2002 2160p UHD BluRay REMUX DV HDR HEVC DTS HD MA 5 1-TRiToN'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'We Were Soldiers (2002)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'We Were Soldiers 2002 2160p UHD BluRay REMUX DV HDR HEVC DTS HD MA 5 1-TRiToN' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Back to the Future Part III - 1990 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: FraMeSToR
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Back to the Future Part III (1990)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Back to the Future Part II - 1989 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: FraMeSToR
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Back to the Future Part II (1989)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1 DV HEVC REMUX-FraMeSToR' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC 2 0-CiNEPHiLES' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC 2 0-CiNEPHiLES'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Back to the Future - 1985 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: CiNEPHiLES
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC 2 0-CiNEPHiLES'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Back to the Future (1985)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC 2 0-CiNEPHiLES' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5.1 x265-E' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5.1 x265-E'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Cloverfield - 2008 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: E
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5.1 x265-E'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Cloverfield (2008)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5.1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Lassiter (1984) 1080p x265 ita eng ac3 [GoZeR]' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Lassiter (1984) 1080p x265 ita eng ac3 [GoZeR]'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Lassiter - 1984 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: GoZeR
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Lassiter (1984) 1080p x265 ita eng ac3 [GoZeR]'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Lassiter (1984)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Lassiter (1984) 1080p x265 ita eng ac3 [GoZeR]' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Fright Night - 1985 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: E
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Fright Night (1985)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7.1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG ITA-moviesbyrizzo' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG ITA-moviesbyrizzo'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Crimson Tide - 1995 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: moviesbyrizzo
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: English, Italian
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG ITA-moviesbyrizzo'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: HDTV-2160p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Crimson Tide (1995)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG ITA-moviesbyrizzo' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p XviD AC3-Bifra' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p XviD AC3-Bifra'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Guardia guardia scelta brigadiere e maresciallo - 1956 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: Bifra
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p XviD AC3-Bifra'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Guardia guardia scelta brigadiere e maresciallo (1956)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p XviD AC3-Bifra' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Racconti romani (1955) WEB 360p XviD AC3   Bifra' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Racconti romani (1955) WEB 360p XviD AC3   Bifra'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Racconti romani - 1955 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Racconti romani (1955) WEB 360p XviD AC3   Bifra'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Racconti romani (1955)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Racconti romani (1955) WEB 360p XviD AC3   Bifra' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'The Yakuza (1974) 1080p x264 ita eng ac3 sub ita eng [GoZeR]' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'The Yakuza (1974) 1080p x264 ita eng ac3 sub ita eng [GoZeR]'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. The Yakuza - 1974 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: GoZeR
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'The Yakuza (1974) 1080p x264 ita eng ac3 sub ita eng [GoZeR]'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'The Yakuza (1974)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'The Yakuza (1974) 1080p x264 ita eng ac3 sub ita eng [GoZeR]' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265-E' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265-E'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Hancock - 2008 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: E
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265-E'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Hancock (2008)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265-E' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP+Atmos-KiNGDOM' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP+Atmos-KiNGDOM'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Lethal Weapon - 1987 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: KiNGDOM
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP+Atmos-KiNGDOM'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: Directors Cut
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Lethal Weapon (1987)'
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Release 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP+Atmos-KiNGDOM' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.2|Debug|DownloadDecisionMaker|Processing release 'Danger Danger 2021 720p WEB-DL x264 Dual Audio Hindi DD 2.0 English DDP 2.0 Exclusive By Dr-STAR' from '1337x'
+2025-07-28 10:01:23.2|Debug|Parser|Parsing string 'Danger Danger 2021 720p WEB-DL x264 Dual Audio Hindi DD 2.0 English DDP 2.0 Exclusive By Dr-STAR'
+2025-07-28 10:01:23.2|Debug|Parser|Movie Parsed. Danger Danger - 2021 
+2025-07-28 10:01:23.2|Debug|Parser|Release Group parsed: STAR
+2025-07-28 10:01:23.2|Debug|Parser|Languages parsed: English, Hindi
+2025-07-28 10:01:23.2|Debug|QualityParser|Trying to parse quality for 'Danger Danger 2021 720p WEB-DL x264 Dual Audio Hindi DD 2.0 English DDP 2.0 Exclusive By Dr-STAR'
+2025-07-28 10:01:23.2|Debug|Parser|Quality parsed: WEBDL-720p v1
+2025-07-28 10:01:23.2|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.2|Debug|ParsingService|No matching movie for titles 'Danger Danger (2021)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Danger Danger 2021 720p WEB-DL x264 Dual Audio Hindi DD 2.0 English DDP 2.0 Exclusive By Dr-STAR' from '1337x' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Back in Action 2025 1080p WEBRip x265 HEVC 10Bit DDP5 1 UKBand' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Back in Action 2025 1080p WEBRip x265 HEVC 10Bit DDP5 1 UKBand'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Back in Action - 2025 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Back in Action 2025 1080p WEBRip x265 HEVC 10Bit DDP5 1 UKBand'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Back in Action (2025)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Back in Action 2025 1080p WEBRip x265 HEVC 10Bit DDP5 1 UKBand' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5 1 x265' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5 1 x265'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. The Lost Boys - 1987 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5 1 x265'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'The Lost Boys (1987)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'The Lost Boys 1987 UHD BluRay 2160p HDR10 HEVC DTS HD MA 5 1 x265' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Pane amore e 1955 WEB 360p XviD AC3 Bifra' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Pane amore e 1955 WEB 360p XviD AC3 Bifra'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Pane amore e - 1955 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Pane amore e 1955 WEB 360p XviD AC3 Bifra'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Pane amore e (1955)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Pane amore e 1955 WEB 360p XviD AC3 Bifra' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5 1 x265' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5 1 x265'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Flashdance - 1983 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5 1 x265'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Flashdance (1983)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Flashdance 1983 UHD BluRay 2160p HDR10 DV HEVC DTS HD MA 5 1 x265' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'A.Brother.and.7.Siblings.2025.720p.WEB.H264-SYLiX' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'A.Brother.and.7.Siblings.2025.720p.WEB.H264-SYLiX'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. A Brother and 7 Siblings - 2025 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: SYLiX
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'A.Brother.and.7.Siblings.2025.720p.WEB.H264-SYLiX'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBDL-720p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'A Brother and 7 Siblings (2025)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'A.Brother.and.7.Siblings.2025.720p.WEB.H264-SYLiX' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Happy Gilmore 1996 1080p 10bit BluRay 6CH X265 HEVC-PSA' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Happy Gilmore 1996 1080p 10bit BluRay 6CH X265 HEVC-PSA'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Happy Gilmore - 1996 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: PSA
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Happy Gilmore 1996 1080p 10bit BluRay 6CH X265 HEVC-PSA'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Happy Gilmore (1996)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Happy Gilmore 1996 1080p 10bit BluRay 6CH X265 HEVC-PSA' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Back to the Future Part III - 1990 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Back to the Future Part III (1990)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Back to the Future Part III 1990 UHD BluRay 2160p TrueHD Atmos 7' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Back to the Future Part II - 1989 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Back to the Future Part II (1989)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Back to the Future Part II 1989 UHD BluRay 2160p TrueHD Atmos 7 1' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Back to the Future - 1985 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Back to the Future (1985)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Back to the Future 1985 2160p UHD Blu ray Remux DV HDR HEVC FLAC' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5 1 x265 E' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5 1 x265 E'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Cloverfield - 2008 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5 1 x265 E'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Cloverfield (2008)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Cloverfield 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD 5 1 x265 E' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Maargan (2025) 1080p WEBRip 5.1-WORLD' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Maargan (2025) 1080p WEBRip 5.1-WORLD'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Maargan - 2025 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: WORLD
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Maargan (2025) 1080p WEBRip 5.1-WORLD'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Maargan (2025)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Maargan (2025) 1080p WEBRip 5.1-WORLD' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Behind Enemy Lines 2001 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Behind Enemy Lines 2001 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Behind Enemy Lines - 2001 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Behind Enemy Lines 2001 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Behind Enemy Lines (2001)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Behind Enemy Lines 2001 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Volcano 1997 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Volcano 1997 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Volcano - 1997 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Volcano 1997 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Volcano (1997)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Volcano 1997 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Just Wright 2010 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Just Wright 2010 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Just Wright - 2010 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Just Wright 2010 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Just Wright (2010)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Just Wright 2010 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Mirrors 2008 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Mirrors 2008 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Mirrors - 2008 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Mirrors 2008 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Mirrors (2008)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Mirrors 2008 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'High Crimes 2002 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'High Crimes 2002 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. High Crimes - 2002 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'High Crimes 2002 1080p DSNP WEB-DL DDP5 1 H 264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'High Crimes (2002)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'High Crimes 2002 1080p DSNP WEB-DL DDP5 1 H 264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Inside (2024) 1080p WEBRip x265 10bit 5.1-LAMA' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Inside (2024) 1080p WEBRip x265 10bit 5.1-LAMA'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Inside - 2024 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: LAMA
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Inside (2024) 1080p WEBRip x265 10bit 5.1-LAMA'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Inside (2024)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Inside (2024) 1080p WEBRip x265 10bit 5.1-LAMA' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'The Wild Parrots Of Telegraph Hill (2003) 1080p BluRay 5.1-LAMA' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'The Wild Parrots Of Telegraph Hill (2003) 1080p BluRay 5.1-LAMA'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. The Wild Parrots Of Telegraph Hill - 2003 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: LAMA
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'The Wild Parrots Of Telegraph Hill (2003) 1080p BluRay 5.1-LAMA'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'The Wild Parrots Of Telegraph Hill (2003)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'The Wild Parrots Of Telegraph Hill (2003) 1080p BluRay 5.1-LAMA' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Marley and Me 2008 1080p DSNP WEB-DL H264-GPRS' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Marley and Me 2008 1080p DSNP WEB-DL H264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Marley and Me - 2008 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: GPRS
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Marley and Me 2008 1080p DSNP WEB-DL H264-GPRS'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Marley and Me (2008)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Marley and Me 2008 1080p DSNP WEB-DL H264-GPRS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'The.Phoenician.Scheme.2025.2160p.UHD.BluRay.REMUX.DV.P7.HDR.MULTi.Atmos.H265-BTM' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'The.Phoenician.Scheme.2025.2160p.UHD.BluRay.REMUX.DV.P7.HDR.MULTi.Atmos.H265-BTM'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. The Phoenician Scheme - 2025 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: BTM
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'The.Phoenician.Scheme.2025.2160p.UHD.BluRay.REMUX.DV.P7.HDR.MULTi.Atmos.H265-BTM'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Remux-2160p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'The Phoenician Scheme (2025)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'The.Phoenician.Scheme.2025.2160p.UHD.BluRay.REMUX.DV.P7.HDR.MULTi.Atmos.H265-BTM' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'The Fantastic Four First Steps 2025 1080p HDCAM V2 x264-RW' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'The Fantastic Four First Steps 2025 1080p HDCAM V2 x264-RW'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. The Fantastic Four First Steps - 2025 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: RW
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'The Fantastic Four First Steps 2025 1080p HDCAM V2 x264-RW'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: CAM v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'The Fantastic Four First Steps (2025)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'The Fantastic Four First Steps 2025 1080p HDCAM V2 x264-RW' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Lassiter 1984 1080p x265 ita eng ac3 GoZeR' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Lassiter 1984 1080p x265 ita eng ac3 GoZeR'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Lassiter - 1984 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Lassiter 1984 1080p x265 ita eng ac3 GoZeR'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Lassiter (1984)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Lassiter 1984 1080p x265 ita eng ac3 GoZeR' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Fright Night - 1985 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: BR-DISK v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Fright Night (1985)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Fright Night 1985 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Crimson Tide - 1995 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: English
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: HDTV-2160p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Crimson Tide (1995)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Crimson Tide 1995 Gene Hackman 4K SDR 2160p 4 58GB multisub ENG' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Guardia guardia scelta brigadiere e maresciallo - 1956 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Guardia guardia scelta brigadiere e maresciallo (1956)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Guardia guardia scelta brigadiere e maresciallo 1956 WEB 360p' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Racconti romani 1955 WEB 360p XviD AC3 Bifra' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Racconti romani 1955 WEB 360p XviD AC3 Bifra'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Racconti romani - 1955 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Racconti romani 1955 WEB 360p XviD AC3 Bifra'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Racconti romani (1955)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Racconti romani 1955 WEB 360p XviD AC3 Bifra' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Pane amore e 1955 WEB 360p XviD MP3 Bifra' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Pane amore e 1955 WEB 360p XviD MP3 Bifra'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Pane amore e - 1955 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Pane amore e 1955 WEB 360p XviD MP3 Bifra'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Pane amore e (1955)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Pane amore e 1955 WEB 360p XviD MP3 Bifra' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Madagascar 2005 1080p BluRay x265-YAWNTiC' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Madagascar 2005 1080p BluRay x265-YAWNTiC'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Madagascar - 2005 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: YAWNTiC
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Madagascar 2005 1080p BluRay x265-YAWNTiC'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Madagascar (2005)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Madagascar 2005 1080p BluRay x265-YAWNTiC' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'The Yakuza 1974 1080p x264 ita eng ac3 sub ita eng GoZeR' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'The Yakuza 1974 1080p x264 ita eng ac3 sub ita eng GoZeR'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. The Yakuza - 1974 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'The Yakuza 1974 1080p x264 ita eng ac3 sub ita eng GoZeR'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'The Yakuza (1974)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'The Yakuza 1974 1080p x264 ita eng ac3 sub ita eng GoZeR' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Hancock - 2008 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: BR-DISK v1
+2025-07-28 10:01:23.3|Debug|ParsingService|No matching movie for titles 'Hancock (2008)'
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Release 'Hancock Theatrical Cut 2008 UHD BluRay 2160p HDR10 DV HEVC TrueHD' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.3|Debug|DownloadDecisionMaker|Processing release 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP Atmos KiNG' from 'RARBG'
+2025-07-28 10:01:23.3|Debug|Parser|Parsing string 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP Atmos KiNG'
+2025-07-28 10:01:23.3|Debug|Parser|Movie Parsed. Lethal Weapon - 1987 
+2025-07-28 10:01:23.3|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.3|Debug|QualityParser|Trying to parse quality for 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP Atmos KiNG'
+2025-07-28 10:01:23.3|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.3|Debug|Parser|Edition parsed: Directors Cut
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Lethal Weapon (1987)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Lethal Weapon 1987 2160p Directors Cut Bluray x265 DDP Atmos KiNG' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Danger Danger 2021 720p WEB DL x264 Dual Audio Hindi DD 2' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Danger Danger 2021 720p WEB DL x264 Dual Audio Hindi DD 2'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Danger Danger - 2021 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Hindi
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Danger Danger 2021 720p WEB DL x264 Dual Audio Hindi DD 2'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: WEBDL-720p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Danger Danger (2021)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Danger Danger 2021 720p WEB DL x264 Dual Audio Hindi DD 2' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Sunday in the Park with George 1986 DVDRip XviD SAPHiRE CT' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Sunday in the Park with George 1986 DVDRip XviD SAPHiRE CT'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Sunday in the Park with George - 1986 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Sunday in the Park with George 1986 DVDRip XviD SAPHiRE CT'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: DVD v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Sunday in the Park with George (1986)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Sunday in the Park with George 1986 DVDRip XviD SAPHiRE CT' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'The Adventures of Pluto Nash Pluto Nash 2002 WEBDL 1080p H264' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'The Adventures of Pluto Nash Pluto Nash 2002 WEBDL 1080p H264'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. The Adventures of Pluto Nash Pluto Nash - 2002 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'The Adventures of Pluto Nash Pluto Nash 2002 WEBDL 1080p H264'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'The Adventures of Pluto Nash Pluto Nash (2002)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'The Adventures of Pluto Nash Pluto Nash 2002 WEBDL 1080p H264' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'The Book Of Eli 2010 UPS BluRay 2160p HDR10 DV HEVC DTS HD MA 5' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'The Book Of Eli 2010 UPS BluRay 2160p HDR10 DV HEVC DTS HD MA 5'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. The Book Of Eli - 2010 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'The Book Of Eli 2010 UPS BluRay 2160p HDR10 DV HEVC DTS HD MA 5'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: BR-DISK v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'The Book Of Eli (2010)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'The Book Of Eli 2010 UPS BluRay 2160p HDR10 DV HEVC DTS HD MA 5' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Victor Victoria 1982 2160p SDR 4K ENG ITA 6 2GB multisub movie' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Victor Victoria 1982 2160p SDR 4K ENG ITA 6 2GB multisub movie'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Victor Victoria - 1982 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: English, Italian
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Victor Victoria 1982 2160p SDR 4K ENG ITA 6 2GB multisub movie'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: HDTV-2160p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Victor Victoria (1982)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Victor Victoria 1982 2160p SDR 4K ENG ITA 6 2GB multisub movie' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release '99 Moons 2022 1080p H265 iTA Ger AC3 Sub NUiTA MIRCrew' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string '99 Moons 2022 1080p H265 iTA Ger AC3 Sub NUiTA MIRCrew'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. 99 Moons - 2022 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Italian, German
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for '99 Moons 2022 1080p H265 iTA Ger AC3 Sub NUiTA MIRCrew'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles '99 Moons (2022)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release '99 Moons 2022 1080p H265 iTA Ger AC3 Sub NUiTA MIRCrew' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'The Godfather Part II 1974 1080p PTV WEB-DL AAC 2 0 H 264-PiRaTeS' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'The Godfather Part II 1974 1080p PTV WEB-DL AAC 2 0 H 264-PiRaTeS'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. The Godfather Part II - 1974 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: PiRaTeS
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'The Godfather Part II 1974 1080p PTV WEB-DL AAC 2 0 H 264-PiRaTeS'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'The Godfather Part II (1974)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'The Godfather Part II 1974 1080p PTV WEB-DL AAC 2 0 H 264-PiRaTeS' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Dark River 2017 1080p AMZN WEB-DL DDP 5 1 H 264-OnlyWeb' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Dark River 2017 1080p AMZN WEB-DL DDP 5 1 H 264-OnlyWeb'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Dark River - 2017 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: OnlyWeb
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Dark River 2017 1080p AMZN WEB-DL DDP 5 1 H 264-OnlyWeb'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Dark River (2017)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Dark River 2017 1080p AMZN WEB-DL DDP 5 1 H 264-OnlyWeb' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Faith in the Flames The Nichole Jolly Story 2025 1080p AMZN WEB-DL DDP5 1 H' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Faith in the Flames The Nichole Jolly Story 2025 1080p AMZN WEB-DL DDP5 1 H'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Faith in the Flames The Nichole Jolly Story - 2025 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Faith in the Flames The Nichole Jolly Story 2025 1080p AMZN WEB-DL DDP5 1 H'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Faith in the Flames The Nichole Jolly Story (2025)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Faith in the Flames The Nichole Jolly Story 2025 1080p AMZN WEB-DL DDP5 1 H' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'The Stepfather 1987 4K HDR DV 2160p BDRip Ita Eng x265 NAHOM' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'The Stepfather 1987 4K HDR DV 2160p BDRip Ita Eng x265 NAHOM'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. The Stepfather - 1987 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'The Stepfather 1987 4K HDR DV 2160p BDRip Ita Eng x265 NAHOM'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'The Stepfather (1987)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'The Stepfather 1987 4K HDR DV 2160p BDRip Ita Eng x265 NAHOM' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Along Came Polly 2004 1080p x264 ita eng ac3 sub ita nueng GoZ' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Along Came Polly 2004 1080p x264 ita eng ac3 sub ita nueng GoZ'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Along Came Polly - 2004 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Along Came Polly 2004 1080p x264 ita eng ac3 sub ita nueng GoZ'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Along Came Polly (2004)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Along Came Polly 2004 1080p x264 ita eng ac3 sub ita nueng GoZ' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Nobody 2021 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Nobody 2021 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Nobody - 2021 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Nobody 2021 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: Bluray-2160p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Nobody (2021)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Nobody 2021 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x265' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Day of the Fight 2024 1080p BluRay x265 10bit EAC3 5 1 r00t' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Day of the Fight 2024 1080p BluRay x265 10bit EAC3 5 1 r00t'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Day of the Fight - 2024 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Day of the Fight 2024 1080p BluRay x265 10bit EAC3 5 1 r00t'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Day of the Fight (2024)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Day of the Fight 2024 1080p BluRay x265 10bit EAC3 5 1 r00t' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Dragon The Bruce Lee Story 1993 1080p x265 ita eng ac3 sub ita' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Dragon The Bruce Lee Story 1993 1080p x265 ita eng ac3 sub ita'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Dragon The Bruce Lee Story - 1993 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Dragon The Bruce Lee Story 1993 1080p x265 ita eng ac3 sub ita'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Dragon The Bruce Lee Story (1993)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Dragon The Bruce Lee Story 1993 1080p x265 ita eng ac3 sub ita' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Whiplash 2014 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x26' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Whiplash 2014 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x26'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Whiplash - 2014 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Whiplash 2014 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x26'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: BR-DISK v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Whiplash (2014)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Whiplash 2014 UHD BluRay 2160p HDR10 DV HEVC TrueHD Atmos 7 1 x26' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Bilal A New Breed Of Hero (2015) [Cartoon] BluRay H264 DolbyD 5.1 + nickarad' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Bilal A New Breed Of Hero (2015) [Cartoon] BluRay H264 DolbyD 5.1 + nickarad'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Bilal A New Breed Of Hero - 2015 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Bilal A New Breed Of Hero (2015) [Cartoon] BluRay H264 DolbyD 5.1 + nickarad'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: Bluray-720p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Bilal A New Breed Of Hero (2015)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Bilal A New Breed Of Hero (2015) [Cartoon] BluRay H264 DolbyD 5.1 + nickarad' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'The Babysitter Killer Queen 2020 WEB DL 2160p HDR10 HEVC DTS HD M' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'The Babysitter Killer Queen 2020 WEB DL 2160p HDR10 HEVC DTS HD M'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. The Babysitter Killer Queen - 2020 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'The Babysitter Killer Queen 2020 WEB DL 2160p HDR10 HEVC DTS HD M'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: WEBDL-2160p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'The Babysitter Killer Queen (2020)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'The Babysitter Killer Queen 2020 WEB DL 2160p HDR10 HEVC DTS HD M' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Thelma (2024) - edited, 1080p' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Thelma (2024) - edited, 1080p'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Thelma - 2024 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Thelma (2024) - edited, 1080p'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Thelma (2024)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Thelma (2024) - edited, 1080p' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Processing release 'Madagascar (2005) 1080p' from 'RARBG'
+2025-07-28 10:01:23.4|Debug|Parser|Parsing string 'Madagascar (2005) 1080p'
+2025-07-28 10:01:23.4|Debug|Parser|Movie Parsed. Madagascar - 2005 
+2025-07-28 10:01:23.4|Debug|Parser|Release Group parsed: 
+2025-07-28 10:01:23.4|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:01:23.4|Debug|QualityParser|Trying to parse quality for 'Madagascar (2005) 1080p'
+2025-07-28 10:01:23.4|Debug|Parser|Quality parsed: HDTV-1080p v1
+2025-07-28 10:01:23.4|Debug|Parser|Edition parsed: 
+2025-07-28 10:01:23.4|Debug|ParsingService|No matching movie for titles 'Madagascar (2005)'
+2025-07-28 10:01:23.4|Debug|DownloadDecisionMaker|Release 'Madagascar (2005) 1080p' from 'RARBG' rejected for the following reasons: [Permanent] Unknown Movie. Unable to identify correct movie using release name.
+2025-07-28 10:01:23.4|Info|RssSyncService|RSS Sync Completed. Reports found: 70, Reports grabbed: 0
+2025-07-28 10:01:23.4|Debug|PendingReleaseService|Removing failed releases from pending
+2025-07-28 10:01:24.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:24.7|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:01:53.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:53.5|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:01:53.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:53.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:01:54.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:54.4|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:01:55.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:55.3|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:01:55.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:01:55.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:03:23.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:03:23.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:03:23.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:03:23.5|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:03:24.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:03:24.4|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:03:24.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:03:24.5|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:03:52.6|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 10:03:53.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:03:53.5|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:04:53.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:04:53.5|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:04:53.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:04:53.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 10:04:54.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:04:54.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:04:54.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:04:54.6|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:06:23.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:06:23.6|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:06:24.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:06:24.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 10:06:24.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:06:24.5|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:06:25.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:06:25.4|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 10:06:53.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:06:53.5|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:07:53.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:07:53.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:07:53.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:07:53.6|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:07:54.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:07:54.5|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:07:55.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:07:55.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:08:52.6|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 10:08:53.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:08:53.8|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:09:23.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:09:23.5|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:09:23.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:09:23.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:09:24.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:09:24.5|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:09:25.0|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:09:25.0|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 10:10:52.6|Error|TaskExtensions|Task Error
+
+[v5.26.2.10099] code = Full (13), message = System.Data.SQLite.SQLiteException (0x800007FF): database or disk is full
+database or disk is full
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1142
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1125
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Radarr.Core/Datastore/BasicRepository.cs:line 188
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(TModel model) in ./Radarr.Core/Dat2025-07-28 10:21:33.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-28 10:21:33.6|Info|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was challenged.
+2025-07-28 10:21:52.6|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 10:21:53.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:21:53.6|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:21:55.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:21:55.5|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:21:56.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:21:56.4|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:21:56.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:21:56.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 10:21:57.3|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:21:57.3|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:21:57.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:21:57.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:23:23.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:23:23.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:23:23.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:23:23.6|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:23:24.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:23:24.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:23:24.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:23:24.6|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:24:53.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:24:53.5|Debug|Api|[GET] /api/v3/command: 200.OK (1 ms)
+2025-07-28 10:24:53.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:24:53.6|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:24:54.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:24:54.4|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:24:54.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:24:54.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:26:23.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:26:23.5|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 10:26:23.5|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:26:23.5|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:26:24.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:26:24.4|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:26:24.4|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:26:24.4|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:26:52.6|Debug|ImportListSyncService|No enabled import lists, skipping sync and cleaning
+2025-07-28 10:26:53.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:26:53.8|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:26:54.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:26:54.7|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:27:23.6|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:27:23.6|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:27:23.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:27:23.8|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (1 ms)
+2025-07-28 10:27:24.7|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:27:24.7|Debug|Api|[GET] /api/v3/queue/details?all=true: 200.OK (0 ms)
+2025-07-28 10:27:24.8|Debug|Radarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-28 10:27:24.8|Debug|Api|[GET] /api/v3/command: 200.OK (0 ms)
+2025-07-28 10:28:52.6|Error|TaskExtensions|Task Error
+
+[v5.26.2.10099] code = Full (13), message = System.Data.SQLite.SQLiteException (0x800007FF): database or disk is full
+database or disk is full
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1142
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 1125
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Radarr.Core/Datastore/BasicRepository.cs:line 188
+   at NzbDrone.Core.Datastore.BasicRepository`1.Insert(TModel model) in ./Radarr.Core/Datastore/BasicRepository.cs:line 151
+   at NzbDrone.Core.Messaging.Commands.CommandQueueManager.Push[TCommand](TCommand command, CommandPriority priority, CommandTrigger trigger) in ./Radarr.Core/Messaging/Commands/CommandQueueManager.cs:line 140
+   at NzbDrone.Core.Jobs.Scheduler.ExecuteCommands() in ./Radarr.Core/Jobs/Scheduler.cs:line 42
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+
+
+2025-07-28 10:29:22.6|Error|TaskExtensions|Task Error
+
+[v5.26.2.10099] code = Full (13), message = System.Data.SQLite.SQLiteException (0x800007FF): database or disk is full
+database or disk is full
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1142
+   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition& command) in /_

@@ -1,0 +1,1273 @@
+2025-07-24 10:36:17.0|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-07-24 10:36:17.0|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-07-24 10:36:17.0|Debug|ProcessProvider| - [153] Prowlarr
+2025-07-24 10:36:17.0|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 10:36:17.0|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0059826s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0062351s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|CreateTable VersionInfo
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "VersionInfo" ("Version" INTEGER NOT NULL)
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005987s
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|VersionMigration migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.003755s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex VersionInfo (Version)
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "UC_Version" ON "VersionInfo" ("Version" ASC)
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005651s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 1.5E-06s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo AppliedOn DateTime
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "AppliedOn" DATETIME
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0009221s
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|VersionUniqueMigration migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0028047s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 1.3E-06s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|CreateColumn VersionInfo Description String
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo" ADD COLUMN "Description" TEXT
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.000628s
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|VersionDescriptionMigration migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0025602s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|InitialSetup|Starting migration of Log DB to 1
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|CreateTable Logs
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Logs" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Message" TEXT NOT NULL, "Time" DATETIME NOT NULL, "Logger" TEXT NOT NULL, "Exception" TEXT, "ExceptionType" TEXT, "Level" TEXT NOT NULL)
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0014257s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex Logs (Time)
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Logs_Time" ON "Logs" ("Time" ASC)
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0004925s
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (1, '2025-07-24T02:36:17', 'InitialSetup')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|1: InitialSetup migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0031636s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|2: ApplicationStatus migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|ApplicationStatus|Starting migration of Log DB to 2
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (2, '2025-07-24T02:36:17', 'ApplicationStatus')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|2: ApplicationStatus migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0031603s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|3: IndexerProps migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|IndexerProps|Starting migration of Log DB to 3
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (3, '2025-07-24T02:36:17', 'IndexerProps')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|3: IndexerProps migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029553s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|4: add_update_history migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|add_update_history|Starting migration of Log DB to 4
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|CreateTable UpdateHistory
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "UpdateHistory" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Date" DATETIME NOT NULL, "Version" TEXT NOT NULL, "EventType" INTEGER NOT NULL)
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0010415s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|CreateIndex UpdateHistory (Date)
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_UpdateHistory_Date" ON "UpdateHistory" ("Date" ASC)
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0005302s
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (4, '2025-07-24T02:36:17', 'add_update_history')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|4: add_update_history migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0034217s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|5: update_notifiarr migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|update_notifiarr|Starting migration of Log DB to 5
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (5, '2025-07-24T02:36:17', 'update_notifiarr')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|5: update_notifiarr migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030369s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|6: app_profiles migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|app_profiles|Starting migration of Log DB to 6
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (6, '2025-07-24T02:36:17', 'app_profiles')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|6: app_profiles migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029373s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|7: history_failed migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|history_failed|Starting migration of Log DB to 7
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (7, '2025-07-24T02:36:17', 'history_failed')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|7: history_failed migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030542s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|8: redacted_api migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|redacted_api|Starting migration of Log DB to 8
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (8, '2025-07-24T02:36:17', 'redacted_api')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|8: redacted_api migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029269s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|10: IndexerProxies migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|IndexerProxies|Starting migration of Log DB to 10
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (10, '2025-07-24T02:36:17', 'IndexerProxies')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|10: IndexerProxies migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030586s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|11: app_indexer_remote_name migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|app_indexer_remote_name|Starting migration of Log DB to 11
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (11, '2025-07-24T02:36:17', 'app_indexer_remote_name')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|11: app_indexer_remote_name migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0028979s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|13: desi_gazelle_to_unit3d migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|desi_gazelle_to_unit3d|Starting migration of Log DB to 13
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (13, '2025-07-24T02:36:17', 'desi_gazelle_to_unit3d')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|13: desi_gazelle_to_unit3d migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030315s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|14: add_on_update_to_notifications migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|add_on_update_to_notifications|Starting migration of Log DB to 14
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (14, '2025-07-24T02:36:17', 'add_on_update_to_notifications')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|14: add_on_update_to_notifications migrated
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.003046s
+2025-07-24 10:36:17.0|Info|FluentMigrator.Runner.MigrationRunner|15: IndexerVersions migrating
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.0|Info|IndexerVersions|Starting migration of Log DB to 15
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (15, '2025-07-24T02:36:17', 'IndexerVersions')
+2025-07-24 10:36:17.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|15: IndexerVersions migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0028187s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|16: cleanup_config migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|cleanup_config|Starting migration of Log DB to 16
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (16, '2025-07-24T02:36:17', 'cleanup_config')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|16: cleanup_config migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029717s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|17: indexer_cleanup migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|indexer_cleanup|Starting migration of Log DB to 17
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (17, '2025-07-24T02:36:17', 'indexer_cleanup')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|17: indexer_cleanup migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029429s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|18: minimum_seeders migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|minimum_seeders|Starting migration of Log DB to 18
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (18, '2025-07-24T02:36:17', 'minimum_seeders')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|18: minimum_seeders migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030081s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|19: remove_showrss migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|remove_showrss|Starting migration of Log DB to 19
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (19, '2025-07-24T02:36:17', 'remove_showrss')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|19: remove_showrss migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029707s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|20: remove_torrentparadiseml migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|remove_torrentparadiseml|Starting migration of Log DB to 20
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (20, '2025-07-24T02:36:17', 'remove_torrentparadiseml')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|20: remove_torrentparadiseml migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.002876s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|21: localization_setting_to_string migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|localization_setting_to_string|Starting migration of Log DB to 21
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (21, '2025-07-24T02:36:17', 'localization_setting_to_string')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|21: localization_setting_to_string migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0033692s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|22: orpheus_api migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|orpheus_api|Starting migration of Log DB to 22
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (22, '2025-07-24T02:36:17', 'orpheus_api')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|22: orpheus_api migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029505s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|23: download_client_categories migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|download_client_categories|Starting migration of Log DB to 23
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (23, '2025-07-24T02:36:17', 'download_client_categories')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|23: download_client_categories migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.003059s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|24: add_salt_to_users migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|add_salt_to_users|Starting migration of Log DB to 24
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (24, '2025-07-24T02:36:17', 'add_salt_to_users')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|24: add_salt_to_users migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029725s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|25: speedcd_userpasssettings_to_speedcdsettings migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|speedcd_userpasssettings_to_speedcdsettings|Starting migration of Log DB to 25
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (25, '2025-07-24T02:36:17', 'speedcd_userpasssettings_to_speedcdsettings')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|25: speedcd_userpasssettings_to_speedcdsettings migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0032318s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|26: torrentday_cookiesettings_to_torrentdaysettings migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|torrentday_cookiesettings_to_torrentdaysettings|Starting migration of Log DB to 26
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (26, '2025-07-24T02:36:17', 'torrentday_cookiesettings_to_torrentdaysettings')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|26: torrentday_cookiesettings_to_torrentdaysettings migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0032521s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|27: alpharatio_greatposterwall_config_contract migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|alpharatio_greatposterwall_config_contract|Starting migration of Log DB to 27
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (27, '2025-07-24T02:36:17', 'alpharatio_greatposterwall_config_contract')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|27: alpharatio_greatposterwall_config_contract migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0032402s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|28: remove_notwhatcd migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|remove_notwhatcd|Starting migration of Log DB to 28
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (28, '2025-07-24T02:36:17', 'remove_notwhatcd')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|28: remove_notwhatcd migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030319s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|29: add_on_grab_to_notifications migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|add_on_grab_to_notifications|Starting migration of Log DB to 29
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (29, '2025-07-24T02:36:17', 'add_on_grab_to_notifications')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|29: add_on_grab_to_notifications migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.003038s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|30: animetorrents_use_custom_config_contract migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|animetorrents_use_custom_config_contract|Starting migration of Log DB to 30
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (30, '2025-07-24T02:36:17', 'animetorrents_use_custom_config_contract')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|30: animetorrents_use_custom_config_contract migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030427s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|31: apprise_server_url migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|apprise_server_url|Starting migration of Log DB to 31
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (31, '2025-07-24T02:36:17', 'apprise_server_url')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|31: apprise_server_url migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029319s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|32: health_restored_notification migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|health_restored_notification|Starting migration of Log DB to 32
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (32, '2025-07-24T02:36:17', 'health_restored_notification')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|32: health_restored_notification migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029421s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|33: remove_uc migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|remove_uc|Starting migration of Log DB to 33
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (33, '2025-07-24T02:36:17', 'remove_uc')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|33: remove_uc migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0030369s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|34: history_fix_data_titles migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|history_fix_data_titles|Starting migration of Log DB to 34
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (34, '2025-07-24T02:36:17', 'history_fix_data_titles')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|34: history_fix_data_titles migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0036949s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|35: download_client_per_indexer migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|download_client_per_indexer|Starting migration of Log DB to 35
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (35, '2025-07-24T02:36:17', 'download_client_per_indexer')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|35: download_client_per_indexer migrated
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0031223s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|36: postgres_update_timestamp_columns_to_with_timezone migrating
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.1|Info|postgres_update_timestamp_columns_to_with_timezone|Starting migration of Log DB to 36
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|AlterTable Logs
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 1.6E-06s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|AlterColumn Logs Time DateTimeOffset
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "Logs_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Message" TEXT NOT NULL, "Time" DATETIME NOT NULL, "Logger" TEXT NOT NULL, "Exception" TEXT, "ExceptionType" TEXT, "Level" TEXT NOT NULL)
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "Logs_temp" ("Id", "Message", "Time", "Logger", "Exception", "ExceptionType", "Level") SELECT "Id", "Message", "Time", "Logger", "Exception", "ExceptionType", "Level" FROM "Logs"
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "Logs"
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "Logs_temp" RENAME TO "Logs"
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_Logs_Time" ON "Logs" ("Time" ASC)
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0048878s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|AlterTable UpdateHistory
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 1.4E-06s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|AlterColumn UpdateHistory Date DateTimeOffset
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "UpdateHistory_temp" ("Id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, "Date" DATETIME NOT NULL, "Version" TEXT NOT NULL, "EventType" INTEGER NOT NULL)
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "UpdateHistory_temp" ("Id", "Date", "Version", "EventType") SELECT "Id", "Date", "Version", "EventType" FROM "UpdateHistory"
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "UpdateHistory"
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "UpdateHistory_temp" RENAME TO "UpdateHistory"
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE INDEX "IX_UpdateHistory_Date" ON "UpdateHistory" ("Date" ASC)
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0041248s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|AlterTable VersionInfo
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 1.6E-06s
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|AlterColumn VersionInfo AppliedOn DateTimeOffset
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE TABLE "VersionInfo_temp" ("Version" INTEGER NOT NULL, "AppliedOn" DATETIME, "Description" TEXT)
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo_temp" ("Version", "AppliedOn", "Description") SELECT "Version", "AppliedOn", "Description" FROM "VersionInfo"
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|DROP TABLE "VersionInfo"
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|ALTER TABLE "VersionInfo_temp" RENAME TO "VersionInfo"
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|CREATE UNIQUE INDEX "UC_Version" ON "VersionInfo" ("Version" ASC)
+2025-07-24 10:36:17.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0037383s
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (36, '2025-07-24T02:36:17', 'postgres_update_timestamp_columns_to_with_timezone')
+2025-07-24 10:36:17.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|36: postgres_update_timestamp_columns_to_with_timezone migrated
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0067007s
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrating
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.2|Info|add_notification_status|Starting migration of Log DB to 37
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (37, '2025-07-24T02:36:17', 'add_notification_status')
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|37: add_notification_status migrated
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0031595s
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|38: indexers_freeleech_only_config_contract migrating
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.2|Info|indexers_freeleech_only_config_contract|Starting migration of Log DB to 38
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (38, '2025-07-24T02:36:17', 'indexers_freeleech_only_config_contract')
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|38: indexers_freeleech_only_config_contract migrated
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0036208s
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|39: email_encryption migrating
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.2|Info|email_encryption|Starting migration of Log DB to 39
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (39, '2025-07-24T02:36:17', 'email_encryption')
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|39: email_encryption migrated
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0029972s
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|40: newznab_category_to_capabilities_settings migrating
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.2|Info|newznab_category_to_capabilities_settings|Starting migration of Log DB to 40
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (40, '2025-07-24T02:36:17', 'newznab_category_to_capabilities_settings')
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|40: newznab_category_to_capabilities_settings migrated
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0035754s
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|41: gazelle_freeleech_token_options migrating
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.2|Info|gazelle_freeleech_token_options|Starting migration of Log DB to 41
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (41, '2025-07-24T02:36:17', 'gazelle_freeleech_token_options')
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|41: gazelle_freeleech_token_options migrated
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0032587s
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|42: myanonamouse_freeleech_wedge_options migrating
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Beginning Transaction
+2025-07-24 10:36:17.2|Info|myanonamouse_freeleech_wedge_options|Starting migration of Log DB to 42
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|INSERT INTO "VersionInfo" ("Version", "AppliedOn", "Description") VALUES (42, '2025-07-24T02:36:17', 'myanonamouse_freeleech_wedge_options')
+2025-07-24 10:36:17.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Committing Transaction
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|42: myanonamouse_freeleech_wedge_options migrated
+2025-07-24 10:36:17.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.003079s
+2025-07-24 10:36:17.2|Debug|MigrationController|Took: 00:00:00.2136352
+2025-07-24 10:36:17.3|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-07-24 10:36:17.3|Info|UpdaterConfigProvider|Update mechanism BuiltIn not supported in the current configuration, changing to Docker.
+2025-07-24 10:36:17.5|Info|AppSyncProfileService|Setting up default app profile
+2025-07-24 10:36:17.5|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-07-24 10:36:17.5|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-07-24 10:36:17.5|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-07-24 10:36:17.6|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-07-24 10:36:17.8|Debug|HttpClient|Downloading Completed. took 0s
+2025-07-24 10:36:17.9|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-07-24 10:36:17.9|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-07-24 10:36:17.9|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-07-24 10:36:17.9|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-07-24 10:36:17.9|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-07-24 10:36:17.9|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-07-24 10:36:17.9|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-07-24 10:36:17.9|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-07-24 10:36:18.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 10:37:54.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:37:55.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:37:55.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:37:55.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:37:56.0|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:37:56.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:37:57.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:37:57.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:37:57.1|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:37:59.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:37:59.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:37:59.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:37:59.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:37:59.4|Debug|Api|[GET] /api/v1/tag: 200.OK (11 ms)
+2025-07-24 10:37:59.4|Debug|Api|[GET] /api/v1/customFilter: 200.OK (17 ms)
+2025-07-24 10:37:59.4|Debug|Api|[GET] /api/v1/appprofile: 200.OK (9 ms)
+2025-07-24 10:37:59.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (26 ms)
+2025-07-24 10:37:59.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:37:59.4|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (4 ms)
+2025-07-24 10:37:59.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:37:59.4|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (4 ms)
+2025-07-24 10:38:00.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:38:00.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:38:00.3|Debug|Api|[GET] /api/v1/config/ui: 200.OK (7 ms)
+2025-07-24 10:38:00.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:38:00.3|Debug|Api|[GET] /api/v1/system/status: 200.OK (32 ms)
+2025-07-24 10:38:00.3|Debug|Api|[GET] /api/v1/localization: 200.OK (8 ms)
+2025-07-24 10:38:00.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:38:00.4|Debug|Api|[GET] /api/v1/config/host: 200.OK (37 ms)
+2025-07-24 10:38:01.2|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:38:01.3|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:38:01.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:38:01.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 10:38:01.5|Debug|Api|[GET] /api/v1/config/host: 200.OK (4 ms)
+2025-07-24 10:38:01.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:38:01.5|Debug|Api|[GET] /api/v1/indexer: 200.OK (3 ms)
+2025-07-24 10:38:01.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:38:01.5|Debug|Api|[GET] /api/v1/health: 200.OK (8 ms)
+2025-07-24 10:38:02.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:38:02.4|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 10:38:02.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 10:38:02.5|Debug|Prowlarr.Http.Authentication.NoAuthenticationHandler|AuthenticationScheme: None was successfully authenticated.
+2025-07-24 10:39:06.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:39:07.0|Debug|Api|[PUT] /api/v1/config/host: 202.Accepted (115 ms)
+2025-07-24 10:39:08.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:39:08.0|Debug|Api|[GET] /api/v1/system/status: 200.OK (2 ms)
+2025-07-24 10:39:12.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:39:12.9|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-07-24 10:39:13.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:39:13.7|Debug|Api|[GET] /api/v1/system/status: 200.OK (1 ms)
+2025-07-24 10:39:13.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:39:13.8|Debug|Api|[GET] /api/v1/health: 200.OK (0 ms)
+2025-07-24 10:39:27.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:39:27.5|Debug|Api|[GET] /api/v1/localization/options: 200.OK (3 ms)
+2025-07-24 10:39:27.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:39:27.5|Debug|Api|[GET] /api/v1/config/ui: 200.OK (1 ms)
+2025-07-24 10:40:58.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 10:41:01.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:41:01.7|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (2 ms)
+2025-07-24 10:41:01.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:41:01.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 10:41:01.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:41:01.7|Debug|Api|[GET] /api/v1/customFilter: 200.OK (1 ms)
+2025-07-24 10:41:01.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:41:01.9|Debug|Api|[GET] /api/v1/appprofile: 200.OK (1 ms)
+2025-07-24 10:41:02.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:41:02.6|Debug|Api|[GET] /api/v1/config/ui: 200.OK (1 ms)
+2025-07-24 10:41:02.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:41:02.6|Debug|Api|[GET] /api/v1/tag: 200.OK (1 ms)
+2025-07-24 10:41:02.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:41:02.6|Debug|Api|[GET] /api/v1/config/host: 200.OK (0 ms)
+2025-07-24 10:41:02.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:41:02.7|Debug|Api|[GET] /api/v1/system/status: 200.OK (1 ms)
+2025-07-24 10:41:02.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:41:02.8|Debug|Api|[GET] /api/v1/localization: 200.OK (3 ms)
+2025-07-24 10:42:41.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:41.4|Debug|Api|[GET] /api/v1/tag: 200.OK (1 ms)
+2025-07-24 10:42:41.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:41.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 10:42:41.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:41.4|Debug|Api|[GET] /api/v1/customFilter: 200.OK (0 ms)
+2025-07-24 10:42:41.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:41.4|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (0 ms)
+2025-07-24 10:42:41.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:41.4|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 10:42:42.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:42.3|Debug|Api|[GET] /api/v1/localization: 200.OK (2 ms)
+2025-07-24 10:42:42.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:42.3|Debug|Api|[GET] /api/v1/config/host: 200.OK (1 ms)
+2025-07-24 10:42:42.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:42.4|Debug|Api|[GET] /api/v1/appprofile: 200.OK (1 ms)
+2025-07-24 10:42:42.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:42.5|Debug|Api|[GET] /api/v1/config/ui: 200.OK (1 ms)
+2025-07-24 10:42:45.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:45.5|Debug|Api|[GET] /api/v1/system/status: 200.OK (1 ms)
+2025-07-24 10:42:46.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:46.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 10:42:46.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:46.5|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (0 ms)
+2025-07-24 10:42:46.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 10:42:47.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 10:42:48.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:42:48.6|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-07-24 10:43:08.1|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-07-24 10:43:08.1|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-07-24 10:43:08.1|Debug|ProcessProvider| - [152] Prowlarr
+2025-07-24 10:43:08.2|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 10:43:08.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 10:43:08.3|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 10:43:08.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 10:43:08.3|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 10:43:08.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0437704s
+2025-07-24 10:43:08.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 10:43:08.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0457825s
+2025-07-24 10:43:08.4|Debug|MigrationController|Took: 00:00:00.1903158
+2025-07-24 10:43:08.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 10:43:08.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 10:43:08.4|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 10:43:08.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 10:43:08.4|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 10:43:08.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0012922s
+2025-07-24 10:43:08.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 10:43:08.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0015648s
+2025-07-24 10:43:08.4|Debug|MigrationController|Took: 00:00:00.0092359
+2025-07-24 10:43:08.6|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-07-24 10:43:08.7|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-07-24 10:43:08.8|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-07-24 10:43:08.8|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-07-24 10:43:08.9|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-07-24 10:43:09.1|Debug|HttpClient|Downloading Completed. took 0s
+2025-07-24 10:43:09.2|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-07-24 10:43:09.2|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-07-24 10:43:09.2|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-07-24 10:43:09.2|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-07-24 10:43:09.2|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-07-24 10:43:09.2|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-07-24 10:43:09.2|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-07-24 10:43:09.2|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-07-24 10:43:09.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 10:43:33.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:43:33.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:43:33.8|Debug|Api|[GET] /api/v1/health: 200.OK (39 ms)
+2025-07-24 10:43:33.8|Debug|Api|[GET] /api/v1/system/status: 200.OK (63 ms)
+2025-07-24 10:43:34.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:43:34.7|Debug|Api|[GET] /api/v1/health: 200.OK (2 ms)
+2025-07-24 10:43:35.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:43:35.6|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-07-24 10:43:36.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:43:36.6|Debug|Api|[GET] /api/v1/config/ui: 200.OK (7 ms)
+2025-07-24 10:43:36.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:43:36.6|Debug|Api|[GET] /api/v1/localization/options: 200.OK (6 ms)
+2025-07-24 10:44:41.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:44:41.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:44:41.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:44:41.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (5 ms)
+2025-07-24 10:44:41.7|Debug|Api|[GET] /api/v1/tag: 200.OK (3 ms)
+2025-07-24 10:44:41.8|Debug|Api|[GET] /api/v1/indexer: 200.OK (20 ms)
+2025-07-24 10:44:41.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:44:41.8|Debug|Api|[GET] /api/v1/appprofile: 200.OK (3 ms)
+2025-07-24 10:44:42.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:44:42.0|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (4 ms)
+2025-07-24 10:44:42.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:44:42.0|Debug|Api|[GET] /api/v1/customFilter: 200.OK (3 ms)
+2025-07-24 10:44:42.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:44:42.7|Debug|Api|[GET] /api/v1/localization: 200.OK (8 ms)
+2025-07-24 10:44:58.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:44:58.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:44:58.0|Debug|Api|[GET] /api/v1/config/ui: 200.OK (2 ms)
+2025-07-24 10:44:58.0|Debug|Api|[GET] /api/v1/system/status: 200.OK (4 ms)
+2025-07-24 10:47:24.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 10:47:30.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:30.2|Debug|Api|[GET] /api/v1/indexer: 200.OK (2 ms)
+2025-07-24 10:47:30.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:30.3|Debug|Api|[GET] /api/v1/customFilter: 200.OK (0 ms)
+2025-07-24 10:47:30.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:30.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:30.3|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (0 ms)
+2025-07-24 10:47:30.3|Debug|Api|[GET] /api/v1/tag: 200.OK (0 ms)
+2025-07-24 10:47:30.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:30.3|Debug|Api|[GET] /api/v1/appprofile: 200.OK (0 ms)
+2025-07-24 10:47:30.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:30.8|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (1 ms)
+2025-07-24 10:47:31.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:31.1|Debug|Api|[GET] /api/v1/config/ui: 200.OK (1 ms)
+2025-07-24 10:47:31.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:31.1|Debug|Api|[GET] /api/v1/system/status: 200.OK (1 ms)
+2025-07-24 10:47:31.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:31.2|Debug|Api|[GET] /api/v1/localization: 200.OK (1 ms)
+2025-07-24 10:47:32.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:32.3|Debug|Api|[GET] /api/v1/config/host: 200.OK (35 ms)
+2025-07-24 10:47:33.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 10:47:33.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:33.6|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-07-24 10:47:34.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:34.2|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 10:47:34.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:34.3|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 10:47:35.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 10:47:36.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:36.4|Debug|Api|[GET] /api/v1/health: 200.OK (0 ms)
+2025-07-24 10:47:37.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:37.3|Debug|Api|[GET] /api/v1/system/status: 200.OK (1 ms)
+2025-07-24 10:47:39.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:39.8|Debug|Api|[GET] /api/v1/localization/options: 200.OK (0 ms)
+2025-07-24 10:47:39.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:47:39.8|Debug|Api|[GET] /api/v1/config/ui: 200.OK (0 ms)
+2025-07-24 10:48:54.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 10:49:00.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:00.7|Debug|Api|[GET] /api/v1/appprofile: 200.OK (1 ms)
+2025-07-24 10:49:00.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:00.7|Debug|Api|[GET] /api/v1/customFilter: 200.OK (0 ms)
+2025-07-24 10:49:00.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:00.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 10:49:00.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:00.7|Debug|Api|[GET] /api/v1/indexer: 200.OK (0 ms)
+2025-07-24 10:49:00.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:00.8|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (0 ms)
+2025-07-24 10:49:00.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:00.8|Debug|Api|[GET] /api/v1/tag: 200.OK (0 ms)
+2025-07-24 10:49:01.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:01.6|Debug|Api|[GET] /api/v1/config/host: 200.OK (2 ms)
+2025-07-24 10:49:01.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:01.6|Debug|Api|[GET] /api/v1/system/status: 200.OK (1 ms)
+2025-07-24 10:49:01.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:01.7|Debug|Api|[GET] /api/v1/localization: 200.OK (1 ms)
+2025-07-24 10:49:01.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:01.7|Debug|Api|[GET] /api/v1/config/ui: 200.OK (0 ms)
+2025-07-24 10:49:02.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 10:49:02.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:02.8|Debug|Api|[GET] /api/v1/health: 200.OK (0 ms)
+2025-07-24 10:49:03.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 10:49:36.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:36.8|Debug|Api|[GET] /api/v1/indexerStats?endDate=2025-07-24T02%3A49%3A35.515Z: 200.OK (16 ms)
+2025-07-24 10:49:41.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:41.0|Debug|Api|[GET] /api/v1/localization/options: 200.OK (0 ms)
+2025-07-24 10:49:41.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:49:41.1|Debug|Api|[GET] /api/v1/config/ui: 200.OK (1 ms)
+2025-07-24 10:50:02.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:50:02.7|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (4 ms)
+2025-07-24 10:50:05.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:50:05.8|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (26 ms)
+2025-07-24 10:51:27.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:51:27.7|Debug|Api|[GET] /api/v1/appprofile: 200.OK (1 ms)
+2025-07-24 10:51:27.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:51:27.8|Debug|Api|[GET] /api/v1/applications: 200.OK (8 ms)
+2025-07-24 10:51:31.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:51:31.8|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (1 ms)
+2025-07-24 10:52:39.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:52:39.8|Debug|Api|[GET] /api/v1/command: 200.OK (29 ms)
+2025-07-24 10:53:15.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:53:15.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 10:53:15.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:53:15.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 10:53:17.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:53:19.0|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (1245 ms)
+2025-07-24 10:56:26.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:56:26.2|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (6 ms)
+2025-07-24 10:56:26.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:56:26.4|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (162 ms)
+2025-07-24 10:56:42.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:56:42.4|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 10:56:42.4|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 10:56:42.5|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 10:56:42.5|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (186 ms)
+2025-07-24 10:58:09.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:58:09.8|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2025-07-24 10:58:10.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 10:58:10.0|Debug|Api|[GET] /api/v1/health: 200.OK (0 ms)
+2025-07-24 11:03:39.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:03:39.8|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)
+2025-07-24 11:08:44.7|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-07-24 11:08:44.7|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-07-24 11:08:44.7|Debug|ProcessProvider| - [152] Prowlarr
+2025-07-24 11:08:44.7|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 11:08:44.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 11:08:44.9|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 11:08:44.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 11:08:44.9|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 11:08:44.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0430872s
+2025-07-24 11:08:44.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 11:08:44.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0450965s
+2025-07-24 11:08:44.9|Debug|MigrationController|Took: 00:00:00.1873796
+2025-07-24 11:08:44.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 11:08:44.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 11:08:44.9|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 11:08:44.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 11:08:44.9|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 11:08:44.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0013034s
+2025-07-24 11:08:44.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 11:08:44.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0015967s
+2025-07-24 11:08:44.9|Debug|MigrationController|Took: 00:00:00.0089002
+2025-07-24 11:08:45.2|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-07-24 11:08:45.3|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-07-24 11:08:45.3|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-07-24 11:08:45.4|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-07-24 11:08:45.4|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-07-24 11:08:45.6|Debug|HttpClient|Downloading Completed. took 0s
+2025-07-24 11:08:45.8|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-07-24 11:08:45.8|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-07-24 11:08:45.8|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-07-24 11:08:45.8|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-07-24 11:08:45.8|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-07-24 11:08:45.8|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-07-24 11:08:45.8|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-07-24 11:08:45.8|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-07-24 11:08:46.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 11:09:22.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:09:22.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:09:22.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:09:22.5|Debug|Api|[GET] /api/v1/tag: 200.OK (8 ms)
+2025-07-24 11:09:22.5|Debug|Api|[GET] /api/v1/appprofile: 200.OK (17 ms)
+2025-07-24 11:09:22.5|Debug|Api|[GET] /api/v1/indexer: 200.OK (20 ms)
+2025-07-24 11:09:22.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:09:22.5|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (4 ms)
+2025-07-24 11:09:22.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:09:22.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (3 ms)
+2025-07-24 11:09:23.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:09:23.4|Debug|Api|[GET] /api/v1/system/status: 200.OK (31 ms)
+2025-07-24 11:09:23.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:09:23.5|Debug|Api|[GET] /api/v1/localization: 200.OK (7 ms)
+2025-07-24 11:09:23.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:09:23.5|Debug|Api|[GET] /api/v1/customFilter: 200.OK (3 ms)
+2025-07-24 11:10:09.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 11:10:16.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:16.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:16.3|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (2 ms)
+2025-07-24 11:10:16.3|Debug|Api|[GET] /api/v1/indexer: 200.OK (3 ms)
+2025-07-24 11:10:16.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:16.3|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (1 ms)
+2025-07-24 11:10:16.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:16.3|Debug|Api|[GET] /api/v1/tag: 200.OK (1 ms)
+2025-07-24 11:10:16.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:16.4|Debug|Api|[GET] /api/v1/appprofile: 200.OK (1 ms)
+2025-07-24 11:10:17.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:17.2|Debug|Api|[GET] /api/v1/config/ui: 200.OK (6 ms)
+2025-07-24 11:10:17.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:17.3|Debug|Api|[GET] /api/v1/system/status: 200.OK (2 ms)
+2025-07-24 11:10:17.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:17.3|Debug|Api|[GET] /api/v1/customFilter: 200.OK (0 ms)
+2025-07-24 11:10:17.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:17.3|Debug|Api|[GET] /api/v1/localization: 200.OK (2 ms)
+2025-07-24 11:10:18.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:18.3|Debug|Api|[GET] /api/v1/config/host: 200.OK (35 ms)
+2025-07-24 11:10:19.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:19.2|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 11:10:19.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:19.2|Debug|Api|[GET] /api/v1/health: 200.OK (8 ms)
+2025-07-24 11:10:19.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:19.2|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (0 ms)
+2025-07-24 11:10:19.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:10:20.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:10:57.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:10:59.3|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (1411 ms)
+2025-07-24 11:11:14.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:11:14.6|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (5 ms)
+2025-07-24 11:11:17.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:11:17.9|Debug|Api|[GET] /api/v1/indexerProxy/schema: 200.OK (8 ms)
+2025-07-24 11:11:40.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:11:40.8|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:11:41.6|Debug|Api|[POST] /api/v1/indexerProxy/test: 200.OK (908 ms)
+2025-07-24 11:11:44.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:11:44.4|Debug|Api|[POST] /api/v1/indexerProxy: 201.Created (54 ms)
+2025-07-24 11:11:50.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:11:50.3|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-07-24 11:11:52.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:11:52.7|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:11:53.5|Debug|Api|[POST] /api/v1/indexerProxy/test: 200.OK (832 ms)
+2025-07-24 11:11:57.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:11:57.6|Debug|Api|[PUT] /api/v1/indexerProxy/1: 202.Accepted (8 ms)
+2025-07-24 11:12:04.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:12:04.5|Debug|Api|[GET] /api/v1/health: 200.OK (0 ms)
+2025-07-24 11:12:05.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:12:05.4|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 11:12:05.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:12:05.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 11:12:06.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:12:07.2|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (825 ms)
+2025-07-24 11:12:10.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:12:10.8|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (6 ms)
+2025-07-24 11:12:11.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:12:11.2|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (124 ms)
+2025-07-24 11:12:37.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:12:37.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:12:37.2|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:12:37.2|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:12:37.2|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (157 ms)
+2025-07-24 11:14:46.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:14:46.4|Debug|Api|[GET] /api/v1/command: 200.OK (29 ms)
+2025-07-24 11:16:46.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:16:46.3|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (2 ms)
+2025-07-24 11:16:54.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:16:54.5|Debug|Api|[POST] /api/v1/tag: 201.Created (12 ms)
+2025-07-24 11:16:55.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:16:55.4|Debug|Api|[GET] /api/v1/tag: 200.OK (1 ms)
+2025-07-24 11:16:56.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:16:56.4|Debug|Api|[GET] /api/v1/tag/detail: 200.OK (6 ms)
+2025-07-24 11:17:00.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:17:00.8|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:17:01.7|Debug|Api|[PUT] /api/v1/indexerProxy/1: 202.Accepted (823 ms)
+2025-07-24 11:17:04.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:17:04.2|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 11:17:04.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:17:04.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (0 ms)
+2025-07-24 11:17:05.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:17:06.2|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (942 ms)
+2025-07-24 11:17:06.7|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:17:09.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:17:09.0|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-07-24 11:17:09.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:17:09.2|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (2 ms)
+2025-07-24 11:17:09.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:17:09.3|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (1 ms)
+2025-07-24 11:17:16.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:17:16.0|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:17:16.0|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:17:16.0|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:17:18.4|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:17:18.4|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (2367 ms)
+2025-07-24 11:17:57.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:17:57.3|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (1 ms)
+2025-07-24 11:18:03.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:03.7|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:18:04.5|Debug|Api|[POST] /api/v1/indexerProxy/test: 200.OK (831 ms)
+2025-07-24 11:18:07.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:07.2|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:18:08.1|Debug|Api|[PUT] /api/v1/indexerProxy/1: 202.Accepted (837 ms)
+2025-07-24 11:18:10.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:10.9|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 11:18:11.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:11.0|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 11:18:11.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:12.6|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (861 ms)
+2025-07-24 11:18:13.1|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:18:14.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:14.9|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-07-24 11:18:17.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:17.7|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (1 ms)
+2025-07-24 11:18:17.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:17.8|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (2 ms)
+2025-07-24 11:18:24.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:24.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:18:24.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:18:24.9|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:18:27.0|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:18:27.0|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (2050 ms)
+2025-07-24 11:18:34.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:18:34.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:18:34.1|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:18:34.1|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:18:36.5|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:18:36.5|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (2363 ms)
+2025-07-24 11:20:33.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:20:33.0|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2025-07-24 11:23:59.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:23:59.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:23:59.5|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:23:59.6|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:24:01.9|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:24:01.9|Debug|Api|[POST] /api/v1/indexer/test?forceTest=true: 400.BadRequest (2425 ms)
+2025-07-24 11:24:27.3|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-07-24 11:24:27.3|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-07-24 11:24:27.3|Debug|ProcessProvider| - [152] Prowlarr
+2025-07-24 11:24:27.3|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 11:24:27.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 11:24:27.4|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 11:24:27.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 11:24:27.5|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 11:24:27.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0422165s
+2025-07-24 11:24:27.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 11:24:27.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0442423s
+2025-07-24 11:24:27.5|Debug|MigrationController|Took: 00:00:00.1872477
+2025-07-24 11:24:27.5|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 11:24:27.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 11:24:27.5|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 11:24:27.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 11:24:27.5|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 11:24:27.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0024499s
+2025-07-24 11:24:27.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 11:24:27.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0027179s
+2025-07-24 11:24:27.5|Debug|MigrationController|Took: 00:00:00.0103786
+2025-07-24 11:24:27.8|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-07-24 11:24:27.9|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-07-24 11:24:27.9|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-07-24 11:24:27.9|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-07-24 11:24:28.0|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-07-24 11:24:28.2|Debug|HttpClient|Downloading Completed. took 0s
+2025-07-24 11:24:28.3|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-07-24 11:24:28.3|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-07-24 11:24:28.3|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-07-24 11:24:28.4|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-07-24 11:24:28.4|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-07-24 11:24:28.4|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-07-24 11:24:28.4|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-07-24 11:24:28.4|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-07-24 11:24:28.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 11:24:28.7|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:24:40.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:24:41.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:24:42.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:24:42.8|Debug|Api|[GET] /api/v1/command: 200.OK (38 ms)
+2025-07-24 11:24:42.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:24:42.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:24:42.8|Debug|Api|[GET] /api/v1/health: 200.OK (13 ms)
+2025-07-24 11:24:42.8|Debug|Api|[GET] /api/v1/indexer: 200.OK (21 ms)
+2025-07-24 11:25:35.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 11:25:45.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:45.1|Debug|Api|[GET] /api/v1/customFilter: 200.OK (4 ms)
+2025-07-24 11:25:45.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:45.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:45.1|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (5 ms)
+2025-07-24 11:25:45.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:45.2|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (14 ms)
+2025-07-24 11:25:45.2|Debug|Api|[GET] /api/v1/tag: 200.OK (5 ms)
+2025-07-24 11:25:45.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:45.2|Debug|Api|[GET] /api/v1/indexer: 200.OK (3 ms)
+2025-07-24 11:25:45.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:45.2|Debug|Api|[GET] /api/v1/appprofile: 200.OK (4 ms)
+2025-07-24 11:25:46.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:46.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:46.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:46.1|Debug|Api|[GET] /api/v1/localization: 200.OK (7 ms)
+2025-07-24 11:25:46.1|Debug|Api|[GET] /api/v1/config/host: 200.OK (45 ms)
+2025-07-24 11:25:46.1|Debug|Api|[GET] /api/v1/system/status: 200.OK (19 ms)
+2025-07-24 11:25:46.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:46.3|Debug|Api|[GET] /api/v1/config/ui: 200.OK (6 ms)
+2025-07-24 11:25:47.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:47.6|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (2 ms)
+2025-07-24 11:25:47.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:47.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:47.6|Debug|Api|[GET] /api/v1/indexer: 200.OK (0 ms)
+2025-07-24 11:25:47.6|Debug|Api|[GET] /api/v1/health: 200.OK (0 ms)
+2025-07-24 11:25:47.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:25:48.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:25:53.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:53.8|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (24 ms)
+2025-07-24 11:25:56.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:56.6|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 11:25:57.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:57.6|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 11:25:57.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:25:58.9|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (1207 ms)
+2025-07-24 11:26:02.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:02.2|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (5 ms)
+2025-07-24 11:26:02.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:02.3|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (148 ms)
+2025-07-24 11:26:11.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:11.3|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (2 ms)
+2025-07-24 11:26:19.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:19.0|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 11:26:19.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:19.0|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 11:26:20.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:21.0|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (834 ms)
+2025-07-24 11:26:25.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:25.2|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (2 ms)
+2025-07-24 11:26:25.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:25.2|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (2 ms)
+2025-07-24 11:26:32.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:32.1|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:26:32.1|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:26:32.2|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:26:34.4|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:26:34.4|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (2312 ms)
+2025-07-24 11:26:40.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:40.5|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:26:40.5|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:26:40.5|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:26:42.8|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:26:42.8|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (2392 ms)
+2025-07-24 11:26:57.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:26:57.1|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (2 ms)
+2025-07-24 11:29:09.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:09.7|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:29:10.5|Debug|Api|[POST] /api/v1/indexerProxy/test: 200.OK (832 ms)
+2025-07-24 11:29:13.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:13.8|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:29:14.7|Debug|Api|[PUT] /api/v1/indexerProxy/1: 202.Accepted (920 ms)
+2025-07-24 11:29:17.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:17.2|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 11:29:17.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:17.2|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 11:29:19.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:19.7|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:29:20.5|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (870 ms)
+2025-07-24 11:29:21.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:21.5|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-07-24 11:29:24.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:24.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:24.2|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (1 ms)
+2025-07-24 11:29:24.2|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (2 ms)
+2025-07-24 11:29:31.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:31.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:29:31.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:29:32.0|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:29:35.2|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:29:35.2|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (3226 ms)
+2025-07-24 11:29:39.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:29:39.2|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:29:39.2|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:29:39.2|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:29:41.7|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:29:41.7|Debug|Api|[POST] /api/v1/indexer: 400.BadRequest (2521 ms)
+2025-07-24 11:30:58.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:30:58.9|Debug|Api|[GET] /api/v1/command: 200.OK (14 ms)
+2025-07-24 11:31:35.6|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-07-24 11:31:35.6|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-07-24 11:31:35.6|Debug|ProcessProvider| - [152] Prowlarr
+2025-07-24 11:31:35.6|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 11:31:35.7|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 11:31:35.7|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 11:31:35.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 11:31:35.8|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 11:31:35.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0434798s
+2025-07-24 11:31:35.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 11:31:35.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0454741s
+2025-07-24 11:31:35.8|Debug|MigrationController|Took: 00:00:00.1900758
+2025-07-24 11:31:35.8|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 11:31:35.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 11:31:35.8|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 11:31:35.8|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 11:31:35.8|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 11:31:35.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0013335s
+2025-07-24 11:31:35.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 11:31:35.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0016223s
+2025-07-24 11:31:35.8|Debug|MigrationController|Took: 00:00:00.0089644
+2025-07-24 11:31:36.1|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-07-24 11:31:36.2|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-07-24 11:31:36.2|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-07-24 11:31:36.2|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-07-24 11:31:36.3|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-07-24 11:31:36.5|Debug|HttpClient|Downloading Completed. took 0s
+2025-07-24 11:31:36.6|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-07-24 11:31:36.6|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-07-24 11:31:36.6|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-07-24 11:31:36.7|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-07-24 11:31:36.7|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-07-24 11:31:36.7|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-07-24 11:31:36.7|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-07-24 11:31:36.7|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-07-24 11:31:36.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 11:31:37.1|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:32:08.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 11:32:15.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:15.1|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (15 ms)
+2025-07-24 11:32:15.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:15.1|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (9 ms)
+2025-07-24 11:32:15.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:15.1|Debug|Api|[GET] /api/v1/appprofile: 200.OK (7 ms)
+2025-07-24 11:32:15.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:15.1|Debug|Api|[GET] /api/v1/customFilter: 200.OK (3 ms)
+2025-07-24 11:32:15.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:15.2|Debug|Api|[GET] /api/v1/indexer: 200.OK (24 ms)
+2025-07-24 11:32:16.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:16.0|Debug|Api|[GET] /api/v1/config/ui: 200.OK (6 ms)
+2025-07-24 11:32:16.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:16.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:16.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:16.1|Debug|Api|[GET] /api/v1/localization: 200.OK (8 ms)
+2025-07-24 11:32:16.1|Debug|Api|[GET] /api/v1/system/status: 200.OK (32 ms)
+2025-07-24 11:32:16.1|Debug|Api|[GET] /api/v1/config/host: 200.OK (60 ms)
+2025-07-24 11:32:17.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:17.2|Debug|Api|[GET] /api/v1/tag: 200.OK (6 ms)
+2025-07-24 11:32:18.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:32:18.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:18.1|Debug|Api|[GET] /api/v1/indexer: 200.OK (4 ms)
+2025-07-24 11:32:18.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:18.1|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 11:32:19.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:32:19.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:19.2|Debug|Api|[GET] /api/v1/health: 200.OK (8 ms)
+2025-07-24 11:32:22.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:22.2|Debug|Api|[GET] /api/v1/indexerProxy: 200.OK (24 ms)
+2025-07-24 11:32:26.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:26.5|Debug|Api|[GET] /api/v1/indexer: 200.OK (1 ms)
+2025-07-24 11:32:26.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:26.7|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (0 ms)
+2025-07-24 11:32:27.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:29.1|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (1363 ms)
+2025-07-24 11:32:32.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:32.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:32.7|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (6 ms)
+2025-07-24 11:32:32.8|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (151 ms)
+2025-07-24 11:32:42.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:32:42.4|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:32:42.4|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:32:42.5|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:32:44.6|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:32:44.6|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (2269 ms)
+2025-07-24 11:33:08.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:33:08.9|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:33:08.9|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:33:08.9|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:33:11.0|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:33:11.0|Debug|Api|[POST] /api/v1/indexer/test?forceTest=true: 400.BadRequest (2109 ms)
+2025-07-24 11:35:25.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:35:25.2|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (1 ms)
+2025-07-24 11:35:30.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:35:30.9|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (4 ms)
+2025-07-24 11:35:33.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:35:33.4|Debug|Cardigann|Adding request for TorrentGalaxyClone: https://torrentgalaxy.one/get-posts/
+2025-07-24 11:35:33.4|Debug|Cardigann|Downloading Feed https://torrentgalaxy.one/get-posts/
+2025-07-24 11:35:33.4|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://torrentgalaxy.one/get-posts/
+2025-07-24 11:35:35.4|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access torrentgalaxy.one, blocked by CloudFlare Protection.
+2025-07-24 11:35:35.4|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (2015 ms)
+2025-07-24 11:36:07.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:36:07.5|Debug|Api|[GET] /api/v1/command: 200.OK (29 ms)
+2025-07-24 11:42:22.3|Debug|ProcessProvider|Found 0 processes with the name: Prowlarr.Console
+2025-07-24 11:42:22.3|Debug|ProcessProvider|Found 1 processes with the name: Prowlarr
+2025-07-24 11:42:22.3|Debug|ProcessProvider| - [153] Prowlarr
+2025-07-24 11:42:22.3|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 11:42:22.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 11:42:22.5|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 11:42:22.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 11:42:22.5|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 11:42:22.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0437169s
+2025-07-24 11:42:22.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 11:42:22.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0457491s
+2025-07-24 11:42:22.5|Debug|MigrationController|Took: 00:00:00.1906918
+2025-07-24 11:42:22.5|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-07-24 11:42:22.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-07-24 11:42:22.5|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-07-24 11:42:22.5|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-07-24 11:42:22.5|Info|DatabaseEngineVersionCheck|SQLite 3.49.2
+2025-07-24 11:42:22.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0013893s
+2025-07-24 11:42:22.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-07-24 11:42:22.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0016621s
+2025-07-24 11:42:22.5|Debug|MigrationController|Took: 00:00:00.0093363
+2025-07-24 11:42:22.8|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-07-24 11:42:22.9|Debug|NotificationFactory|Initializing Providers. Count 20
+2025-07-24 11:42:22.9|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-07-24 11:42:23.0|Debug|HttpClient|Downloading [https://indexers.prowlarr.com/master/11/package.zip] to [/config/Definitions/indexers.zip]
+2025-07-24 11:42:23.1|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-07-24 11:42:23.3|Debug|HttpClient|Downloading Completed. took 0s
+2025-07-24 11:42:23.4|Debug|IndexerDefinitionUpdateService|Updated indexer definitions
+2025-07-24 11:42:23.4|Debug|IndexerFactory|Initializing Providers. Count 67
+2025-07-24 11:42:23.4|Debug|IndexerProxyFactory|Initializing Providers. Count 4
+2025-07-24 11:42:23.4|Debug|DownloadClientFactory|Initializing Providers. Count 18
+2025-07-24 11:42:23.5|Debug|ApplicationFactory|Initializing Providers. Count 7
+2025-07-24 11:42:23.5|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-07-24 11:42:23.5|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-07-24 11:42:23.5|Info|Microsoft.Hosting.Lifetime|Content root path: /app/prowlarr/bin
+2025-07-24 11:42:23.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 11:42:23.8|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://prowlarr.servarr.com/v1/ping
+2025-07-24 11:42:48.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:42:48.5|Debug|Api|[GET] /api/v1/health: 200.OK (49 ms)
+2025-07-24 11:42:51.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:42:53.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:42:54.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:42:54.7|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:42:54.7|Debug|Api|[GET] /api/v1/indexer: 200.OK (19 ms)
+2025-07-24 11:42:54.7|Debug|Api|[GET] /api/v1/command: 200.OK (35 ms)
+2025-07-24 11:44:18.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:44:18.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:44:18.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:44:18.4|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (3 ms)
+2025-07-24 11:44:18.4|Debug|Api|[GET] /api/v1/tag: 200.OK (6 ms)
+2025-07-24 11:44:18.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:44:18.4|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (4 ms)
+2025-07-24 11:44:18.4|Debug|Api|[GET] /api/v1/appprofile: 200.OK (3 ms)
+2025-07-24 11:44:18.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:44:18.4|Debug|Api|[GET] /api/v1/customFilter: 200.OK (3 ms)
+2025-07-24 11:44:18.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:44:18.4|Debug|Api|[GET] /api/v1/indexer: 200.OK (3 ms)
+2025-07-24 11:44:19.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:44:19.3|Debug|Api|[GET] /api/v1/config/ui: 200.OK (6 ms)
+2025-07-24 11:44:19.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:44:19.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:44:19.4|Debug|Api|[GET] /api/v1/system/status: 200.OK (40 ms)
+2025-07-24 11:44:19.4|Debug|Api|[GET] /api/v1/config/host: 200.OK (59 ms)
+2025-07-24 11:45:21.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was not authenticated.
+2025-07-24 11:45:29.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:29.0|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 11:45:29.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:29.0|Debug|Api|[GET] /api/v1/tag: 200.OK (1 ms)
+2025-07-24 11:45:29.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:29.0|Debug|Api|[GET] /api/v1/indexer: 200.OK (0 ms)
+2025-07-24 11:45:29.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:29.1|Debug|Api|[GET] /api/v1/customFilter: 200.OK (1 ms)
+2025-07-24 11:45:30.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:30.0|Debug|Api|[GET] /api/v1/config/ui: 200.OK (1 ms)
+2025-07-24 11:45:30.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:30.0|Debug|Api|[GET] /api/v1/config/host: 200.OK (2 ms)
+2025-07-24 11:45:30.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:30.0|Debug|Api|[GET] /api/v1/system/status: 200.OK (2 ms)
+2025-07-24 11:45:30.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:30.1|Debug|Api|[GET] /api/v1/appprofile: 200.OK (1 ms)
+2025-07-24 11:45:30.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:30.1|Debug|Api|[GET] /api/v1/indexer/categories: 200.OK (1 ms)
+2025-07-24 11:45:30.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:30.3|Debug|Api|[GET] /api/v1/localization: 200.OK (8 ms)
+2025-07-24 11:45:31.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:31.5|Debug|Api|[GET] /api/v1/health: 200.OK (1 ms)
+2025-07-24 11:45:31.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:31.5|Debug|Api|[GET] /api/v1/indexer: 200.OK (0 ms)
+2025-07-24 11:45:31.5|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:45:31.8|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:31.8|Debug|Api|[GET] /api/v1/indexerStatus: 200.OK (1 ms)
+2025-07-24 11:45:32.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: SignalR was successfully authenticated.
+2025-07-24 11:45:33.9|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:35.1|Debug|Api|[GET] /api/v1/indexer/schema: 200.OK (1196 ms)
+2025-07-24 11:45:39.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:39.6|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (149 ms)
+2025-07-24 11:45:40.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:40.5|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (4 ms)
+2025-07-24 11:45:45.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:45:45.3|Debug|Cardigann|Adding request for 1337x: https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:45:45.3|Debug|Cardigann|Downloading Feed https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:45:45.4|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://1337x.to/cat/Movies/time/desc/1/
+2025-07-24 11:45:47.8|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access 1337x.to, blocked by CloudFlare Protection.
+2025-07-24 11:45:47.8|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (2535 ms)
+2025-07-24 11:48:14.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:48:14.4|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (4 ms)
+2025-07-24 11:48:14.4|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:48:14.4|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (1 ms)
+2025-07-24 11:48:19.1|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:48:19.1|Debug|Cardigann|Adding request for LimeTorrents: https://www.limetorrents.lol/latest100
+2025-07-24 11:48:19.1|Debug|Cardigann|Downloading Feed https://www.limetorrents.lol/latest100
+2025-07-24 11:48:19.2|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://www.limetorrents.lol/latest100
+2025-07-24 11:48:21.1|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access www.limetorrents.lol, blocked by CloudFlare Protection.
+2025-07-24 11:48:21.1|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (2015 ms)
+2025-07-24 11:48:24.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:48:24.0|Debug|Api|[GET] /api/v1/command: 200.OK (2 ms)
+2025-07-24 11:48:42.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:48:42.2|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (1 ms)
+2025-07-24 11:48:42.3|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:48:42.3|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (3 ms)
+2025-07-24 11:48:46.2|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:48:46.2|Debug|Cardigann|Adding request for Torlock: https://www.torlock.com/all/torrents/2025.html?sort=added&order=desc
+2025-07-24 11:48:46.2|Debug|Cardigann|Downloading Feed https://www.torlock.com/all/torrents/2025.html?sort=added&order=desc
+2025-07-24 11:48:46.4|Warn|Cardigann|Unable to connect to indexer
+
+[v1.37.0.5076] System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.IO.IOException: Cannot determine the frame size or a corrupted frame was received.
+   at System.Net.Security.SslStream.GetFrameSize(ReadOnlySpan`1 buffer)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsync(SslClientAuthenticationOptions sslOptions, HttpRequestMessage request, Boolean async, Stream stream, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp2ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp2ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./Prowlarr.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./Prowlarr.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./Prowlarr.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.TestConnection() in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 764
+
+
+2025-07-24 11:48:46.5|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to connect to indexer, please check your DNS settings and ensure IPv6 is working or disabled. The SSL connection could not be established, see inner exception.
+2025-07-24 11:48:46.5|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (361 ms)
+2025-07-24 11:49:06.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:49:06.6|Debug|Api|[GET] /api/v1/downloadclient: 200.OK (1 ms)
+2025-07-24 11:49:06.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:49:06.6|Debug|Api|[POST] /api/v1/indexer/action/getUrls: 200.OK (3 ms)
+2025-07-24 11:49:11.6|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:49:11.6|Debug|Cardigann|Adding request for EZTV: https://eztvx.to/home
+2025-07-24 11:49:11.6|Debug|Cardigann|Downloading Feed https://eztvx.to/home
+2025-07-24 11:49:11.7|Debug|FlareSolverr|Cloudflare Detected, Applying FlareSolverr Proxy FlareSolverr to request https://eztvx.to/home
+2025-07-24 11:49:13.7|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- : Unable to access eztvx.to, blocked by CloudFlare Protection.
+2025-07-24 11:49:13.7|Debug|Api|[POST] /api/v1/indexer/test: 400.BadRequest (2014 ms)
+2025-07-24 11:53:54.0|Debug|Prowlarr.Http.Authentication.ApiKeyAuthenticationHandler|AuthenticationScheme: API was successfully authenticated.
+2025-07-24 11:53:54.0|Debug|Api|[GET] /api/v1/command: 200.OK (1 ms)

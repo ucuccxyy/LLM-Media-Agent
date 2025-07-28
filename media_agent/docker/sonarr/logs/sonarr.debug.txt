@@ -1,0 +1,870 @@
+2025-07-28 10:27:29.0|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:29.0|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. SDTV v1
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S03E10 HDTV x264 SVA rarbg SD
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S03E10 HDTV x264 SVA rarbg SD] No restrictions apply, allowing
+2025-07-28 10:27:29.0|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:29.0|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:29.0|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:29.0|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Release 'Better Call Saul S03E10 HDTV x264 SVA rarbg SD' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S03e09 Mux 1080p H264 Ita Eng Ac3 5 1 Sub Ita Eng WEBMux' from 'RARBG'
+2025-07-28 10:27:29.0|Debug|Parser|Parsing string 'Better Call Saul S03e09 Mux 1080p H264 Ita Eng Ac3 5 1 Sub Ita Eng WEBMux'
+2025-07-28 10:27:29.0|Debug|Parser|Episode Parsed. Better Call Saul - S03E09 
+2025-07-28 10:27:29.0|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:27:29.0|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S03e09 Mux 1080p H264 Ita Eng Ac3 5 1 Sub Ita Eng WEBMux'
+2025-07-28 10:27:29.0|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 10:27:29.0|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Selected languages: Italian, English
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S03e09 Mux 1080p H264 Ita Eng Ac3 5 1 Sub Ita Eng WEBMux
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Item: Better Call Saul S03e09 Mux 1080p H264 Ita Eng Ac3 5 1 Sub Ita Eng WEBMux, meets size constraints
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:29.0|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:29.0|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBRip-1080p v1
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S03e09 Mux 1080p H264 Ita Eng Ac3 5 1 Sub Ita Eng WEBMux
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S03e09 Mux 1080p H264 Ita Eng Ac3 5 1 Sub Ita Eng WEBMux] No restrictions apply, allowing
+2025-07-28 10:27:29.0|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:29.0|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:29.0|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:29.0|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Release 'Better Call Saul S03e09 Mux 1080p H264 Ita Eng Ac3 5 1 Sub Ita Eng WEBMux' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S03E09 720p HDTV x264 AVS rarbg SD' from 'RARBG'
+2025-07-28 10:27:29.0|Debug|Parser|Parsing string 'Better Call Saul S03E09 720p HDTV x264 AVS rarbg SD'
+2025-07-28 10:27:29.0|Debug|Parser|Episode Parsed. Better Call Saul - S03E09 
+2025-07-28 10:27:29.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:29.0|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S03E09 720p HDTV x264 AVS rarbg SD'
+2025-07-28 10:27:29.0|Debug|Parser|Quality parsed: HDTV-720p v1
+2025-07-28 10:27:29.0|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S03E09 720p HDTV x264 AVS rarbg SD
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Item: Better Call Saul S03E09 720p HDTV x264 AVS rarbg SD, meets size constraints
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:29.0|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:29.0|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. HDTV-720p v1
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S03E09 720p HDTV x264 AVS rarbg SD
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S03E09 720p HDTV x264 AVS rarbg SD] No restrictions apply, allowing
+2025-07-28 10:27:29.0|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:29.0|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:29.0|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:29.0|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Release 'Better Call Saul S03E09 720p HDTV x264 AVS rarbg SD' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S03E09 HDTV x264 SVA rarbg SD' from 'RARBG'
+2025-07-28 10:27:29.0|Debug|Parser|Parsing string 'Better Call Saul S03E09 HDTV x264 SVA rarbg SD'
+2025-07-28 10:27:29.0|Debug|Parser|Episode Parsed. Better Call Saul - S03E09 
+2025-07-28 10:27:29.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:29.0|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S03E09 HDTV x264 SVA rarbg SD'
+2025-07-28 10:27:29.0|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:27:29.0|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S03E09 HDTV x264 SVA rarbg SD
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Item: Better Call Saul S03E09 HDTV x264 SVA rarbg SD, meets size constraints
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:29.0|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:29.0|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. SDTV v1
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S03E09 HDTV x264 SVA rarbg SD
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S03E09 HDTV x264 SVA rarbg SD] No restrictions apply, allowing
+2025-07-28 10:27:29.0|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:29.0|Debug|TorrentSeedingSpecification|Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:29.0|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:29.0|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Release 'Better Call Saul S03E09 HDTV x264 SVA rarbg SD' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S03E09 HDTV x264 FLEET eztv' from 'RARBG'
+2025-07-28 10:27:29.0|Debug|Parser|Parsing string 'Better Call Saul S03E09 HDTV x264 FLEET eztv'
+2025-07-28 10:27:29.0|Debug|Parser|Episode Parsed. Better Call Saul - S03E09 
+2025-07-28 10:27:29.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:29.0|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S03E09 HDTV x264 FLEET eztv'
+2025-07-28 10:27:29.0|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:27:29.0|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S03E09 HDTV x264 FLEET eztv
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Item: Better Call Saul S03E09 HDTV x264 FLEET eztv, meets size constraints
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:29.0|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:29.0|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. SDTV v1
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S03E09 HDTV x264 FLEET eztv
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S03E09 HDTV x264 FLEET eztv] No restrictions apply, allowing
+2025-07-28 10:27:29.0|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:29.0|Debug|TorrentSeedingSpecification|Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:29.0|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:29.0|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Release 'Better Call Saul S03E09 HDTV x264 FLEET eztv' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S03E09 HDTV x264 SVA eztv' from 'RARBG'
+2025-07-28 10:27:29.0|Debug|Parser|Parsing string 'Better Call Saul S03E09 HDTV x264 SVA eztv'
+2025-07-28 10:27:29.0|Debug|Parser|Episode Parsed. Better Call Saul - S03E09 
+2025-07-28 10:27:29.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:29.0|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S03E09 HDTV x264 SVA eztv'
+2025-07-28 10:27:29.0|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:27:29.0|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S03E09 HDTV x264 SVA eztv
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Item: Better Call Saul S03E09 HDTV x264 SVA eztv, meets size constraints
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:29.0|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:29.0|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. SDTV v1
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S03E09 HDTV x264 SVA eztv
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S03E09 HDTV x264 SVA eztv] No restrictions apply, allowing
+2025-07-28 10:27:29.0|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:29.0|Debug|TorrentSeedingSpecification|Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:29.0|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:29.0|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Release 'Better Call Saul S03E09 HDTV x264 SVA eztv' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S03E09 720p HDTV x264 AVS ettv' from 'RARBG'
+2025-07-28 10:27:29.0|Debug|Parser|Parsing string 'Better Call Saul S03E09 720p HDTV x264 AVS ettv'
+2025-07-28 10:27:29.0|Debug|Parser|Episode Parsed. Better Call Saul - S03E09 
+2025-07-28 10:27:29.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:29.0|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S03E09 720p HDTV x264 AVS ettv'
+2025-07-28 10:27:29.0|Debug|Parser|Quality parsed: HDTV-720p v1
+2025-07-28 10:27:29.0|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S03E09 720p HDTV x264 AVS ettv
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Item: Better Call Saul S03E09 720p HDTV x264 AVS ettv, meets size constraints
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:29.0|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:29.0|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. HDTV-720p v1
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S03E09 720p HDTV x264 AVS ettv
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S03E09 720p HDTV x264 AVS ettv] No restrictions apply, allowing
+2025-07-28 10:27:29.0|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:29.0|Debug|TorrentSeedingSpecification|Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:29.0|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:29.0|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Release 'Better Call Saul S03E09 720p HDTV x264 AVS ettv' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S03E09 HDTV x264 SVA ettv' from 'RARBG'
+2025-07-28 10:27:29.0|Debug|Parser|Parsing string 'Better Call Saul S03E09 HDTV x264 SVA ettv'
+2025-07-28 10:27:29.0|Debug|Parser|Episode Parsed. Better Call Saul - S03E09 
+2025-07-28 10:27:29.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:29.0|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S03E09 HDTV x264 SVA ettv'
+2025-07-28 10:27:29.0|Debug|Parser|Quality parsed: SDTV v1
+2025-07-28 10:27:29.0|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S03E09 HDTV x264 SVA ettv
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Item: Better Call Saul S03E09 HDTV x264 SVA ettv, meets size constraints
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:29.0|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:29.0|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. SDTV v1
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S03E09 HDTV x264 SVA ettv
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S03E09 HDTV x264 SVA ettv] No restrictions apply, allowing
+2025-07-28 10:27:29.0|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:29.0|Debug|TorrentSeedingSpecification|Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:29.0|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:29.0|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Release 'Better Call Saul S03E09 HDTV x264 SVA ettv' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S03E09 720p HDTV x264 AVS eztv' from 'RARBG'
+2025-07-28 10:27:29.0|Debug|Parser|Parsing string 'Better Call Saul S03E09 720p HDTV x264 AVS eztv'
+2025-07-28 10:27:29.0|Debug|Parser|Episode Parsed. Better Call Saul - S03E09 
+2025-07-28 10:27:29.0|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:29.0|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S03E09 720p HDTV x264 AVS eztv'
+2025-07-28 10:27:29.0|Debug|Parser|Quality parsed: HDTV-720p v1
+2025-07-28 10:27:29.0|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:29.0|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S03E09 720p HDTV x264 AVS eztv
+2025-07-28 10:27:29.0|Debug|AcceptableSizeSpecification|Item: Better Call Saul S03E09 720p HDTV x264 AVS eztv, meets size constraints
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:29.0|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:29.0|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:29.0|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:29.0|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. HDTV-720p v1
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S03E09 720p HDTV x264 AVS eztv
+2025-07-28 10:27:29.0|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S03E09 720p HDTV x264 AVS eztv] No restrictions apply, allowing
+2025-07-28 10:27:29.0|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:29.0|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:29.0|Debug|TorrentSeedingSpecification|Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:29.0|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:29.0|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:29.0|Debug|DownloadDecisionMaker|Release 'Better Call Saul S03E09 720p HDTV x264 AVS eztv' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Not enough seeders: 0. Minimum seeders: 1
+2025-07-28 10:27:29.0|Debug|IndexerFactory|Temporarily ignoring indexer 1337x till 07/28/2025 10:28:18 due to recent failures.
+2025-07-28 10:27:29.0|Info|ReleaseSearchService|Searching indexers for [Better Call Saul : S04]. 1 active indexers
+2025-07-28 10:27:29.0|Debug|Torznab|Downloading Feed http://18.205.18.246:9117/api/v2.0/indexers/therarbg/results/torznab/api?t=tvsearch&cat=5070,5080,143862&extended=1&apikey=(removed)&offset=0&limit=100&q=Better%20Call%20Saul%202014&season=4
+2025-07-28 10:27:30.7|Debug|Torznab|Downloading Feed http://18.205.18.246:9117/api/v2.0/indexers/therarbg/results/torznab/api?t=tvsearch&cat=5070,5080,143862&extended=1&apikey=(removed)&offset=0&limit=100&q=Better%20Call%20Saul&season=4
+2025-07-28 10:27:32.7|Debug|ReleaseSearchService|Total of 53 reports were found for [Better Call Saul : S04] from 1 indexers
+2025-07-28 10:27:32.7|Debug|ReleaseSearchService|Setting last search time to: 07/28/2025 02:27:32
+2025-07-28 10:27:32.8|Error|EpisodeSearchService|Unable to search for episodes in season 4 of [27]
+
+[v4.0.15.2941] code = Full (13), message = System.Data.SQLite.SQLiteException (0x800007FF): database or disk is full
+database or disk is full
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 563
+   at NzbDrone.Core.Datastore.BasicRepository`1.UpdateFields(IDbConnection connection, IDbTransaction transaction, IList`1 models, List`1 propertiesToUpdate) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 396
+   at NzbDrone.Core.Datastore.BasicRepository`1.SetFields(IList`1 models, Expression`1[] properties) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 349
+   at NzbDrone.Core.IndexerSearch.ReleaseSearchService.Dispatch(Func`2 searchAction, SearchCriteriaBase criteriaBase) in ./Sonarr.Core/IndexerSearch/ReleaseSearchService.cs:line 544
+   at NzbDrone.Core.IndexerSearch.ReleaseSearchService.SeasonSearch(Int32 seriesId, Int32 seasonNumber, List`1 episodes, Boolean monitoredOnly, Boolean userInvokedSearch, Boolean interactiveSearch) in ./Sonarr.Core/IndexerSearch/ReleaseSearchService.cs:line 149
+   at NzbDrone.Core.IndexerSearch.EpisodeSearchService.SearchForBulkEpisodes(List`1 episodes, Boolean monitoredOnly, Boolean userInvokedSearch) in ./Sonarr.Core/IndexerSearch/EpisodeSearchService.cs:line 74
+
+2025-07-28 10:27:32.9|Debug|IndexerFactory|Temporarily ignoring indexer 1337x till 07/28/2025 10:28:18 due to recent failures.
+2025-07-28 10:27:32.9|Info|ReleaseSearchService|Searching indexers for [Better Call Saul : S05]. 1 active indexers
+2025-07-28 10:27:32.9|Debug|Torznab|Downloading Feed http://18.205.18.246:9117/api/v2.0/indexers/therarbg/results/torznab/api?t=tvsearch&cat=5070,5080,143862&extended=1&apikey=(removed)&offset=0&limit=100&q=Better%20Call%20Saul%202014&season=5
+2025-07-28 10:27:34.7|Debug|Torznab|Downloading Feed http://18.205.18.246:9117/api/v2.0/indexers/therarbg/results/torznab/api?t=tvsearch&cat=5070,5080,143862&extended=1&apikey=(removed)&offset=0&limit=100&q=Better%20Call%20Saul&season=5
+2025-07-28 10:27:36.7|Debug|ReleaseSearchService|Total of 55 reports were found for [Better Call Saul : S05] from 1 indexers
+2025-07-28 10:27:36.7|Debug|ReleaseSearchService|Setting last search time to: 07/28/2025 02:27:36
+2025-07-28 10:27:36.8|Info|DownloadDecisionMaker|Processing 55 releases
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul 2015 Season 05 S05 2160p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul 2015 Season 05 S05 2160p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul 2015 - Season 05 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul 2015 Season 05 S05 2160p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: WEBRip-2160p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul 2015 Season 05 S05 2160p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Max size is unlimited, skipping size check
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul 2015 Season 05 S05 2160p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR, meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|FullSeasonSpecification|Checking if all episodes in full season release have aired. Better Call Saul 2015 Season 05 S05 2160p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBRip-2160p v1
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Quality WEBRip-2160p v1 rejected by Series' quality profile
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul 2015 Season 05 S05 2160p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul 2015 Season 05 S05 2160p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul 2015 Season 05 S05 2160p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] WEBRip-2160p is not wanted in profile, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul 2015 Season 05 S05 1080p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul 2015 Season 05 S05 1080p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul 2015 - Season 05 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul 2015 Season 05 S05 1080p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul 2015 Season 05 S05 1080p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul 2015 Season 05 S05 1080p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR, meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|FullSeasonSpecification|Checking if all episodes in full season release have aired. Better Call Saul 2015 Season 05 S05 1080p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBRip-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul 2015 Season 05 S05 1080p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul 2015 Season 05 S05 1080p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul 2015 Season 05 S05 1080p NF WEBRip x265 HEVC 10bit AC3 6 0 Qman UTR' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul (2015) Season 05 S05 (2160p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul (2015) Season 05 S05 (2160p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul (2015) - Season 05 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul (2015) Season 05 S05 (2160p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: WEBRip-2160p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: UTR
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul (2015) Season 05 S05 (2160p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul (2015) Season 05 S05 (2160p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR], Size: 16857746432 is smaller than minimum allowed size (19120783360 bytes for 10x 521min), rejecting.
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|FullSeasonSpecification|Checking if all episodes in full season release have aired. Better Call Saul (2015) Season 05 S05 (2160p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBRip-2160p v1
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Quality WEBRip-2160p v1 rejected by Series' quality profile
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul (2015) Season 05 S05 (2160p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul (2015) Season 05 S05 (2160p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul (2015) Season 05 S05 (2160p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]' from 'RARBG' rejected for the following reasons: [Permanent] 15.7 GB is smaller than minimum allowed 17.8 GB (for 10x 521min), [Permanent] Importing after download will exceed available disk space, [Permanent] WEBRip-2160p is not wanted in profile, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul (2015) Season 05 S05 (1080p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul (2015) Season 05 S05 (1080p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul (2015) - Season 05 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul (2015) Season 05 S05 (1080p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: UTR
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul (2015) Season 05 S05 (1080p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul (2015) Season 05 S05 (1080p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR], meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|FullSeasonSpecification|Checking if all episodes in full season release have aired. Better Call Saul (2015) Season 05 S05 (1080p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBRip-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul (2015) Season 05 S05 (1080p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul (2015) Season 05 S05 (1080p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul (2015) Season 05 S05 (1080p NF WEBRip x265 HEVC 10bit AAC 5.1 Joy) [UTR]' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul (2015) Season 5 S05 + Extras (1080p BluRay x265 HEVC 10bit AAC 5.1 Bandi) [QxR]' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul (2015) Season 5 S05 + Extras (1080p BluRay x265 HEVC 10bit AAC 5.1 Bandi) [QxR]'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul (2015) - Season 05 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul (2015) Season 5 S05 + Extras (1080p BluRay x265 HEVC 10bit AAC 5.1 Bandi) [QxR]'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: QxR
+2025-07-28 10:27:36.8|Debug|ParsingService|Found matching series by IMDb ID tt3032476, an alias may be needed for: Better Call Saul (2015)
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul (2015) Season 5 S05 + Extras (1080p BluRay x265 HEVC 10bit AAC 5.1 Bandi) [QxR]
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul (2015) Season 5 S05 + Extras (1080p BluRay x265 HEVC 10bit AAC 5.1 Bandi) [QxR], meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|FullSeasonSpecification|Checking if all episodes in full season release have aired. Better Call Saul (2015) Season 5 S05 + Extras (1080p BluRay x265 HEVC 10bit AAC 5.1 Bandi) [QxR]
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul (2015) Season 5 S05 + Extras (1080p BluRay x265 HEVC 10bit AAC 5.1 Bandi) [QxR]
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul (2015) Season 5 S05 + Extras (1080p BluRay x265 HEVC 10bit AAC 5.1 Bandi) [QxR]] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul (2015) Season 5 S05 + Extras (1080p BluRay x265 HEVC 10bit AAC 5.1 Bandi) [QxR]' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E07 JMM 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul S05E07 JMM 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul - S05E07 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E07 JMM 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: d3g
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E07 JMM 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E07 JMM 1080p BluRay 10Bit DDP5 1 H265-d3g, meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E07 JMM 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E07 JMM 1080p BluRay 10Bit DDP5 1 H265-d3g] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E07 JMM 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E03 The Guy for This 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul S05E03 The Guy for This 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul - S05E03 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E03 The Guy for This 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: d3g
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E03 The Guy for This 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E03 The Guy for This 1080p BluRay 10Bit DDP5 1 H265-d3g, meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E03 The Guy for This 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E03 The Guy for This 1080p BluRay 10Bit DDP5 1 H265-d3g] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E03 The Guy for This 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E02 50 Percent Off 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul S05E02 50 Percent Off 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul - S05E02 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E02 50 Percent Off 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: d3g
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E02 50 Percent Off 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E02 50 Percent Off 1080p BluRay 10Bit DDP5 1 H265-d3g, meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E02 50 Percent Off 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E02 50 Percent Off 1080p BluRay 10Bit DDP5 1 H265-d3g] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E02 50 Percent Off 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E01 Magic Man 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul S05E01 Magic Man 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul - S05E01 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E01 Magic Man 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: d3g
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E01 Magic Man 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E01 Magic Man 1080p BluRay 10Bit DDP5 1 H265-d3g, meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E01 Magic Man 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E01 Magic Man 1080p BluRay 10Bit DDP5 1 H265-d3g] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E01 Magic Man 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E10 Something Unforgivable 1080p BluRay 10Bit DDP5 1 H2' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul S05E10 Something Unforgivable 1080p BluRay 10Bit DDP5 1 H2'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul - S05E10 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E10 Something Unforgivable 1080p BluRay 10Bit DDP5 1 H2'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E10 Something Unforgivable 1080p BluRay 10Bit DDP5 1 H2
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E10 Something Unforgivable 1080p BluRay 10Bit DDP5 1 H2, meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E10 Something Unforgivable 1080p BluRay 10Bit DDP5 1 H2
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E10 Something Unforgivable 1080p BluRay 10Bit DDP5 1 H2] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E10 Something Unforgivable 1080p BluRay 10Bit DDP5 1 H2' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E04 Namaste 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul S05E04 Namaste 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul - S05E04 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E04 Namaste 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: d3g
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E04 Namaste 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E04 Namaste 1080p BluRay 10Bit DDP5 1 H265-d3g, meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E04 Namaste 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E04 Namaste 1080p BluRay 10Bit DDP5 1 H265-d3g] No restrictions apply, allowing
+2025-07-28 10:27:36.8|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:36.8|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:36.8|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:36.8|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E04 Namaste 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E06 Wexler v Goodman 1080p BluRay 10Bit DDP5 1 H265-d3g' from 'RARBG'
+2025-07-28 10:27:36.8|Debug|Parser|Parsing string 'Better Call Saul S05E06 Wexler v Goodman 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Episode Parsed. Better Call Saul - S05E06 
+2025-07-28 10:27:36.8|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:36.8|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E06 Wexler v Goodman 1080p BluRay 10Bit DDP5 1 H265-d3g'
+2025-07-28 10:27:36.8|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|Parser|Release Group parsed: d3g
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:36.8|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E06 Wexler v Goodman 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E06 Wexler v Goodman 1080p BluRay 10Bit DDP5 1 H265-d3g, meets size constraints
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:36.8|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:36.8|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:36.8|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:36.8|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:36.8|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:36.8|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:36.8|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E06 Wexler v Goodman 1080p BluRay 10Bit DDP5 1 H265-d3g
+2025-07-28 10:27:36.8|Debu2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E10 PROPER 1080p WEB x264 ASCENDANCE TGx' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E10 720p WEBRip x264 XLF TGx' from 'RARBG'
+2025-07-28 10:27:37.1|Debug|Parser|Parsing string 'Better Call Saul S05E10 720p WEBRip x264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Episode Parsed. Better Call Saul - S05E10 
+2025-07-28 10:27:37.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:37.1|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E10 720p WEBRip x264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Quality parsed: WEBRip-720p v1
+2025-07-28 10:27:37.1|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E10 720p WEBRip x264 XLF TGx
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E10 720p WEBRip x264 XLF TGx, meets size constraints
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:37.1|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:37.1|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:37.1|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBRip-720p v1
+2025-07-28 10:27:37.1|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E10 720p WEBRip x264 XLF TGx
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E10 720p WEBRip x264 XLF TGx] No restrictions apply, allowing
+2025-07-28 10:27:37.1|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:37.1|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:37.1|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:37.1|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E10 720p WEBRip x264 XLF TGx' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E09 1080p WEB H264 XLF TGx' from 'RARBG'
+2025-07-28 10:27:37.1|Debug|Parser|Parsing string 'Better Call Saul S05E09 1080p WEB H264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Episode Parsed. Better Call Saul - S05E09 
+2025-07-28 10:27:37.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:37.1|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E09 1080p WEB H264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:27:37.1|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E09 1080p WEB H264 XLF TGx
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E09 1080p WEB H264 XLF TGx, meets size constraints
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:37.1|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:37.1|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:37.1|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBDL-1080p v1
+2025-07-28 10:27:37.1|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E09 1080p WEB H264 XLF TGx
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E09 1080p WEB H264 XLF TGx] No restrictions apply, allowing
+2025-07-28 10:27:37.1|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:37.1|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:37.1|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:37.1|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E09 1080p WEB H264 XLF TGx' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E08 1080p WEB H264 XLF TGx' from 'RARBG'
+2025-07-28 10:27:37.1|Debug|Parser|Parsing string 'Better Call Saul S05E08 1080p WEB H264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Episode Parsed. Better Call Saul - S05E08 
+2025-07-28 10:27:37.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:37.1|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E08 1080p WEB H264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:27:37.1|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E08 1080p WEB H264 XLF TGx
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E08 1080p WEB H264 XLF TGx, meets size constraints
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:37.1|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:37.1|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:37.1|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBDL-1080p v1
+2025-07-28 10:27:37.1|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E08 1080p WEB H264 XLF TGx
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E08 1080p WEB H264 XLF TGx] No restrictions apply, allowing
+2025-07-28 10:27:37.1|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:37.1|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:37.1|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:37.1|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E08 1080p WEB H264 XLF TGx' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E07 1080p WEB H264 XLF TGx' from 'RARBG'
+2025-07-28 10:27:37.1|Debug|Parser|Parsing string 'Better Call Saul S05E07 1080p WEB H264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Episode Parsed. Better Call Saul - S05E07 
+2025-07-28 10:27:37.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:37.1|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E07 1080p WEB H264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:27:37.1|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E07 1080p WEB H264 XLF TGx
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E07 1080p WEB H264 XLF TGx, meets size constraints
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:37.1|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:37.1|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:37.1|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBDL-1080p v1
+2025-07-28 10:27:37.1|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E07 1080p WEB H264 XLF TGx
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E07 1080p WEB H264 XLF TGx] No restrictions apply, allowing
+2025-07-28 10:27:37.1|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:37.1|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:37.1|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:37.1|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E07 1080p WEB H264 XLF TGx' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E06 Wexler contro Goodman ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv' from 'RARBG'
+2025-07-28 10:27:37.1|Debug|Parser|Parsing string 'Better Call Saul S05E06 Wexler contro Goodman ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv'
+2025-07-28 10:27:37.1|Debug|Parser|Episode Parsed. Better Call Saul - S05E06 
+2025-07-28 10:27:37.1|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:27:37.1|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E06 Wexler contro Goodman ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv'
+2025-07-28 10:27:37.1|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 10:27:37.1|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Selected languages: Italian, English
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E06 Wexler contro Goodman ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E06 Wexler contro Goodman ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv, meets size constraints
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:37.1|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:37.1|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:37.1|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBRip-1080p v1
+2025-07-28 10:27:37.1|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E06 Wexler contro Goodman ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E06 Wexler contro Goodman ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv] No restrictions apply, allowing
+2025-07-28 10:27:37.1|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:37.1|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:37.1|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:37.1|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E06 Wexler contro Goodman ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E05 Dedicato A Max ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv' from 'RARBG'
+2025-07-28 10:27:37.1|Debug|Parser|Parsing string 'Better Call Saul S05E05 Dedicato A Max ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv'
+2025-07-28 10:27:37.1|Debug|Parser|Episode Parsed. Better Call Saul - S05E05 
+2025-07-28 10:27:37.1|Debug|Parser|Languages parsed: Italian, English
+2025-07-28 10:27:37.1|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E05 Dedicato A Max ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv'
+2025-07-28 10:27:37.1|Debug|Parser|Quality parsed: WEBRip-1080p v1
+2025-07-28 10:27:37.1|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Selected languages: Italian, English
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E05 Dedicato A Max ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E05 Dedicato A Max ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv, meets size constraints
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:37.1|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:37.1|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:37.1|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBRip-1080p v1
+2025-07-28 10:27:37.1|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E05 Dedicato A Max ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E05 Dedicato A Max ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv] No restrictions apply, allowing
+2025-07-28 10:27:37.1|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:37.1|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:37.1|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:37.1|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E05 Dedicato A Max ITA ENG 1080p NF WEBMux DDP5 1 x264 MeM mkv' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Processing release 'Better Call Saul S05E05 1080p WEB H264 XLF TGx' from 'RARBG'
+2025-07-28 10:27:37.1|Debug|Parser|Parsing string 'Better Call Saul S05E05 1080p WEB H264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Episode Parsed. Better Call Saul - S05E05 
+2025-07-28 10:27:37.1|Debug|Parser|Languages parsed: Unknown
+2025-07-28 10:27:37.1|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S05E05 1080p WEB H264 XLF TGx'
+2025-07-28 10:27:37.1|Debug|Parser|Quality parsed: WEBDL-1080p v1
+2025-07-28 10:27:37.1|Debug|Parser|Release Group parsed: 
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 10:27:37.1|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Beginning size check for: Better Call Saul S05E05 1080p WEB H264 XLF TGx
+2025-07-28 10:27:37.1|Debug|AcceptableSizeSpecification|Item: Better Call Saul S05E05 1080p WEB H264 XLF TGx, meets size constraints
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Performing already imported check on report
+2025-07-28 10:27:37.1|Debug|AlreadyImportedSpecification|Skipping already imported check for episode without file
+2025-07-28 10:27:37.1|Debug|FreeSpaceSpecification|Importing after download will exceed available disk space
+2025-07-28 10:27:37.1|Debug|MaximumSizeSpecification|Maximum size is not set.
+2025-07-28 10:27:37.1|Debug|MinimumAgeSpecification|Not checking minimum age requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|QualityAllowedByProfileSpecification|Checking if report meets quality requirements. WEBDL-1080p v1
+2025-07-28 10:27:37.1|Debug|QueueSpecification|Checking if existing release in queue meets cutoff. Queued: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|UpgradableSpecification|Existing item meets cut-off, skipping. Existing: Bluray-1080p v1 [] (0)
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|Checking if release meets restrictions: Better Call Saul S05E05 1080p WEB H264 XLF TGx
+2025-07-28 10:27:37.1|Debug|ReleaseRestrictionsSpecification|[Better Call Saul S05E05 1080p WEB H264 XLF TGx] No restrictions apply, allowing
+2025-07-28 10:27:37.1|Debug|RetentionSpecification|Not checking retention requirement for non-usenet report
+2025-07-28 10:27:37.1|Debug|SceneMappingSpecification|No applicable scene mapping, skipping.
+2025-07-28 10:27:37.1|Debug|SeriesSpecification|Checking if series matches searched series
+2025-07-28 10:27:37.1|Debug|DelaySpecification|Delay Profile does not require a waiting period before download for Torrent.
+2025-07-28 10:27:37.1|Debug|HistorySpecification|Skipping history check during search
+2025-07-28 10:27:37.1|Debug|DownloadDecisionMaker|Release 'Better Call Saul S05E05 1080p WEB H264 XLF TGx' from 'RARBG' rejected for the following reasons: [Permanent] Importing after download will exceed available disk space, [Permanent] Release in queue already meets cutoff: Bluray-1080p v1
+2025-07-28 10:27:37.1|Debug|IndexerFactory|Temporarily ignoring indexer 1337x till 07/28/2025 10:28:18 due to recent failures.
+2025-07-28 10:27:37.1|Info|ReleaseSearchService|Searching indexers for [Better Call Saul : S06]. 1 active indexers
+2025-07-28 10:27:37.1|Debug|Torznab|Downloading Feed http://18.205.18.246:9117/api/v2.0/indexers/therarbg/results/torznab/api?t=tvsearch&cat=5070,5080,143862&extended=1&apikey=(removed)&offset=0&limit=100&q=Better%20Call%20Saul%202014&season=6
+2025-07-28 10:27:38.8|Debug|Torznab|Downloading Feed http://18.205.18.246:9117/api/v2.0/indexers/therarbg/results/torznab/api?t=tvsearch&cat=5070,5080,143862&extended=1&apikey=(removed)&offset=0&limit=100&q=Better%20Call%20Saul&season=6
+2025-07-28 10:27:40.7|Debug|ReleaseSearchService|Total of 51 reports were found for [Better Call Saul : S06] from 1 indexers
+2025-07-28 10:27:40.7|Debug|ReleaseSearchService|Setting last search time to: 07/28/2025 02:27:40
+2025-07-28 10:27:40.7|Error|EpisodeSearchService|Unable to search for episodes in season 6 of [27]
+
+[v4.0.15.2941] code = Full (13), message = System.Data.SQLite.SQLiteException (0x800007FF): database or disk is full
+database or disk is full
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 563
+   at NzbDrone.Core.Datastore.BasicRepository`1.UpdateFields(IDbConnection connection, IDbTransaction transaction, IList`1 models, List`1 propertiesToUpdate) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 396
+   at NzbDrone.Core.Datastore.BasicRepository`1.SetFields(IList`1 models, Expression`1[] properties) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 349
+   at NzbDrone.Core.IndexerSearch.ReleaseSearchService.Dispatch(Func`2 searchAction, SearchCriteriaBase criteriaBase) in ./Sonarr.Core/IndexerSearch/ReleaseSearchService.cs:line 544
+   at NzbDrone.Core.IndexerSearch.ReleaseSearchService.SeasonSearch(Int32 seriesId, Int32 seasonNumber, List`1 episodes, Boolean monitoredOnly, Boolean userInvokedSearc2025-07-28 11:02:51.3|Debug|ImportListSyncService|No import lists with automatic add enabled
+2025-07-28 11:02:51.3|Debug|Parser|Parsing string 'Better Call Saul S01E09 720p WEB x265 MiNX TGx'
+2025-07-28 11:02:51.3|Debug|Parser|Episode Parsed. Better Call Saul - S01E09 
+2025-07-28 11:02:51.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 11:02:51.3|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S01E09 720p WEB x265 MiNX TGx'
+2025-07-28 11:02:51.3|Debug|Parser|Quality parsed: WEBDL-720p v1
+2025-07-28 11:02:51.3|Debug|Parser|Release Group parsed: 
+2025-07-28 11:02:51.3|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 11:02:51.3|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 11:02:51.3|Debug|TrackedDownloadService|Tracking 'qBittorrent:Better Call Saul S01E09 720p WEB x265 MiNX TGx': ClientState=Warning (readonly) SonarrStage=Downloading Episode='Better Call Saul - S01E09 WEBDL-720p v1' OutputPath=.
+2025-07-28 11:02:51.3|Debug|Parser|Parsing string 'Better Call Saul S06E08 1080p BluRay 10Bit Dts-HDMa5 1 HEVC-d3g'
+2025-07-28 11:02:51.3|Debug|Parser|Episode Parsed. Better Call Saul - S06E08 
+2025-07-28 11:02:51.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 11:02:51.3|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S06E08 1080p BluRay 10Bit Dts-HDMa5 1 HEVC-d3g'
+2025-07-28 11:02:51.3|Debug|Parser|Quality parsed: Bluray-1080p v1
+2025-07-28 11:02:51.3|Debug|Parser|Release Group parsed: d3g
+2025-07-28 11:02:51.3|Debug|Parser|Parsing string 'Better Call Saul S01E07 720p WEB x265 MiNX TGx'
+2025-07-28 11:02:51.3|Debug|Parser|Episode Parsed. Better Call Saul - S01E07 
+2025-07-28 11:02:51.3|Debug|Parser|Languages parsed: Unknown
+2025-07-28 11:02:51.3|Debug|QualityParser|Trying to parse quality for 'Better Call Saul S01E07 720p WEB x265 MiNX TGx'
+2025-07-28 11:02:51.3|Debug|Parser|Quality parsed: WEBDL-720p v1
+2025-07-28 11:02:51.3|Debug|Parser|Release Group parsed: 
+2025-07-28 11:02:51.3|Error|EventAggregator|TaskManager failed while processing [CommandExecutedEvent]
+
+[v4.0.15.2941] code = Full (13), message = System.Data.SQLite.SQLiteException (0x800007FF): database or disk is full
+database or disk is full
+   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)
+   at System.Data.SQLite.SQLiteDataReader.NextResult()
+   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)
+   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SQLite.SQLiteCommand.ExecuteNonQuery(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in /_/Dapper/SqlMapper.cs:line 2858
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in /_/Dapper/SqlMapper.cs:line 581
+   at NzbDrone.Core.Datastore.BasicRepository`1.UpdateFields(IDbConnection connection, IDbTransaction transaction, TModel model, List`1 propertiesToUpdate) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 385
+   at NzbDrone.Core.Datastore.BasicRepository`1.SetFields(TModel model, Expression`1[] properties) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 335
+   at NzbDrone.Core.Jobs.ScheduledTaskRepository.SetLastExecutionTime(Int32 id, DateTime executionTime, DateTime startTime) in ./Sonarr.Core/Jobs/ScheduledTaskRepository.cs:line 28
+   at NzbDrone.Core.Jobs.TaskManager.Handle(CommandExecutedEvent message)
+   at NzbDrone.Core.Messaging.Events.EventAggregator.PublishEvent[TEvent](TEvent event)
+
+2025-07-28 11:02:51.3|Debug|AggregateLanguages|Language couldn't be parsed from release, fallback to series original language: English
+2025-07-28 11:02:51.3|Debug|AggregateLanguages|Selected languages: English
+2025-07-28 11:02:51.3|Debug|Parser|Parsing string 'Better Call Saul S06E11 1080p BluRay 10Bit Dts-HDMa5 1 HEVC-d3g'
+2025-07-28 11:02:51.3|Debug|Parser|Episode Parsed. Better Call Saul - S06E11 
+2025-07-28 11:02:51.3|Debug|
