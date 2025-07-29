@@ -14,3 +14,10 @@ media_agent/logs/
 media_agent/data/
 *.log
 api.pid
+
+# Ignore Docker service runtime data
+media_agent/docker/radarr/
+media_agent/docker/sonarr/
+media_agent/docker/qbittorrent/
+media_agent/docker/jackett/
+media_agent/docker/prowlarr/

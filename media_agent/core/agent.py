@@ -131,7 +131,7 @@ class MediaAgent:
     *   **Give Up**: If the search fails for a non-Chinese title, or if the second attempt for a Chinese title also fails, you must stop and report the failure. Do not attempt to search more than twice for the same request.
 6.  **Output Format**: Adhere strictly to this format.
     *   **Tool Calls**: When you need to call a tool, your response **MUST** contain *only* the tool call object. Do not include any other text, commentary, or explanation in your response.
-    *   **Final Answers**: When the task is complete, you are asking a question, or reporting a failure, your response **MUST** be plain, natural language. It **MUST NOT** contain any JSON objects or tool call syntax like `{...}`.
+    *   **Final Answers**: When the task is complete, you are asking a question, or reporting a failure, your response **MUST** be plain, natural language. It **MUST NOT** contain any JSON objects or tool call syntax like `{{...}}` in the end of your response.
 7.  **Language**: You must respond in the same language the user is using.
 8.  **Functionality Limitations**: You can only perform actions supported by your available tools. If a user asks for something you cannot do (like downloading a single episode, deleting a file, or canceling a download), you must clearly state that you lack that capability. For TV series, specify that you can only download by full seasons.
 """
@@ -339,7 +339,7 @@ class MediaAgent:
         ] + example_messages + [
             MessagesPlaceholder(variable_name="chat_history"),
             ("human", "{input}"),
-            ("placeholder", "{agent_scratchpad}"),
+            MessagesPlaceholder(variable_name="agent_scratchpad"),
         ])
         
         agent = create_tool_calling_agent(self.llm_manager.llm, self.tools, prompt)
