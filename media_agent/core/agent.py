@@ -134,9 +134,35 @@ class MediaAgent:
     *   **Final Answers**: When the task is complete, you are asking a question, or reporting a failure, your response **MUST** be plain, natural language. It **MUST NOT** contain any JSON objects or tool call syntax like `{{...}}` in the end of your response.
 7.  **Language**: You must respond in the same language the user is using.
 8.  **Functionality Limitations**: You can only perform actions supported by your available tools. If a user asks for something you cannot do (like downloading a single episode, deleting a file, or canceling a download), you must clearly state that you lack that capability. For TV series, specify that you can only download by full seasons.
+9.  **Mandatory Chinese Title Retry**: This is a critical and non-negotiable rule. If a `search_movie` or `search_series` call with a Chinese `query` fails, you **MUST** immediately retry the *exact same search* one more time. Do not ask the user for more information or give up before this mandatory second attempt.
 """
         
         example_messages = []
+
+        # Scenario: Chinese search fails on first attempt and succeeds on retry
+        search_cn_fail_id = "tool_call_search_cn_fail"
+        search_cn_retry_id = "tool_call_search_cn_retry"
+        example_messages.extend([
+            HumanMessage(content="帮我找一下电影《阿凡达》"),
+            AIMessage(
+                content="",
+                tool_calls=[{"name": "search_movie", "args": {"query": "阿凡达"}, "id": search_cn_fail_id}]
+            ),
+            ToolMessage(
+                content="No movie found for '阿凡达'.",
+                tool_call_id=search_cn_fail_id
+            ),
+            # Model sees the Chinese title search failed, so it immediately retries.
+            AIMessage(
+                content="",
+                tool_calls=[{"name": "search_movie", "args": {"query": "阿凡达"}, "id": search_cn_retry_id}]
+            ),
+            ToolMessage(
+                content="Found the following movie: Title: Avatar, Year: 2009, TMDB ID: 19995",
+                tool_call_id=search_cn_retry_id
+            ),
+            AIMessage(content="好的，我找到了电影《阿凡达》（2009）。")
+        ])
 
         # Scenario 1: Successful end-to-end task (download and verify) - General Case
         search_call_1_id = "tool_call_search_1"
