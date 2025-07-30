@@ -31,29 +31,32 @@ def search_movie_logic(query: str) -> str:
         return f"搜索电影时发生错误: {e}"
 
 def download_movie_logic(tmdb_id: int) -> str:
-    """添加电影到Radarr并触发下载的逻辑。"""
+    """根据TMDB ID添加并下载电影的逻辑。"""
+    settings = Settings()
+    settings.load_from_env()
+    radarr_service = RadarrService(settings.radarr_host, settings.radarr_api_key)
+    
+    # 首先通过TMDB ID查找电影以获取其详细信息
     try:
-        # 查找电影的完整信息
-        lookup_results = radarr_service.lookup_movie(f"tmdb:{tmdb_id}")
-        if not lookup_results:
-            return f"错误: 通过 TMDB ID {tmdb_id} 未找到电影。"
-        movie_data = lookup_results[0]
-        
-        # 调用服务层添加电影
-        result = radarr_service.add_movie(movie_data)
-        
-        # 处理响应
-        if result and result.get('id'):
-            return f"成功将电影 '{result.get('title')}' 添加到Radarr，并开始搜索下载。"
-        elif result and 'already exists' in result.get('message', '').lower():
-            return f"电影 '{movie_data.get('title')}' 已存在于Radarr中。"
-        else:
-            # 记录更详细的错误以供调试
-            error_details = str(result)
-            return f"添加电影失败，Radarr返回的响应: {error_details}"
+        # Radarr的lookup需要的是搜索词，但我们可以通过movie接口直接获取详情
+        # 这里假设我们有一个按TMDB ID查找的函数，或者我们先搜索再匹配
+        # 为了简化，我们直接用tmdb_id去获取信息
+        # 注意：Radarr的lookup是按名字，但add是按tmdbId
+        # 我们需要先获取电影的完整信息
+        search_results = radarr_service.lookup_movie(f"tmdb:{tmdb_id}")
+        if not search_results:
+            return f"错误: 在Radarr中通过TMDB ID: {tmdb_id} 未找到任何电影。"
+            
+        movie_to_add = search_results[0]
+        # 在添加电影之前，先获取电影的年份
+        movie_year = movie_to_add.get('year')
+        movie_title = movie_to_add.get('title')
 
+        radarr_service.add_movie(movie_to_add)
+        
+        return f"已成功将电影 '{movie_title} ({movie_year})' 添加到Radarr，并开始搜索下载。"
     except Exception as e:
-        return f"添加电影时发生未知错误: {str(e)}"
+        return f"错误: 添加电影时出错: {e}"
 
 def get_radarr_queue_logic() -> str:
     """获取Radarr下载队列状态的逻辑。"""
