@@ -30,17 +30,6 @@ class MediaAgent:
     def _create_tools(self) -> list[BaseTool]:
         """Creates and returns all media management tools."""
         @tool
-        def ask_user_for_clarification(question: str) -> str:
-            """
-            Asks the user for more information when a request is ambiguous.
-            For example, when you don't know if they want a movie or a TV series.
-            Args:
-                question (str): The question to ask the user.
-            """
-            # This tool is a signal. The actual question is returned to the user.
-            return question
-
-        @tool
         def search_movie(query: str) -> str:
             """
             Searches for a movie by its title.
@@ -114,7 +103,6 @@ class MediaAgent:
             return qbittorrent_tool.get_torrents_logic()
 
         return [
-            ask_user_for_clarification,
             search_movie,
             download_movie,
             search_series,
@@ -127,26 +115,25 @@ class MediaAgent:
     def _create_agent(self):
         """创建Agent"""
         
-        system_prompt = """You are a media management assistant. Follow these rules in order.
+        system_prompt = """You are a media management assistant. Your goal is to help users find and download media. Follow these workflows strictly.
 
-**Step 1: Check for Ambiguity**
-- If the user's request is general and could mean either a movie or a TV series (e.g., "search Avatar", "find The Office"), your *only* allowed first step is to use the `ask_user_for_clarification` tool. Ask them "您是想搜索电影还是电视剧？".
-- Do not proceed to any other step until the user clarifies.
+**Workflow 1: User wants to DOWNLOAD media**
+This is a strict two-turn process. When a user says they want to download something (e.g., "download Breaking Bad"):
+1.  **First Turn (Search & Confirm):**
+    - Your **ONLY** action is to use the appropriate search tool (`search_movie` or `search_series`).
+    - After the search is complete, your final response for this turn **MUST** be to present ALL search results to the user and ask them to confirm which specific item they want to download. For example: "I found 'Breaking Bad' (2008). Should I proceed with the download?"
+    - **DO NOT** call the download tool in this turn.
+2.  **Second Turn (Download):**
+    - After the user has replied and confirmed, your **ONLY** action in this new turn is to call the correct download tool (`download_movie` or `download_series`) with the correct ID from the previous turn's search results.
 
-**Step 2: Execute a SINGLE, Focused Action**
-- Once the user's intent is clear (either from their initial request or after clarification), use the ONE appropriate tool to fulfill that specific request (`search_movie`, `search_series`, `download_movie`, etc.).
-- **Your job is to execute one tool and then report the results.** Do not chain tools together or perform follow-up actions unless the user explicitly asks for them in a new message. For example, after a successful search, simply report the search results. DO NOT check the download queue unless the user asks you to.
+**Workflow 2: User wants to SEARCH for media**
+- If the user's request is ambiguous and could be a movie or a series (e.g., "search Avatar"), you **MUST** call both `search_movie` and `search_series` in parallel, then present the combined results.
+- If the request is unambiguous (e.g., "find the movie Inception"), call only the single appropriate search tool and present the results.
 
-**Step 3: Report Results Truthfully (PRIME DIRECTIVE)**
-- Your most critical function is to act as a **lossless relay** of information from the tools.
-- When a search tool returns a list of results, you **MUST** transmit **EVERY SINGLE ITEM** from that list to the user.
-- You are **STRICTLY PROHIBITED** from summarizing, shortening, or altering the results.
-- **COUNT THE ITEMS** from the tool output and ensure your response has the same count. Failure to do so is a critical error.
-- If a tool fails, report the failure message exactly as you received it.
-
-**Final Answer Rules:**
-- Your final answer must be plain, natural language and must not contain tool call syntax.
-- **NEVER** invent information or perform unrequested actions. Do not apologize for things you were not asked to do. Base your entire response ONLY on the direct results from the single tool you just used.
+**CRITICAL RULES FOR ALL WORKFLOWS:**
+- **Information Handling:** You **MUST ONLY** use information from the most recent tool result to inform your next action. **NEVER** use data or IDs from your instructional examples.
+- **Argument Formatting:** The `query` argument for search tools **MUST** be a simple string (the title). **DO NOT** invent complex JSON queries.
+- **Reporting:** You **MUST** report all results from tools without summarizing or shortening.
 """
         
         example_messages = []
@@ -364,31 +351,47 @@ class MediaAgent:
             )
         ])
 
-        # Scenario 11: Ambiguous query leads to clarification
-        ask_call_11_id = "tool_call_ask_11"
-        search_call_11_id = "tool_call_search_11"
+        # Scenario 11: Ambiguous query leads to parallel search
+        search_movie_ambiguous_id = "tool_call_search_movie_ambiguous"
+        search_series_ambiguous_id = "tool_call_search_series_ambiguous"
         example_messages.extend([
-            HumanMessage(content="帮我搜索阿凡达"),
+            HumanMessage(content="帮我搜索'一部作品'"),
             AIMessage(
                 content="",
-                tool_calls=[{"name": "ask_user_for_clarification", "args": {"question": "您是想搜索电影还是电视剧？"}, "id": ask_call_11_id}]
+                tool_calls=[
+                    {"name": "search_movie", "args": {"query": "一部作品"}, "id": search_movie_ambiguous_id},
+                    {"name": "search_series", "args": {"query": "一部作品"}, "id": search_series_ambiguous_id}
+                ]
             ),
             ToolMessage(
-                content="您是想搜索电影还是电视剧？",
-                tool_call_id=ask_call_11_id
+                content="找到了 1 部电影:\n1. 电影: 一部作品的电影版, 年份: 2020, TMDB ID: 12345\n--- 搜索结果结束 ---",
+                tool_call_id=search_movie_ambiguous_id
             ),
-            AIMessage(content="您是想搜索电影还是电视剧？"),
-            HumanMessage(content="电影"),
+            ToolMessage(
+                content="找到了 1 部电视剧:\n1. 电视剧: 一部作品的电视剧版, 年份: 2018, TVDB ID: 54321\n--- 搜索结果结束 ---",
+                tool_call_id=search_series_ambiguous_id
+            ),
+            AIMessage(
+                content="我同时找到了一部电影和一部电视剧，请问您指的是哪一个？\n- 电影: 一部作品的电影版 (2020)\n- 电视剧: 一部作品的电视剧版 (2018)"
+            )
+        ])
+
+        # Scenario 12: A direct download request where the agent correctly searches and then asks for confirmation
+        search_call_12_id = "tool_call_search_12"
+        example_messages.extend([
+            HumanMessage(content="帮我下载电视剧'电视剧K'的第一季"),
+            # Correct first action: Search the series
             AIMessage(
                 content="",
-                tool_calls=[{"name": "search_movie", "args": {"query": "阿凡达"}, "id": search_call_11_id}]
+                tool_calls=[{"name": "search_series", "args": {"query": "电视剧K"}, "id": search_call_12_id}]
             ),
             ToolMessage(
-                content="找到了 9 部电影:\n1. 电影: 阿凡达：火与烬, 年份: 2025, TMDB ID: 83533\n2. 电影: 捕捉阿凡达, 年份: 2010, TMDB ID: 183392\n3. 电影: 阿凡达, 年份: 2009, TMDB ID: 19995\n4. 电影: 阿凡达5：追寻伊娃, 年份: 2031, TMDB ID: 393209\n5. 电影: 阿凡达：水之道, 年份: 2022, TMDB ID: 76600\n6. 电影: 异形大战阿凡达, 年份: 2011, TMDB ID: 79582\n7. 电影: 阿凡达4：图鲲骑士, 年份: 2029, TMDB ID: 216527\n8. 电影: 阿凡达：深入潘多拉, 年份: 2022, TMDB ID: 1059673\n9. 电影: 阿凡达：创建潘多拉世界, 年份: 2010, TMDB ID: 111332\n--- 搜索结果结束 ---",
-                tool_call_id=search_call_11_id
+                content="找到了 1 部电视剧:\n1. 电视剧: 电视剧K, 年份: 2023, TVDB ID: 98765\n--- 搜索结果结束 ---",
+                tool_call_id=search_call_12_id
             ),
+            # Correct final answer for THIS turn: Present results and ask for next step
             AIMessage(
-                content="我找到了以下电影，请问您想看哪一部？\n- 阿凡达：火与烬 (2025)\n- 捕捉阿凡达 (2010)\n- 阿凡达 (2009)\n- 阿凡达5：追寻伊娃 (2031)\n- 阿凡达：水之道 (2022)\n- 异形大战阿凡达 (2011)\n- 阿凡达4：图鲲骑士 (2029)\n- 阿凡达：深入潘多拉 (2022)\n- 阿凡达：创建潘多拉世界 (2010)"
+                content="我找到了 '电视剧K' (2023)。您确定要下载第一季吗？"
             )
         ])
 
