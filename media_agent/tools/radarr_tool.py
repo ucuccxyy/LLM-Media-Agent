@@ -19,13 +19,15 @@ def search_movie_logic(query: str) -> str:
         if not search_results:
             return f"找不到关于 '{query}' 的电影。"
         
-        movies_info = []
-        for movie in search_results[:5]:
+        total_found = len(search_results)
+        movies_info = [f"找到了 {total_found} 部电影:"]
+        for i, movie in enumerate(search_results):
             title = movie.get('title', 'N/A')
             year = movie.get('year', 'N/A')
             tmdb_id = movie.get('tmdbId', 'N/A')
-            movies_info.append(f"电影: {title}, 年份: {year}, TMDB ID: {tmdb_id}")
+            movies_info.append(f"{i+1}. 电影: {title}, 年份: {year}, TMDB ID: {tmdb_id}")
         
+        movies_info.append("--- 搜索结果结束 ---")
         return "\n".join(movies_info)
     except Exception as e:
         return f"搜索电影时发生错误: {e}"
@@ -66,7 +68,7 @@ def get_radarr_queue_logic() -> str:
             return "Radarr下载队列当前为空。"
         
         queue_info = []
-        for item in queue['records'][:5]: # Top 5 items
+        for item in queue['records']: # Top 5 items
             title = item.get('title', 'N/A')
             status = item.get('status', 'N/A')
             timeleft = item.get('timeleft', 'N/A')

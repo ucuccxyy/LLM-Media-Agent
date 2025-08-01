@@ -1,6 +1,6 @@
 services:
   radarr:
-    image: linuxserver/radarr
+    image: linuxserver/radarr:latest
     container_name: radarr
     networks:
       - media_net
@@ -26,7 +26,7 @@ services:
     restart: unless-stopped
     
   sonarr:
-    image: linuxserver/sonarr
+    image: linuxserver/sonarr:latest
     container_name: sonarr
     networks:
       - media_net
@@ -52,7 +52,7 @@ services:
     restart: unless-stopped
       
   qbittorrent:
-    image: linuxserver/qbittorrent
+    image: linuxserver/qbittorrent:latest
     container_name: qbittorrent
     networks:
       - media_net
@@ -71,6 +71,7 @@ services:
       - WEBUI_PORT=8081
     security_opt:
       - no-new-privileges:true
+      - apparmor:unconfined
     read_only: false
     cap_drop:
       - ALL

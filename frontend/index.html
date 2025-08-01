@@ -209,15 +209,44 @@
         const sendButton = document.getElementById('send-button');
         const messageForm = document.getElementById('message-form');
         let currentEventSource = null;
-        let sessionId = localStorage.getItem('sessionId') || generateSessionId();
-
-        console.log(`Initial Session ID: ${sessionId}`);
+        let sessionId; // Will be set by startNewChat
 
         function generateSessionId() {
             const newId = `session-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+            // We still use localStorage so a single session can survive accidental navigation,
+            // but new sessions are now explicitly started.
             localStorage.setItem('sessionId', newId);
             console.log(`New Session ID generated: ${newId}`);
             return newId;
+        }
+        
+        async function resetSessionOnServer(id) {
+            try {
+                const response = await fetch('/api/v1/reset_session', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ session_id: id })
+                });
+                if (!response.ok) {
+                    throw new Error(`Server responded with ${response.status}`);
+                }
+                const result = await response.json();
+                console.log('Session reset on server:', result.message);
+            } catch (error) {
+                console.error('Failed to reset session on server:', error);
+            }
+        }
+
+        async function startNewChat() {
+            console.log("Starting a new chat session...");
+            chatBox.innerHTML = '';
+            if (currentEventSource) {
+                currentEventSource.close();
+                currentEventSource = null;
+            }
+            sessionId = generateSessionId();
+            await resetSessionOnServer(sessionId); // Ensure backend history is cleared for this new ID
+            setButtonState(false);
         }
 
         function setupServiceLinks() {
@@ -362,15 +391,12 @@
         }
 
         // --- Event Listeners ---
-        document.getElementById('new-chat-button').addEventListener('click', () => {
-            chatBox.innerHTML = '';
-            if (currentEventSource) {
-                currentEventSource.close();
-                currentEventSource = null;
-            }
-            sessionId = generateSessionId();
-            setButtonState(false);
+        document.addEventListener('DOMContentLoaded', () => {
+            setupServiceLinks();
+            startNewChat(); // Start a new chat every time the page is loaded/refreshed
         });
+
+        document.getElementById('new-chat-button').addEventListener('click', startNewChat);
         
         messageForm.addEventListener('submit', (e) => {
             e.preventDefault();

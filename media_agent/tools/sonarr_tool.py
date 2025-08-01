@@ -21,13 +21,15 @@ def search_series_logic(query: str) -> str:
         if not search_results:
             return f"找不到关于 '{query}' 的电视剧。"
         
-        series_info = []
-        for series in search_results[:5]: # Top 5 results
+        total_found = len(search_results)
+        series_info = [f"找到了 {total_found} 部电视剧:"]
+        for i, series in enumerate(search_results):
             title = series.get('title', 'N/A')
             year = series.get('year', 'N/A')
             tvdb_id = series.get('tvdbId', 'N/A')
-            series_info.append(f"电视剧: {title}, 年份: {year}, TVDB ID: {tvdb_id}")
+            series_info.append(f"{i+1}. 电视剧: {title}, 年份: {year}, TVDB ID: {tvdb_id}")
         
+        series_info.append("--- 搜索结果结束 ---")
         return "\n".join(series_info)
     except Exception as e:
         return f"搜索电视剧时发生错误: {e}"
@@ -71,13 +73,15 @@ def get_sonarr_queue_logic() -> str:
         if not queue or not queue.get('records'):
             return "Sonarr下载队列当前为空。"
         
-        queue_info = []
-        for item in queue['records'][:5]: # Top 5 items
+        total_items = len(queue['records'])
+        queue_info = [f"当前Sonarr下载队列中有 {total_items} 个项目:"]
+        for i, item in enumerate(queue['records']):
             title = item.get('series', {}).get('title', 'N/A')
             status = item.get('status', 'N/A')
             timeleft = item.get('timeleft', 'N/A')
-            queue_info.append(f"剧集: {title}, 状态: {status}, 剩余时间: {timeleft}")
-            
-        return "当前Sonarr下载队列:\n" + "\n".join(queue_info)
+            queue_info.append(f"{i+1}. 剧集: {title}, 状态: {status}, 剩余时间: {timeleft}")
+
+        queue_info.append("--- 队列列表结束 ---")
+        return "\n".join(queue_info)
     except Exception as e:
         return f"获取Sonarr队列时发生错误: {e}"

@@ -39,7 +39,7 @@ class Settings:
         
         # Ollama配置
         self.ollama_host: str = "http://localhost:11434"
-        self.ollama_model: str = "llama3.3:70b"
+        self.ollama_model: str = "command-r-plus:latest"
         
         # Radarr配置
         self.radarr_host: str = "http://localhost:7878"

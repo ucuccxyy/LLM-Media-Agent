@@ -48,6 +48,27 @@ def get_agent() -> MediaAgent:
             logging.info("MediaAgent initialized.")
     return agent_instance
 
+
+@api_v1.route('/reset_session', methods=['POST'])
+def reset_session():
+    """
+    Resets the conversation history for a given session ID.
+    """
+    data = request.get_json()
+    session_id = data.get('session_id')
+
+    if not session_id:
+        return jsonify({"error": "session_id is required"}), 400
+
+    if session_id in conversation_histories:
+        del conversation_histories[session_id]
+        log.info(f"Conversation history for session_id '{session_id}' has been reset.")
+        return jsonify({"status": "success", "message": f"Session {session_id} reset."})
+    else:
+        log.warning(f"Attempted to reset non-existent session_id: '{session_id}'")
+        return jsonify({"status": "not_found", "message": f"No active session {session_id} to reset."})
+
+
 def convert_chunk_to_dict(chunk):
     """Converts a LangChain stream chunk to a JSON-serializable dictionary."""
     
@@ -116,9 +137,6 @@ def stream():
     agent = get_agent()
     history = get_session_history(session_id)
     
-    # IMPORTANT: Add the user's message to history *before* calling the agent
-    history.add_user_message(message_text)
-    
     agent_input = {
         "input": message_text,
         "chat_history": history.messages
@@ -127,56 +145,53 @@ def stream():
     logging.info(f"Streaming response for session_id: {session_id} with history length: {len(history.messages)}")
     
     def generate():
-        final_answer = None
+        final_answer = ""
         try:
+            # This is the first message in a turn, so we add the user's message
+            history.add_user_message(message_text)
+
             yield f"data: {json.dumps({'type': 'status', 'message': 'Agent is thinking...'})}\n\n"
             
             for chunk in agent.agent_executor.stream(agent_input):
                 converted_chunk = convert_chunk_to_dict(chunk)
                 if converted_chunk:
                     logging.info(f"Streaming chunk: {json.dumps(converted_chunk)}")
-                    
+                    yield f"data: {json.dumps(converted_chunk)}\n\n"
+
                     chunk_type = converted_chunk.get("type")
                     chunk_data = converted_chunk.get("data", {})
-
+                    
                     if chunk_type == 'tool_run':
-                        # The agent has decided to run a tool. Save it to history.
                         history.add_ai_tool_call_message({
                             "name": chunk_data['tool_name'],
                             "args": chunk_data['tool_input'],
                             "id": chunk_data['tool_call_id']
                         })
-                        yield f"data: {json.dumps(converted_chunk)}\n\n"
-
+                    
                     elif chunk_type == 'tool_result':
-                        # The tool has finished running. Save the result.
                         history.add_tool_result_message(
                             chunk_data['tool_name'], 
                             chunk_data['observation'], 
                             chunk_data['tool_call_id']
                         )
-                        yield f"data: {json.dumps(converted_chunk)}\n\n"
                     
                     elif chunk_type == 'final_output':
                         if isinstance(chunk_data, dict):
-                            final_answer = chunk_data.get('output')
-                        yield f"data: {json.dumps(converted_chunk)}\n\n"
-
-                    elif chunk_type == 'thinking_step':
-                        yield f"data: {json.dumps(converted_chunk)}\n\n"
+                            final_answer = chunk_data.get('output', '')
 
                     time.sleep(0.01)
-            
-            if final_answer:
-                history.add_ai_message(final_answer)
-            else:
-                logging.warning(f"Stream for session {session_id} finished without a final output. AI message not added to history.")
-                history.add_ai_message("Task completed.") # Fallback
 
         except Exception as e:
             logging.error(f"Error during agent stream for session {session_id}: {e}", exc_info=True)
             yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
         finally:
+            if final_answer:
+                # The final answer part of the AIMessage.
+                history.add_ai_message(final_answer)
+                logging.info(f"History for {session_id} updated with final AI answer.")
+            else:
+                logging.warning(f"Stream for session {session_id} finished without a final output. Final AI message not added to history.")
+
             logging.info(f"Stream finished for session {session_id}.")
             yield f"data: {json.dumps({'type': 'stream_end'})}\n\n"
             

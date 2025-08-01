@@ -30,6 +30,17 @@ class MediaAgent:
     def _create_tools(self) -> list[BaseTool]:
         """Creates and returns all media management tools."""
         @tool
+        def ask_user_for_clarification(question: str) -> str:
+            """
+            Asks the user for more information when a request is ambiguous.
+            For example, when you don't know if they want a movie or a TV series.
+            Args:
+                question (str): The question to ask the user.
+            """
+            # This tool is a signal. The actual question is returned to the user.
+            return question
+
+        @tool
         def search_movie(query: str) -> str:
             """
             Searches for a movie by its title.
@@ -103,6 +114,7 @@ class MediaAgent:
             return qbittorrent_tool.get_torrents_logic()
 
         return [
+            ask_user_for_clarification,
             search_movie,
             download_movie,
             search_series,
@@ -115,22 +127,26 @@ class MediaAgent:
     def _create_agent(self):
         """创建Agent"""
         
-        system_prompt = """You are a media management assistant. Your goal is to use the available tools to fulfill the user's request.
+        system_prompt = """You are a media management assistant. Follow these rules in order.
 
-**Rules:**
-1.  **Intent Interpretation**: When a user expresses a desire to "watch" an item (e.g., "我想看..."), your first and only initial action **MUST** be to use a search tool (`search_movie` or `search_series`). **Do not** assume you know what the user wants, even for famous titles. Always search first to get accurate information.
-2.  **Complete Execution**: You must complete all steps in the user's request. If a user asks to search and then download, you must search before downloading.
-3.  **Factual Reporting**: Your final answer must be based on the information returned by the tools. If content already exists or an error occurs, report it truthfully.
-4.  **Handling Search Results**:
-    *   If a search returns multiple items, you **MUST** list all results for the user to choose from. **Do not** guess, assume, or download anything.
-    *   If you are not confident which item the user wants, you **MUST** ask for clarification.
-5.  **Action Confirmation**: After a successful `download_movie` or `download_series` call, you **MUST** consider the task complete. **Do not** use any queue-checking tools for verification. Immediately report to the user that the item has been added and the system is searching for it.
-6.  **Search and Retry Logic**: If a search fails, you may try again once. If the second attempt also fails, you must stop and report the failure to the user. Do not attempt to search more than twice for the same request.
-7.  **Output Format**: Adhere strictly to this format.
-    *   **Tool Calls**: When you need to call a tool, your response **MUST** contain *only* the tool call object. Do not include any other text, commentary, or explanation in your response.
-    *   **Final Answers**: When the task is complete, you are asking a question, or reporting a failure, your response **MUST** be plain, natural language. It **MUST NOT** contain any JSON objects or tool call syntax like `{{...}}` in the end of your response.
-8.  **Language**: You must respond in the same language the user is using.
-9.  **Functionality Limitations**: You can only perform actions supported by your available tools. If a user asks for something you cannot do (like downloading a single episode, deleting a file, or canceling a download), you must clearly state that you lack that capability. For TV series, specify that you can only download by full seasons.
+**Step 1: Check for Ambiguity**
+- If the user's request is general and could mean either a movie or a TV series (e.g., "search Avatar", "find The Office"), your *only* allowed first step is to use the `ask_user_for_clarification` tool. Ask them "您是想搜索电影还是电视剧？".
+- Do not proceed to any other step until the user clarifies.
+
+**Step 2: Execute a SINGLE, Focused Action**
+- Once the user's intent is clear (either from their initial request or after clarification), use the ONE appropriate tool to fulfill that specific request (`search_movie`, `search_series`, `download_movie`, etc.).
+- **Your job is to execute one tool and then report the results.** Do not chain tools together or perform follow-up actions unless the user explicitly asks for them in a new message. For example, after a successful search, simply report the search results. DO NOT check the download queue unless the user asks you to.
+
+**Step 3: Report Results Truthfully (PRIME DIRECTIVE)**
+- Your most critical function is to act as a **lossless relay** of information from the tools.
+- When a search tool returns a list of results, you **MUST** transmit **EVERY SINGLE ITEM** from that list to the user.
+- You are **STRICTLY PROHIBITED** from summarizing, shortening, or altering the results.
+- **COUNT THE ITEMS** from the tool output and ensure your response has the same count. Failure to do so is a critical error.
+- If a tool fails, report the failure message exactly as you received it.
+
+**Final Answer Rules:**
+- Your final answer must be plain, natural language and must not contain tool call syntax.
+- **NEVER** invent information or perform unrequested actions. Do not apologize for things you were not asked to do. Base your entire response ONLY on the direct results from the single tool you just used.
 """
         
         example_messages = []
@@ -145,7 +161,7 @@ class MediaAgent:
                 tool_calls=[{"name": "search_series", "args": {"query": "TV Show A"}, "id": search_call_1_id}]
             ),
             ToolMessage(
-                content="Found one series: Title: TV Show A, Year: 2010, TVDB ID: 81189",
+                content="找到了 1 部电视剧:\n1. 电视剧: TV Show A, 年份: 2010, TVDB ID: 81189\n--- 搜索结果结束 ---",
                 tool_call_id=search_call_1_id
             ),
             AIMessage(
@@ -173,7 +189,7 @@ class MediaAgent:
                 tool_calls=[{"name": "search_series", "args": {"query": "TV Show C"}, "id": search_call_2_id}]
             ),
             ToolMessage(
-                content="Found the following series:\n  - Title: TV Show C, Year: 2011, TVDB ID: 121361\n  - Title: TV Show C: The Last Watch, Year: 2019, TVDB ID: 365888",
+                content="找到了 2 部电视剧:\n1. 电视剧: TV Show C, 年份: 2011, TVDB ID: 121361\n2. 电视剧: TV Show C: The Last Watch, 年份: 2019, TVDB ID: 365888\n--- 搜索结果结束 ---",
                 tool_call_id=search_call_2_id
             ),
             AIMessage(content="I found a couple of shows. Which one did you mean?\n- TV Show C (2011)\n- TV Show C: The Last Watch (2019)"),
@@ -199,7 +215,7 @@ class MediaAgent:
                 tool_calls=[{"name": "search_movie", "args": {"query": "电影三部曲A"}, "id": search_call_3_id}]
             ),
             ToolMessage(
-                content="搜索到以下电影:\n  - 标题: 电影三部曲A：第一部, 年份: 2001, TMDB ID: 120\n  - 标题: 电影三部曲A：第二部, 年份: 2002, TMDB ID: 121\n  - 标题: 电影三部曲A：第三部, 年份: 2003, TMDB ID: 122",
+                content="找到了 3 部电影:\n1. 电影: 电影三部曲A：第一部, 年份: 2001, TMDB ID: 120\n2. 电影: 电影三部曲A：第二部, 年份: 2002, TMDB ID: 121\n3. 电影: 电影三部曲A：第三部, 年份: 2003, TMDB ID: 122\n--- 搜索结果结束 ---",
                 tool_call_id=search_call_3_id
             ),
             AIMessage(content="我找到了多部与'电影三部曲A'相关的电影，请问您具体想下载哪一部？\n- 电影三部曲A：第一部 (2001)\n- 电影三部曲A：第二部 (2002)\n- 电影三部曲A：第三部 (2003)"),
@@ -225,7 +241,7 @@ class MediaAgent:
                 tool_calls=[{"name": "search_series", "args": {"query": "电视剧D"}, "id": search_call_4_id}]
             ),
             ToolMessage(
-                content="搜索到以下电视剧: 标题: 电视剧D, 年份: 2015, TVDB ID: 273181",
+                content="找到了 1 部电视剧:\n1. 电视剧: 电视剧D, 年份: 2015, TVDB ID: 273181\n--- 搜索结果结束 ---",
                 tool_call_id=search_call_4_id
             ),
             AIMessage(content="我找到了《电视剧D》(2015)，需要我为您下载它的特别节目吗？"),
@@ -278,7 +294,7 @@ class MediaAgent:
                 tool_calls=[{"name": "search_movie", "args": {"query": "Movie E"}, "id": search_call_6_id}]
             ),
             ToolMessage(
-                content="Found the following movie: Title: Movie E, Year: 2014, TMDB ID: 157336",
+                content="找到了 1 部电影:\n1. 电影: Movie E, 年份: 2014, TMDB ID: 157336\n--- 搜索结果结束 ---",
                 tool_call_id=search_call_6_id
             ),
             AIMessage(content="Yes, I found the movie 'Movie E' from 2014.")
@@ -305,7 +321,7 @@ class MediaAgent:
                 tool_calls=[{"name": "search_movie", "args": {"query": "一部精彩的电影"}, "id": search_call_watch_id}]
             ),
             ToolMessage(
-                content="搜索到以下电影:\n  - 标题: 一部精彩的电影, 年份: 2022, TMDB ID: 789\n  - 标题: 一部精彩的电影：续集, 年份: 2024, TMDB ID: 790",
+                content="找到了 2 部电影:\n1. 电影: 一部精彩的电影, 年份: 2022, TMDB ID: 789\n2. 电影: 一部精彩的电影：续集, 年份: 2024, TMDB ID: 790\n--- 搜索结果结束 ---",
                 tool_call_id=search_call_watch_id
             ),
             AIMessage(content="我找到了几部相关的电影，请问您想看哪一部？\n- 一部精彩的电影 (2022)\n- 一部精彩的电影：续集 (2024)")
@@ -324,6 +340,56 @@ class MediaAgent:
                 tool_call_id=download_call_watch_id
             ),
             AIMessage(content="好的，我已经将'一部精彩的电影' (2022)加入了下载队列，系统现在会开始寻找资源。")
+        ])
+
+        # Scenario 10: Search returns multiple results, agent MUST list all of them
+        search_call_10_id = "tool_call_search_10"
+        example_messages.extend([
+            HumanMessage(content="Search for movies named 'Epic Adventure'"),
+            AIMessage(
+                content="",
+                tool_calls=[{"name": "search_movie", "args": {"query": "Epic Adventure"}, "id": search_call_10_id}]
+            ),
+            ToolMessage(
+                content="找到了 5 部电影:\n1. 电影: Epic Adventure, 年份: 1999, TMDB ID: 101\n2. 电影: Epic Adventure, 年份: 2020, TMDB ID: 102\n3. 电影: Epic Adventure 2: The Next Chapter, 年份: 2002, TMDB ID: 103\n4. 电影: Epic Adventure 3: Final Journey, 年份: 2005, TMDB ID: 104\n5. 电影: The Making of Epic Adventure, 年份: 2000, TMDB ID: 105\n--- 搜索结果结束 ---",
+                tool_call_id=search_call_10_id
+            ),
+            AIMessage(
+                content="""I found the following movies related to 'Epic Adventure'. Which one are you interested in?
+- Epic Adventure (1999)
+- Epic Adventure (2020)
+- Epic Adventure 2: The Next Chapter (2002)
+- Epic Adventure 3: Final Journey (2005)
+- The Making of Epic Adventure (2000)"""
+            )
+        ])
+
+        # Scenario 11: Ambiguous query leads to clarification
+        ask_call_11_id = "tool_call_ask_11"
+        search_call_11_id = "tool_call_search_11"
+        example_messages.extend([
+            HumanMessage(content="帮我搜索阿凡达"),
+            AIMessage(
+                content="",
+                tool_calls=[{"name": "ask_user_for_clarification", "args": {"question": "您是想搜索电影还是电视剧？"}, "id": ask_call_11_id}]
+            ),
+            ToolMessage(
+                content="您是想搜索电影还是电视剧？",
+                tool_call_id=ask_call_11_id
+            ),
+            AIMessage(content="您是想搜索电影还是电视剧？"),
+            HumanMessage(content="电影"),
+            AIMessage(
+                content="",
+                tool_calls=[{"name": "search_movie", "args": {"query": "阿凡达"}, "id": search_call_11_id}]
+            ),
+            ToolMessage(
+                content="找到了 9 部电影:\n1. 电影: 阿凡达：火与烬, 年份: 2025, TMDB ID: 83533\n2. 电影: 捕捉阿凡达, 年份: 2010, TMDB ID: 183392\n3. 电影: 阿凡达, 年份: 2009, TMDB ID: 19995\n4. 电影: 阿凡达5：追寻伊娃, 年份: 2031, TMDB ID: 393209\n5. 电影: 阿凡达：水之道, 年份: 2022, TMDB ID: 76600\n6. 电影: 异形大战阿凡达, 年份: 2011, TMDB ID: 79582\n7. 电影: 阿凡达4：图鲲骑士, 年份: 2029, TMDB ID: 216527\n8. 电影: 阿凡达：深入潘多拉, 年份: 2022, TMDB ID: 1059673\n9. 电影: 阿凡达：创建潘多拉世界, 年份: 2010, TMDB ID: 111332\n--- 搜索结果结束 ---",
+                tool_call_id=search_call_11_id
+            ),
+            AIMessage(
+                content="我找到了以下电影，请问您想看哪一部？\n- 阿凡达：火与烬 (2025)\n- 捕捉阿凡达 (2010)\n- 阿凡达 (2009)\n- 阿凡达5：追寻伊娃 (2031)\n- 阿凡达：水之道 (2022)\n- 异形大战阿凡达 (2011)\n- 阿凡达4：图鲲骑士 (2029)\n- 阿凡达：深入潘多拉 (2022)\n- 阿凡达：创建潘多拉世界 (2010)"
+            )
         ])
 
         prompt = ChatPromptTemplate.from_messages([

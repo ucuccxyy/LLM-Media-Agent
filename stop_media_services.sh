@@ -27,5 +27,51 @@ if docker ps | grep -q -E 'radarr|sonarr|qbittorrent|jackett'; then
     echo "尝试强制停止..."
     docker compose down -v --remove-orphans
 else
-    echo -e "${GREEN}所有服务已成功停止${NC}"
+    echo -e "${GREEN}所有媒体服务已成功停止${NC}"
 fi
+
+# --- 停止日志收集进程 ---
+LOGS_DIR="$(dirname "$0")/media_agent/logs"
+LOGGING_PID_FILE="$LOGS_DIR/logging.pid"
+
+if [ -f "$LOGGING_PID_FILE" ]; then
+    LOG_PID=$(cat "$LOGGING_PID_FILE")
+    if ps -p "$LOG_PID" > /dev/null; then
+        echo "正在停止日志收集进程 (PID: $LOG_PID)..."
+        kill "$LOG_PID"
+        rm "$LOGGING_PID_FILE"
+        echo -e "${GREEN}日志收集进程已停止。${NC}"
+    else
+        echo -e "${YELLOW}发现过期的日志收集PID文件，已移除。${NC}"
+        rm "$LOGGING_PID_FILE"
+    fi
+fi
+
+# --- 停止 API 服务 ---
+echo -e "\n${GREEN}开始停止 API 服务...${NC}"
+
+PROJECT_ROOT="$(dirname "$0")"
+PID_DIR="$PROJECT_ROOT/media_agent/pids"
+PID_FILE="$PID_DIR/api.pid"
+
+if [ ! -f "$PID_FILE" ]; then
+    echo -e "${YELLOW}API 服务未在运行 (未找到PID文件)。${NC}"
+else
+    API_PID=$(cat "$PID_FILE")
+    if ! ps -p "$API_PID" > /dev/null; then
+        echo -e "${YELLOW}API 服务未在运行 (PID $API_PID 无效)。${NC}"
+        rm "$PID_FILE"
+    else
+        echo "正在停止 API 服务 (PID: $API_PID)..."
+        kill "$API_PID"
+        sleep 2
+        if ps -p "$API_PID" > /dev/null; then
+            echo -e "${RED}API 服务未能正常停止，强制关闭...${NC}"
+            kill -9 "$API_PID"
+        fi
+        rm "$PID_FILE"
+        echo -e "${GREEN}API 服务已成功停止。${NC}"
+    fi
+fi
+
+echo -e "\n${GREEN}所有服务和进程已全部停止。${NC}"

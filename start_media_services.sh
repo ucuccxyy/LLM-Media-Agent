@@ -203,3 +203,49 @@ fi
 # 添加停止日志收集的函数说明
 show_info "\n${YELLOW}停止日志收集：${NC}"
 show_info "  kill \$(cat ${LOGS_DIR}/logging.pid)"
+
+# --- 启动 API 服务 ---
+show_info "\n${GREEN}开始启动 API 服务...${NC}"
+
+# API 相关的路径和变量
+VENV_PYTHON="$PROJECT_ROOT/venv/bin/python"
+MAIN_SCRIPT="$PROJECT_ROOT/main.py"
+PID_DIR="$MEDIA_AGENT_ROOT/pids"
+PID_FILE="$PID_DIR/api.pid"
+API_LOG_FILE="$LOGS_DIR/api.log"
+
+# 创建 PID 目录
+mkdir -p "$PID_DIR"
+
+# 检查 API 服务是否已在运行
+if [ -f $PID_FILE ]; then
+    API_PID=$(cat $PID_FILE)
+    if ps -p $API_PID > /dev/null; then
+        show_info "${YELLOW}API 服务已在运行，PID: $API_PID${NC}"
+        exit 0 # 如果两个部分都已在运行，则正常退出
+    else
+        show_info "${YELLOW}发现过期的 PID 文件，正在移除...${NC}"
+        rm $PID_FILE
+    fi
+fi
+
+# 检查虚拟环境
+if [ ! -f "$VENV_PYTHON" ]; then
+    show_info "${RED}错误: 找不到Python虚拟环境: $VENV_PYTHON${NC}"
+    show_info "${YELLOW}请确保已在项目根目录运行 'python -m venv venv' 来创建虚拟环境。${NC}"
+    exit 1
+fi
+
+# 以后台模式启动 API 服务
+show_info "正在后台启动 API 服务..."
+nohup "$VENV_PYTHON" -u "$MAIN_SCRIPT" --mode api >> "$API_LOG_FILE" 2>&1 &
+APP_PID=$!
+
+# 保存 PID
+echo $APP_PID > "$PID_FILE"
+
+show_info "${GREEN}API 服务已成功启动。${NC}"
+show_info "  PID: ${YELLOW}$APP_PID${NC}"
+show_info "  API 日志: ${YELLOW}$API_LOG_FILE${NC}"
+show_info "  使用 'tail -f $API_LOG_FILE' 查看实时日志。"
+show_info "  使用 './stop_media_services.sh' 脚本来停止所有服务和API。"
