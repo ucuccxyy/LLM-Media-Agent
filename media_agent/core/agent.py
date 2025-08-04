@@ -137,7 +137,7 @@ This is a strict two-turn process. When a user says they want to download someth
 """
         
         example_messages = []
-
+        # Below are examples of download scenarios
         # Scenario 1: Successful download after user confirmation (single result)
         search_call_1_id = "tool_call_search_1"
         download_call_1_id = "tool_call_download_1"
@@ -395,11 +395,13 @@ This is a strict two-turn process. When a user says they want to download someth
             )
         ])
 
+        # Above are examples of download scenarios
+
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
         ] + example_messages + [
             MessagesPlaceholder(variable_name="chat_history"),
-            ("human", "{input}"),
+            ("human", "Below is the user's input: {input}"),
             MessagesPlaceholder(variable_name="agent_scratchpad"),
         ])
         
