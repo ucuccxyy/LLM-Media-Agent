@@ -10,22 +10,53 @@
 
 ```
 .
-├── frontend/               # 前端应用
-│   ├── index.html/
-├── media_agent/            # 媒体代理核心模块
-│   ├── api/                # Flask API 定义
-│   ├── core/               # 核心逻辑 (Agent, LLM管理器)
-│   ├── config/             # 配置模块
-│   ├── docker/             # Docker Compose & 服务配置
-│   ├── data/               # 媒体数据存储 (电影/电视剧)
-│   ├── logs/               # 服务和应用日志
-│   └── pids/               # 进程PID文件
-├── venv/                   # Python 虚拟环境
-├── main.py                 # 项目主入口 (CLI / API)
-├── requirements.txt        # Python 依赖
-├── start_media_services.sh # 启动所有服务和API
-├── stop_media_services.sh  # 停止所有服务和API
-└── README.md               # 本文档
+├── frontend/                    # 前端应用
+│   └── index.html              # 前端界面文件
+├── media_agent/                 # 媒体代理核心模块
+│   ├── api/                    # Flask API 定义
+│   │   ├── app.py             # Flask应用创建
+│   │   ├── routes.py          # API路由定义
+│   │   └── sessions.py        # 会话管理
+│   ├── core/                   # 核心逻辑
+│   │   ├── agent.py           # 媒体代理主类
+│   │   └── llm_manager.py     # LLM管理器 (支持多提供商)
+│   ├── config/                 # 配置模块
+│   │   ├── settings.py        # 全局配置管理
+│   │   └── logging_config.py  # 日志配置
+│   ├── docker/                 # Docker服务配置
+│   │   ├── docker-compose.yml # 服务编排文件
+│   │   ├── radarr/            # Radarr配置目录
+│   │   ├── sonarr/            # Sonarr配置目录
+│   │   ├── qbittorrent/       # qBittorrent配置目录
+│   │   ├── jackett/           # Jackett配置目录
+│   │   └── prowlarr/          # Prowlarr配置目录
+│   ├── data/                   # 媒体数据存储
+│   │   ├── downloads/         # 下载目录
+│   │   ├── movies/            # 电影存储目录
+│   │   └── tv_shows/          # 电视剧存储目录
+│   ├── logs/                   # 服务和应用日志
+│   ├── models/                 # 数据模型定义
+│   │   ├── media_models.py    # 媒体数据模型
+│   │   └── task_models.py     # 任务数据模型
+│   ├── pids/                   # 进程PID文件
+│   ├── services/               # 服务层
+│   │   ├── radarr_service.py  # Radarr API服务
+│   │   ├── sonarr_service.py  # Sonarr API服务
+│   │   ├── qbittorrent_service.py # qBittorrent API服务
+│   │   └── notification_service.py # 通知服务
+│   ├── tools/                  # 工具层
+│   │   ├── radarr_tool.py     # Radarr工具函数
+│   │   ├── sonarr_tool.py     # Sonarr工具函数
+│   │   ├── qbittorrent_tool.py # qBittorrent工具函数
+│   │   └── media_parser.py    # 媒体解析工具
+│   └── utils/                  # 工具函数
+├── venv/                       # Python 虚拟环境
+├── main.py                     # 项目主入口 (CLI / API)
+├── requirements.txt            # Python 依赖
+├── start_media_services.sh     # 启动所有服务和API
+├── stop_media_services.sh      # 停止所有服务和API
+├── .gitignore                  # Git忽略文件
+└── README.md                   # 本文档
 ```
 
 ## 3. LLM提供商配置
