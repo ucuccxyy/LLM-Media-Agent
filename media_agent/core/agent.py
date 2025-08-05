@@ -13,13 +13,13 @@ from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
 from uuid import uuid4
 
 from media_agent.tools import radarr_tool, sonarr_tool, qbittorrent_tool
-from media_agent.core.llm_manager import OllamaManager
+from media_agent.core.llm_manager import LLMManager
 from media_agent.tools.sonarr_tool import DownloadSeriesInput
 
 class MediaAgent:
     """媒体管理Agent主类"""
     
-    def __init__(self, llm_manager: OllamaManager, settings):
+    def __init__(self, llm_manager: LLMManager, settings):
         self.llm_manager = llm_manager
         self.settings = settings
         
@@ -137,7 +137,7 @@ This is a strict two-turn process. When a user says they want to download someth
 """
         
         example_messages = []
-        # Below are examples of download scenarios
+        # Below are examples of scenarios
         # Scenario 1: Successful download after user confirmation (single result)
         search_call_1_id = "tool_call_search_1"
         download_call_1_id = "tool_call_download_1"
@@ -302,16 +302,16 @@ This is a strict two-turn process. When a user says they want to download someth
         # Scenario 9: User expresses intent to watch a movie, leading to search, clarification, and download
         search_call_watch_id = "tool_call_search_watch"
         example_messages.extend([
-            HumanMessage(content="我想看电影'一部精彩的电影'"),
+            HumanMessage(content="我想看电影'电影H'"),
             AIMessage(
                 content="",
-                tool_calls=[{"name": "search_movie", "args": {"query": "一部精彩的电影"}, "id": search_call_watch_id}]
+                tool_calls=[{"name": "search_movie", "args": {"query": "电影H"}, "id": search_call_watch_id}]
             ),
             ToolMessage(
-                content="找到了 2 部电影:\n1. 电影: 一部精彩的电影, 年份: 2022, TMDB ID: 789\n2. 电影: 一部精彩的电影：续集, 年份: 2024, TMDB ID: 790\n--- 搜索结果结束 ---",
+                content="找到了 2 部电影:\n1. 电影: 电影H, 年份: 2022, TMDB ID: 789\n2. 电影: 电影H：续集, 年份: 2024, TMDB ID: 790\n--- 搜索结果结束 ---",
                 tool_call_id=search_call_watch_id
             ),
-            AIMessage(content="我找到了几部相关的电影，请问您想看哪一部？\n- 一部精彩的电影 (2022)\n- 一部精彩的电影：续集 (2024)")
+            AIMessage(content="我找到了几部相关的电影，请问您想看哪一部？\n- 电影H (2022)\n- 电影H：续集 (2024)")
         ])
 
         # Scenario 9 Follow-up: User confirms and agent downloads
@@ -326,7 +326,7 @@ This is a strict two-turn process. When a user says they want to download someth
                 content="Successfully added the movie to Radarr...",
                 tool_call_id=download_call_watch_id
             ),
-            AIMessage(content="好的，我已经将'一部精彩的电影' (2022)加入了下载队列，系统现在会开始寻找资源。")
+            AIMessage(content="好的，我已经将'电影H' (2022)加入了下载队列，系统现在会开始寻找资源。")
         ])
 
         # Scenario 10: Search returns multiple results, agent MUST list all of them
@@ -395,7 +395,7 @@ This is a strict two-turn process. When a user says they want to download someth
             )
         ])
 
-        # Above are examples of download scenarios
+        # Above are examples of scenarios
 
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
@@ -405,7 +405,7 @@ This is a strict two-turn process. When a user says they want to download someth
             MessagesPlaceholder(variable_name="agent_scratchpad"),
         ])
         
-        agent = create_tool_calling_agent(self.llm_manager.llm, self.tools, prompt)
+        agent = create_tool_calling_agent(self.llm_manager.get_llm(), self.tools, prompt)
         
         return AgentExecutor(agent=agent, tools=self.tools, verbose=True)
     

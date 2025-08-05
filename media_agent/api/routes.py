@@ -9,7 +9,7 @@ from uuid import uuid4
 
 # We need to import the necessary components to initialize our agent
 from media_agent.core.agent import MediaAgent
-from media_agent.core.llm_manager import OllamaManager
+from media_agent.core.llm_manager import LLMManager
 from media_agent.config.settings import Settings
 from media_agent.api.sessions import get_session_history
 
@@ -42,7 +42,7 @@ def get_agent() -> MediaAgent:
             # Load settings and create the necessary components
             settings = Settings()
             settings.load_from_env()
-            llm_manager = OllamaManager(settings.ollama_host, settings.ollama_model)
+            llm_manager = LLMManager(settings)
             # Create the singleton instance
             agent_instance = MediaAgent(llm_manager, settings)
             logging.info("MediaAgent initialized.")

@@ -3,6 +3,7 @@
 # 定义颜色
 GREEN='\033[0;32m'
 RED='\033[0;31m'
+YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 echo -e "${GREEN}开始停止媒体服务...${NC}"
@@ -74,4 +75,24 @@ else
     fi
 fi
 
-echo -e "\n${GREEN}所有服务和进程已全部停止。${NC}"
+# --- 清空所有日志文件 ---
+echo -e "\n${YELLOW}正在清空所有日志文件...${NC}"
+
+# 清空各个服务的日志文件
+log_files=(
+    "$LOGS_DIR/radarr.log"
+    "$LOGS_DIR/sonarr.log"
+    "$LOGS_DIR/qbittorrent.log"
+    "$LOGS_DIR/jackett.log"
+    "$LOGS_DIR/system.log"
+    "$LOGS_DIR/api.log"
+)
+
+for log_file in "${log_files[@]}"; do
+    if [ -f "$log_file" ]; then
+        > "$log_file"  # 清空文件内容
+        echo -e "${GREEN}已清空: $(basename "$log_file")${NC}"
+    fi
+done
+
+echo -e "\n${GREEN}所有服务和进程已全部停止，日志文件已清空。${NC}"

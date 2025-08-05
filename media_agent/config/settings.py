@@ -16,8 +16,15 @@ class Settings:
     全局配置类
     
     属性:
-        - ollama_host: str = "http://localhost:11434" - Ollama服务地址
-        - ollama_model: str = "llama2" - 使用的LLM模型名称
+        - llm_provider: str - LLM提供商 ("ollama", "openai", "anthropic", "google")
+        - ollama_host: str - Ollama服务地址
+        - ollama_model: str - Ollama模型名称
+        - openai_api_key: str - OpenAI API密钥
+        - openai_model: str - OpenAI模型名称
+        - anthropic_api_key: str - Anthropic API密钥
+        - anthropic_model: str - Anthropic模型名称
+        - google_api_key: str - Google API密钥
+        - google_model: str - Google模型名称
         - radarr_host: str - Radarr服务地址
         - radarr_api_key: str - Radarr API密钥
         - sonarr_host: str - Sonarr服务地址
@@ -37,9 +44,25 @@ class Settings:
         self.project_root = Path(__file__).parent.parent.parent
         self.docker_root = self.project_root / "media-agent" / "docker"
         
+        # LLM提供商配置
+        self.llm_provider: str = "ollama"  # 默认使用Ollama
+        
         # Ollama配置
         self.ollama_host: str = "http://localhost:11434"
         self.ollama_model: str = "command-r-plus:latest"
+        
+        # OpenAI配置
+        self.openai_api_key: Optional[str] = None
+        self.openai_model: str = "gpt-4o-mini"
+        self.openai_base_url: Optional[str] = None  # 支持自定义OpenAI兼容API
+        
+        # Anthropic配置
+        self.anthropic_api_key: Optional[str] = None
+        self.anthropic_model: str = "claude-3-5-sonnet-20241022"
+        
+        # Google配置
+        self.google_api_key: Optional[str] = None
+        self.google_model: str = "gemini-1.5-flash"
         
         # Radarr配置
         self.radarr_host: str = "http://localhost:7878"
@@ -55,7 +78,7 @@ class Settings:
         self.qbittorrent_password: str = "adminadmin"
         
         # 路径配置 - 使用项目的data目录
-        self.data_root: Path = self.project_root / "media-agent" / "data"
+        self.data_root: Path = self.project_root / "media_agent" / "data"
         self.download_path: Path = self.data_root / "downloads"
         self.incomplete_path: Path = self.download_path / "incomplete"
         self.movies_path: Path = self.data_root / "movies"
@@ -77,9 +100,25 @@ class Settings:
         # 加载.env文件
         load_dotenv()
         
+        # LLM提供商配置
+        self.llm_provider = os.getenv("LLM_PROVIDER", self.llm_provider)
+        
         # Ollama配置
         self.ollama_host = os.getenv("OLLAMA_HOST", self.ollama_host)
         self.ollama_model = os.getenv("OLLAMA_MODEL", self.ollama_model)
+        
+        # OpenAI配置
+        self.openai_api_key = os.getenv("OPENAI_API_KEY", self.openai_api_key)
+        self.openai_model = os.getenv("OPENAI_MODEL", self.openai_model)
+        self.openai_base_url = os.getenv("OPENAI_BASE_URL", self.openai_base_url)
+        
+        # Anthropic配置
+        self.anthropic_api_key = os.getenv("ANTHROPIC_API_KEY", self.anthropic_api_key)
+        self.anthropic_model = os.getenv("ANTHROPIC_MODEL", self.anthropic_model)
+        
+        # Google配置
+        self.google_api_key = os.getenv("GOOGLE_API_KEY", self.google_api_key)
+        self.google_model = os.getenv("GOOGLE_MODEL", self.google_model)
         
         # Radarr配置
         self.radarr_host = os.getenv("RADARR_HOST", self.radarr_host)
@@ -124,13 +163,26 @@ class Settings:
             bool: 配置是否有效
             
         验证项:
-        1. 必需的服务地址和API密钥
-        2. 路径配置的存在性和权限
-        3. 基本URL格式检查
+        1. 根据LLM提供商验证相应的配置
+        2. 必需的服务地址和API密钥
+        3. 路径配置的存在性和权限
+        4. 基本URL格式检查
         """
-        # 检查Ollama配置
-        if not self.ollama_host.startswith(("http://", "https://")):
-            return False
+        # 检查LLM提供商配置
+        if self.llm_provider == "ollama":
+            if not self.ollama_host.startswith(("http://", "https://")):
+                return False
+        elif self.llm_provider == "openai":
+            if not self.openai_api_key:
+                return False
+        elif self.llm_provider == "anthropic":
+            if not self.anthropic_api_key:
+                return False
+        elif self.llm_provider == "google":
+            if not self.google_api_key:
+                return False
+        else:
+            return False  # 不支持的提供商
             
         # 检查Radarr配置
         if not all([
@@ -181,13 +233,49 @@ class Settings:
                 
         return True
         
+    def get_llm_config(self) -> dict:
+        """
+        获取当前LLM提供商的配置
+        
+        返回:
+            dict: 包含当前LLM提供商配置的字典
+        """
+        if self.llm_provider == "ollama":
+            return {
+                "provider": "ollama",
+                "host": self.ollama_host,
+                "model": self.ollama_model
+            }
+        elif self.llm_provider == "openai":
+            return {
+                "provider": "openai",
+                "api_key": self.openai_api_key,
+                "model": self.openai_model,
+                "base_url": self.openai_base_url
+            }
+        elif self.llm_provider == "anthropic":
+            return {
+                "provider": "anthropic",
+                "api_key": self.anthropic_api_key,
+                "model": self.anthropic_model
+            }
+        elif self.llm_provider == "google":
+            return {
+                "provider": "google",
+                "api_key": self.google_api_key,
+                "model": self.google_model
+            }
+        else:
+            raise ValueError(f"不支持的LLM提供商: {self.llm_provider}")
+        
     def __str__(self) -> str:
         """返回配置的字符串表示"""
+        llm_config = self.get_llm_config()
+        
         return (
             f"Settings:\n"
-            f"  Ollama:\n"
-            f"    Host: {self.ollama_host}\n"
-            f"    Model: {self.ollama_model}\n"
+            f"  LLM Provider: {self.llm_provider}\n"
+            f"  LLM Config: {llm_config}\n"
             f"  Radarr:\n"
             f"    Host: {self.radarr_host}\n"
             f"    API Key: {'*' * 8 if self.radarr_api_key else 'Not Set'}\n"
