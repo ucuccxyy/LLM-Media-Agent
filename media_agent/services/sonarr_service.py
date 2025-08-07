@@ -88,13 +88,22 @@ class SonarrService:
             logger.error("在add_series中找不到默认的质量配置文件ID。")
             return {"status": "error", "message": "找不到默认的质量配置文件ID。"}
 
+        # 动态获取第一个可用的语言配置文件ID
+        language_profile_id = self._get_first_language_profile_id()
+        if language_profile_id is None:
+            logger.error("在add_series中找不到默认的语言配置文件ID。")
+            return {"status": "error", "message": "找不到默认的语言配置文件ID。"}
+
         # 使用查找到的剧集信息作为我们请求的基础
         series_data = series_info
         
         # 分配我们的本地配置
         series_data['rootFolderPath'] = root_folder
         series_data['qualityProfileId'] = quality_profile_id
+        series_data['languageProfileId'] = language_profile_id
         series_data['monitored'] = True
+        series_data['seasonFolder'] = True  # 为每个季度创建单独的文件夹
+        series_data['tags'] = []  # 空标签列表，用户可以后续添加
 
         # 根据用户请求，明确设置每个季度的监控状态
         all_seasons = series_data.get('seasons', [])
@@ -154,6 +163,15 @@ class SonarrService:
             # Sonarr通常将 'Any' 或 'Standard' 作为第一个配置文件，可以作为默认
             return profiles[0]['id']
         logger.error("在Sonarr中未找到任何质量配置文件。")
+        return None
+
+    def _get_first_language_profile_id(self) -> int:
+        """获取第一个可用的语言配置文件ID。"""
+        profiles = self._make_request("languageprofile")
+        if profiles:
+            # Sonarr通常将 'Any' 或 'Standard' 作为第一个配置文件，可以作为默认
+            return profiles[0]['id']
+        logger.error("在Sonarr中未找到任何语言配置文件。")
         return None
 
 if __name__ == "__main__":

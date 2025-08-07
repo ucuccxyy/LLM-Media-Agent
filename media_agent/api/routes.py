@@ -210,21 +210,61 @@ def chat_sync():
         return jsonify({"error": "A non-empty 'message' field is required."}), 400
 
     user_input = data['message']
+    session_id = data.get('session_id', 'default_session')
     
     try:
         # Get the singleton agent instance
         agent = get_agent()
-        # Process the request
-        result = agent.process_request(user_input)
+        
+        # Get session history
+        history = get_session_history(session_id)
+        
+        # Add user message to history
+        history.add_user_message(user_input)
+        
+        # Build agent input with chat history
+        agent_input = {
+            "input": user_input,
+            "chat_history": history.messages
+        }
+        
+        logging.info(f"Processing chat_sync request for session_id: {session_id} with history length: {len(history.messages)}")
+        
+        # Process the request using the same method as stream endpoint
+        response = agent.agent_executor.invoke(agent_input)
         
         # Extract the final natural language response from the agent's output
-        final_response = result.get("output", "Sorry, I encountered an issue and couldn't get a response.")
+        final_response = response.get("output", "Sorry, I encountered an issue and couldn't get a response.")
+        
+        # Add AI response to history - handle both simple responses and tool call responses
+        if final_response and final_response != "Sorry, I encountered an issue and couldn't get a response.":
+            # Check if the response contains tool calls that need to be added to history
+            if "intermediate_steps" in response:
+                # Handle tool calls and results like in stream endpoint
+                for step in response["intermediate_steps"]:
+                    if hasattr(step, 'action') and hasattr(step, 'observation'):
+                        # Add tool call to history
+                        history.add_ai_tool_call_message({
+                            "name": step.action.tool,
+                            "args": step.action.tool_input,
+                            "id": step.action.tool_call_id
+                        })
+                        # Add tool result to history
+                        history.add_tool_result_message(
+                            step.action.tool,
+                            step.observation,
+                            step.action.tool_call_id
+                        )
+            
+            # Add the final AI response
+            history.add_ai_message(final_response)
+            logging.info(f"History for {session_id} updated with AI response.")
         
         return jsonify({"response": final_response})
 
     except Exception as e:
         # Log the exception for debugging purposes
-        logging.error(f"An error occurred while processing a chat request: {e}", exc_info=True)
+        logging.error(f"An error occurred while processing a chat request for session {session_id}: {e}", exc_info=True)
         # Return a generic error message to the user
         return jsonify({"error": "An internal server error occurred."}), 500
 

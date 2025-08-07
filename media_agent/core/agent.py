@@ -131,13 +131,13 @@ This is a strict two-turn process. When a user says they want to download someth
 - If the request is unambiguous (e.g., "find the movie Inception"), call only the single appropriate search tool and present the results.
 
 **CRITICAL RULES FOR ALL WORKFLOWS:**
-- **Information Handling:** You **MUST ONLY** use information from the most recent tool result to inform your next action. **NEVER** use data or IDs from your instructional examples.
+- **Information Handling:** Your actions must be based on the user's input and the most recent tool call results. Never use any movie or series names or IDs from the examples, and don't include them in your response—the examples are only for demonstrating how to use the tools and have no other meaning.
 - **Argument Formatting:** The `query` argument for search tools **MUST** be a simple string (the title). **DO NOT** invent complex JSON queries.
-- **Reporting:** You **MUST** report all results from tools without summarizing or shortening.
+- **Reporting:** You must fully report the entire list of movies or series returned by the search tool. Do not summarize or shorten. Present all search results to the user in full.When reporting to users which movie has been downloaded, it should be based on the movie name used when calling your download tool and never use other movie names. 
 """
         
         example_messages = []
-        # Below are examples of scenarios
+        # Below are examples of scenarios, They are only used to demonstrate the calling operation of the tools.
         # Scenario 1: Successful download after user confirmation (single result)
         search_call_1_id = "tool_call_search_1"
         download_call_1_id = "tool_call_download_1"
@@ -395,7 +395,7 @@ This is a strict two-turn process. When a user says they want to download someth
             )
         ])
 
-        # Above are examples of scenarios
+        # Above are examples of scenarios, They are only used to demonstrate the calling operation of the tools.
 
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),

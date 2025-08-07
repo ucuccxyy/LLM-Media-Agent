@@ -167,6 +167,16 @@ class RadarrService:
         endpoint = "qualityprofile"
         return self._make_request(endpoint)
     
+    def get_language_profiles(self) -> List[Dict]:
+        """
+        获取语言配置文件列表
+        
+        返回:
+            - 语言配置文件列表
+        """
+        endpoint = "languageprofile"
+        return self._make_request(endpoint)
+    
     def get_root_folders(self) -> List[Dict]:
         """
         获取根文件夹列表
@@ -191,6 +201,14 @@ class RadarrService:
         if profiles and len(profiles) > 0:
             return profiles[0]['id']
         logger.error("在Radarr中未找到任何质量配置文件。")
+        return None
+    
+    def _get_first_language_profile_id(self) -> int:
+        """获取第一个可用的语言配置文件ID。"""
+        profiles = self.get_language_profiles()
+        if profiles and len(profiles) > 0:
+            return profiles[0]['id']
+        logger.error("在Radarr中未找到任何语言配置文件。")
         return None
     
     def check_health(self) -> bool:
