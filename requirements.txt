@@ -57,3 +57,7 @@ urllib3==2.5.0
 Werkzeug==3.1.3
 yarl==1.20.1
 zstandard==0.23.0
+
+# 添加OpenAI SDK支持DeepSeek API
+openai>=1.0.0
+langchain-openai>=0.1.0

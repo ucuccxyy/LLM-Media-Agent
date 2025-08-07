@@ -11,7 +11,7 @@ from uuid import uuid4
 from media_agent.core.agent import MediaAgent
 from media_agent.core.llm_manager import LLMManager
 from media_agent.config.settings import Settings
-from media_agent.api.sessions import get_session_history
+from media_agent.api.sessions import get_session_history, clear_session_history, cleanup_old_sessions
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(__name__)
@@ -60,8 +60,8 @@ def reset_session():
     if not session_id:
         return jsonify({"error": "session_id is required"}), 400
 
-    if session_id in conversation_histories:
-        del conversation_histories[session_id]
+    # 使用新的清理函数
+    if clear_session_history(session_id):
         log.info(f"Conversation history for session_id '{session_id}' has been reset.")
         return jsonify({"status": "success", "message": f"Session {session_id} reset."})
     else:
@@ -137,6 +137,9 @@ def stream():
     agent = get_agent()
     history = get_session_history(session_id)
     
+    # 先添加用户消息到历史
+    history.add_user_message(message_text)
+    
     agent_input = {
         "input": message_text,
         "chat_history": history.messages
@@ -147,8 +150,6 @@ def stream():
     def generate():
         final_answer = ""
         try:
-            # This is the first message in a turn, so we add the user's message
-            history.add_user_message(message_text)
 
             yield f"data: {json.dumps({'type': 'status', 'message': 'Agent is thinking...'})}\n\n"
             
