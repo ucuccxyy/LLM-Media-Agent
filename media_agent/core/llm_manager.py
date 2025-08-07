@@ -66,6 +66,10 @@ class LLMManager:
             if not OPENAI_AVAILABLE:
                 raise ImportError("langchain-openai 未安装。请运行: pip install langchain-openai")
             return self._create_openai_llm()
+        elif provider == "deepseek":
+            if not OPENAI_AVAILABLE:
+                raise ImportError("langchain-openai 未安装。请运行: pip install langchain-openai")
+            return self._create_deepseek_llm()
         elif provider == "anthropic":
             if not ANTHROPIC_AVAILABLE:
                 raise ImportError("langchain-anthropic 未安装。请运行: pip install langchain-anthropic")
@@ -97,6 +101,17 @@ class LLMManager:
         if self.settings.openai_base_url:
             kwargs["base_url"] = self.settings.openai_base_url
             
+        return ChatOpenAI(**kwargs)
+    
+    def _create_deepseek_llm(self):
+        """创建DeepSeek LLM实例 (使用OpenAI兼容API)"""
+        kwargs = {
+            "model": self.settings.deepseek_model,
+            "temperature": 0,
+            "api_key": self.settings.deepseek_api_key,
+            "base_url": self.settings.deepseek_base_url
+        }
+        
         return ChatOpenAI(**kwargs)
     
     def _create_anthropic_llm(self):

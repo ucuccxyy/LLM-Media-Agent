@@ -56,6 +56,11 @@ class Settings:
         self.openai_model: str = "gpt-4o-mini"
         self.openai_base_url: Optional[str] = None  # 支持自定义OpenAI兼容API
         
+        # DeepSeek配置 (使用OpenAI兼容API)
+        self.deepseek_api_key: Optional[str] = None
+        self.deepseek_model: str = "deepseek-chat"
+        self.deepseek_base_url: str = "https://api.deepseek.com"
+        
         # Anthropic配置
         self.anthropic_api_key: Optional[str] = None
         self.anthropic_model: str = "claude-3-5-sonnet-20241022"
@@ -111,6 +116,11 @@ class Settings:
         self.openai_api_key = os.getenv("OPENAI_API_KEY", self.openai_api_key)
         self.openai_model = os.getenv("OPENAI_MODEL", self.openai_model)
         self.openai_base_url = os.getenv("OPENAI_BASE_URL", self.openai_base_url)
+        
+        # DeepSeek配置 (使用OpenAI兼容API)
+        self.deepseek_api_key = os.getenv("DEEPSEEK_API_KEY", self.deepseek_api_key)
+        self.deepseek_model = os.getenv("DEEPSEEK_MODEL", self.deepseek_model)
+        self.deepseek_base_url = os.getenv("DEEPSEEK_BASE_URL", self.deepseek_base_url)
         
         # Anthropic配置
         self.anthropic_api_key = os.getenv("ANTHROPIC_API_KEY", self.anthropic_api_key)
@@ -174,6 +184,9 @@ class Settings:
                 return False
         elif self.llm_provider == "openai":
             if not self.openai_api_key:
+                return False
+        elif self.llm_provider == "deepseek":
+            if not self.deepseek_api_key:
                 return False
         elif self.llm_provider == "anthropic":
             if not self.anthropic_api_key:
@@ -252,6 +265,13 @@ class Settings:
                 "api_key": self.openai_api_key,
                 "model": self.openai_model,
                 "base_url": self.openai_base_url
+            }
+        elif self.llm_provider == "deepseek":
+            return {
+                "provider": "deepseek",
+                "api_key": self.deepseek_api_key,
+                "model": self.deepseek_model,
+                "base_url": self.deepseek_base_url
             }
         elif self.llm_provider == "anthropic":
             return {
