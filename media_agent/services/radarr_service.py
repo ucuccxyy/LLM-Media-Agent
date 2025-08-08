@@ -75,6 +75,12 @@ class RadarrService:
                 raise ValueError(f"Unsupported method: {method}")
                 
             response.raise_for_status()
+            
+            # 对于DELETE请求，通常返回204 No Content，没有JSON内容
+            if method == 'DELETE' or response.status_code == 204:
+                return None
+            
+            # 对于其他请求，尝试解析JSON
             return response.json()
         except requests.exceptions.RequestException as e:
             raise Exception(f"Radarr API request failed: {str(e)}")
@@ -84,6 +90,37 @@ class RadarrService:
         获取Radarr的活动队列。
         """
         return self._make_request("queue")
+    
+    def get_queue_item_details(self, queue_id: int) -> Dict:
+        """
+        获取队列项目的详细信息
+        
+        参数:
+            - queue_id: 队列项目ID
+            
+        返回:
+            - 队列项目的详细信息
+        """
+        endpoint = f"queue/details/{queue_id}"
+        return self._make_request(endpoint)
+    
+    def delete_queue_item(self, queue_id: int) -> bool:
+        """
+        删除队列中的特定项目
+        
+        参数:
+            - queue_id: 队列项目ID
+            
+        返回:
+            - 布尔值表示删除是否成功
+        """
+        try:
+            endpoint = f"queue/{queue_id}"
+            self._make_request(endpoint, method='DELETE')
+            return True
+        except Exception as e:
+            logger.error(f"删除队列项目 {queue_id} 时出错: {e}")
+            return False
     
     def lookup_movie(self, term: str) -> List[Dict]:
         """
@@ -211,6 +248,34 @@ class RadarrService:
         logger.error("在Radarr中未找到任何语言配置文件。")
         return None
     
+    def get_all_movies(self) -> List[Dict]:
+        """
+        获取所有电影列表
+        
+        返回:
+            - 所有电影的详细信息列表
+        """
+        endpoint = "movie"
+        return self._make_request(endpoint)
+    
+    def delete_movie(self, movie_id: int) -> bool:
+        """
+        删除电影
+        
+        参数:
+            - movie_id: 电影ID
+            
+        返回:
+            - 布尔值表示删除是否成功
+        """
+        try:
+            endpoint = f"movie/{movie_id}"
+            self._make_request(endpoint, method='DELETE')
+            return True
+        except Exception as e:
+            logger.error(f"删除电影 {movie_id} 时出错: {e}")
+            return False
+    
     def check_health(self) -> bool:
         """
         检查Radarr服务健康状态
@@ -224,61 +289,3 @@ class RadarrService:
             return True
         except Exception:
             return False
-
-if __name__ == "__main__":
-    """
-    主方法，包含RadarrService类的测试用例
-    """
-    # 初始化配置
-    settings = Settings()
-    settings.load_from_env()
-    
-    # 创建RadarrService实例
-    radarr = RadarrService(settings.radarr_host, settings.radarr_api_key)
-    
-    # 测试用例1：检查服务健康状态
-    print("测试用例1：检查Radarr服务健康状态")
-    health_status = radarr.check_health()
-    print(f"Radarr服务健康状态：{'健康' if health_status else '不健康'}")
-    
-    # 测试用例2：搜索电影
-    if health_status:
-        print("\n测试用例2：搜索电影 '盗梦空间'")
-        try:
-            movies = radarr.lookup_movie("Inception")
-            if movies:
-                print(f"找到 {len(movies)} 个结果：")
-                for movie in movies[:3]:  # 仅显示前3个结果
-                    print(f"- {movie.get('title', '未知标题')} ({movie.get('year', '未知年份')})")
-            else:
-                print("未找到任何结果")
-        except Exception as e:
-            print(f"搜索电影时出错：{e}")
-    
-    # 测试用例3：获取质量配置文件
-    if health_status:
-        print("\n测试用例3：获取质量配置文件")
-        try:
-            profiles = radarr.get_quality_profiles()
-            if profiles:
-                print(f"找到 {len(profiles)} 个质量配置文件：")
-                for profile in profiles:
-                    print(f"- {profile.get('name', '未知配置文件')}")
-            else:
-                print("未找到质量配置文件")
-        except Exception as e:
-            print(f"获取质量配置文件时出错：{e}")
-    
-    # 测试用例4：获取根文件夹
-    if health_status:
-        print("\n测试用例4：获取根文件夹")
-        try:
-            folders = radarr.get_root_folders()
-            if folders:
-                print(f"找到 {len(folders)} 个根文件夹：")
-                for folder in folders:
-                    print(f"- {folder.get('path', '未知路径')}")
-            else:
-                print("未找到根文件夹")
-        except Exception as e:
-            print(f"获取根文件夹时出错：{e}")

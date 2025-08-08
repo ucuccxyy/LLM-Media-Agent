@@ -38,13 +38,18 @@ class SonarrService:
                 response = requests.get(url, headers=self.headers, params=params, timeout=10)
             elif method == 'POST':
                 response = requests.post(url, headers=self.headers, json=json, timeout=10)
+            elif method == 'DELETE':
+                response = requests.delete(url, headers=self.headers, params=params, timeout=10)
             else:
                 raise ValueError(f"Unsupported method: {method}")
                 
             response.raise_for_status()
-            # 对于返回空内容的成功响应，例如204 No Content，requests.json()会失败
-            if response.status_code == 204:
+            
+            # 对于DELETE请求或204状态码，通常没有JSON内容
+            if method == 'DELETE' or response.status_code == 204:
                 return None
+            
+            # 对于其他请求，尝试解析JSON
             return response.json()
         except requests.exceptions.RequestException as e:
             logger.error(f"Sonarr API请求失败: {e}, URL: {url}, 方法: {method}")
@@ -61,6 +66,37 @@ class SonarrService:
         获取Sonarr的活动队列。
         """
         return self._make_request("queue")
+    
+    def get_queue_item_details(self, queue_id: int) -> Dict:
+        """
+        获取队列项目的详细信息
+        
+        参数:
+            - queue_id: 队列项目ID
+            
+        返回:
+            - 队列项目的详细信息
+        """
+        endpoint = f"queue/details/{queue_id}"
+        return self._make_request(endpoint)
+    
+    def delete_queue_item(self, queue_id: int) -> bool:
+        """
+        删除队列中的特定项目
+        
+        参数:
+            - queue_id: 队列项目ID
+            
+        返回:
+            - 布尔值表示删除是否成功
+        """
+        try:
+            endpoint = f"queue/{queue_id}"
+            self._make_request(endpoint, method='DELETE')
+            return True
+        except Exception as e:
+            logger.error(f"删除队列项目 {queue_id} 时出错: {e}")
+            return False
 
     def lookup_series(self, term: str) -> List[Dict]:
         return self._make_request("series/lookup", params={"term": term})
@@ -165,6 +201,36 @@ class SonarrService:
         logger.error("在Sonarr中未找到任何质量配置文件。")
         return None
 
+    def get_all_series(self) -> List[Dict]:
+        """
+        获取所有电视剧列表
+        
+        返回:
+            - 所有电视剧的详细信息列表
+        """
+        endpoint = "series"
+        return self._make_request(endpoint)
+    
+    def delete_series(self, series_id: int) -> bool:
+        """
+        删除电视剧
+        
+        参数:
+            - series_id: 电视剧ID
+            
+        返回:
+            - 布尔值表示删除是否成功
+        """
+        try:
+            endpoint = f"series/{series_id}"
+            # 需要添加删除文件的参数
+            params = {"deleteFiles": True, "addImportListExclusion": False}
+            self._make_request(endpoint, method='DELETE', params=params)
+            return True
+        except Exception as e:
+            logger.error(f"删除电视剧 {series_id} 时出错: {e}")
+            return False
+    
     def _get_first_language_profile_id(self) -> int:
         """获取第一个可用的语言配置文件ID。"""
         profiles = self._make_request("languageprofile")
@@ -173,26 +239,3 @@ class SonarrService:
             return profiles[0]['id']
         logger.error("在Sonarr中未找到任何语言配置文件。")
         return None
-
-if __name__ == "__main__":
-    settings = Settings()
-    settings.load_from_env()
-    sonarr = SonarrService(settings.sonarr_host, settings.sonarr_api_key)
-    
-    # 测试添加电视剧
-    # 请用一个实际存在但你的库里没有的电视剧的TVDB ID替换
-    test_tvdb_id = 247808  # 'The Simpsons'
-    test_seasons = [1, 2]
-    print(f"\n测试添加电视剧: TVDB ID {test_tvdb_id}")
-    result = sonarr.add_series(test_tvdb_id, test_seasons)
-    print(result)
-    
-    # 测试搜索电视剧
-    print("\n测试搜索电视剧: 'Game of Thrones'")
-    search_results = sonarr.lookup_series("Game of Thrones")
-    if search_results:
-        print("搜索成功，找到以下结果:")
-        for series in search_results[:3]:
-            print(f"  - {series['title']} ({series['year']})")
-    else:
-        print("搜索失败或未找到结果。")

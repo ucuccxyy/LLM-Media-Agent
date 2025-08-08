@@ -194,7 +194,7 @@ def get_session_history(session_id: str) -> InMemoryHistory:
     """
     if session_id not in _session_histories:
         _session_histories[session_id] = InMemoryHistory()
-    return _session_histories[session_id]
+    return _session_histories[session_id] 
 
 def clear_session_history(session_id: str) -> bool:
     """

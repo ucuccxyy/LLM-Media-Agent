@@ -2,9 +2,9 @@
 
 ## 1. 项目简介
 
-本项目是一个基于大型语言模型（LLM）的智能代理（Agent）系统，旨在通过自然语言指令实现对电影、电视剧等媒体资源的自动化管理。它集成了 Radarr, Sonarr, qBittorrent, 和 Jackett 等流行的媒体服务，并利用 LLM (支持多种提供商) 作为决策核心，将用户的高级指令转化为具体的操作。
+本项目是一个基于大型语言模型（LLM）的智能代理（Agent）系统，旨在通过自然语言指令实现对电影、电视剧等媒体资源的自动化管理。它集成了 Radarr, Sonarr, qBittorrent, 和 Jackett 媒体服务，并利用 LLM (支持多种提供商) 作为决策核心，将用户的高级指令转化为具体的操作。
 
-用户可以通过命令行或 API 与本系统交互，轻松完成如"帮我下载最新一季的《XX》电视剧"或"找一下评价最高的科幻电影"等复杂任务。
+用户可以通过命令行或 API 与本系统交互，轻松完成如"帮我下载最新一季的《XX》电视剧"或"帮我搜索某一部影片"等复杂任务。
 
 ## 2. 项目结构
 
@@ -21,35 +21,27 @@
 │   │   ├── agent.py           # 媒体代理主类
 │   │   └── llm_manager.py     # LLM管理器 (支持多提供商)
 │   ├── config/                 # 配置模块
-│   │   ├── settings.py        # 全局配置管理
-│   │   └── logging_config.py  # 日志配置
+│   │   └── settings.py        # 全局配置管理
 │   ├── docker/                 # Docker服务配置
 │   │   ├── docker-compose.yml # 服务编排文件
 │   │   ├── radarr/            # Radarr配置目录
 │   │   ├── sonarr/            # Sonarr配置目录
 │   │   ├── qbittorrent/       # qBittorrent配置目录
-│   │   ├── jackett/           # Jackett配置目录
-│   │   └── prowlarr/          # Prowlarr配置目录
+│   │   └── jackett/           # Jackett配置目录
 │   ├── data/                   # 媒体数据存储
 │   │   ├── downloads/         # 下载目录
 │   │   ├── movies/            # 电影存储目录
 │   │   └── tv_shows/          # 电视剧存储目录
 │   ├── logs/                   # 服务和应用日志
-│   ├── models/                 # 数据模型定义
-│   │   ├── media_models.py    # 媒体数据模型
-│   │   └── task_models.py     # 任务数据模型
 │   ├── pids/                   # 进程PID文件
 │   ├── services/               # 服务层
 │   │   ├── radarr_service.py  # Radarr API服务
 │   │   ├── sonarr_service.py  # Sonarr API服务
-│   │   ├── qbittorrent_service.py # qBittorrent API服务
-│   │   └── notification_service.py # 通知服务
+│   │   └── qbittorrent_service.py # qBittorrent API服务
 │   ├── tools/                  # 工具层
 │   │   ├── radarr_tool.py     # Radarr工具函数
 │   │   ├── sonarr_tool.py     # Sonarr工具函数
-│   │   ├── qbittorrent_tool.py # qBittorrent工具函数
-│   │   └── media_parser.py    # 媒体解析工具
-│   └── utils/                  # 工具函数
+│   │   └── qbittorrent_tool.py # qBittorrent工具函数
 ├── venv/                       # Python 虚拟环境
 ├── main.py                     # 项目主入口 (CLI / API)
 ├── requirements.txt            # Python 依赖
@@ -172,25 +164,6 @@ OLLAMA_MODEL=command-r-plus:latest
 pip install langchain-openai langchain-anthropic langchain-google-genai
 ```
 
-#### API密钥错误
-确保API密钥正确且有效，检查环境变量是否正确设置。
-
-#### 网络连接问题
-确保服务器能够访问相应的API端点。
-
-### 3.6 性能建议
-
-1. **本地模型**：适合隐私敏感场景，但需要更多计算资源
-2. **云端API**：适合快速部署，但需要网络连接和API费用
-3. **混合使用**：可以根据不同任务选择不同的提供商
-
-### 3.7 安全注意事项
-
-1. 不要在代码中硬编码API密钥
-2. 使用环境变量或安全的密钥管理服务
-3. 定期轮换API密钥
-4. 监控API使用量和费用
-
 ## 4. 核心原理
 
 本项目的运行机制可以概括为以下几个步骤：
@@ -265,7 +238,7 @@ bash ./stop_media_services.sh
 
 ## 6. 工具说明
 
-Agent 的所有功能均通过调用以下经过验证的工具来实现。这些工具是连接大语言模型（LLM）与底层媒体服务（Radarr, Sonarr, qBittorrent）的桥梁。
+Agent 的所有功能均通过调用以下工具来实现。这些工具是连接大语言模型（LLM）与底层媒体服务（Radarr, Sonarr, qBittorrent）的桥梁。
 
 ---
 
@@ -275,6 +248,7 @@ Agent 的所有功能均通过调用以下经过验证的工具来实现。这�
     -   **功能**: 当用户的指令意图不明确时（例如，同时可能指电影和电视剧），LLM会使用此工具来向用户提问，请求更具体的信息。
     -   **触发场景**: 用户输入"搜索'阿凡达'"。
     -   **模型行为**: 调用此工具，并向用户返回问题："您是想搜索电影还是电视剧？"
+    -   **返回类型**: `str` - 格式化的中文问题字符串，用于向用户请求澄清
 
 ---
 
@@ -283,17 +257,37 @@ Agent 的所有功能均通过调用以下经过验证的工具来实现。这�
 -   **`search_movie(query: str) -> str`**
     -   **功能**: 根据用户提供的关键词搜索电影。
     -   **实现**: 调用 `radarr_tool.search_movie_logic`，通过 Radarr API 查找电影。
-    -   **返回**: 一个包含电影标题、年份和 TMDB ID 的格式化列表。
+    -   **返回类型**: `str` - 格式化的中文搜索结果字符串，包含电影标题、年份、TMDB ID，格式如："找到了 X 部电影:\n1. 电影: 标题, 年份: 年份, TMDB ID: ID\n--- 搜索结果结束 ---"
 
 -   **`download_movie(tmdb_id: int) -> str`**
     -   **功能**: 根据电影的 TMDB ID，将其添加到 Radarr 中并触发搜索下载。
     -   **实现**: 调用 `radarr_tool.download_movie_logic`。该函数会先用 TMDB ID 确认电影信息，然后通过 Radarr API 添加电影。
-    -   **返回**: 操作成功或失败的确认信息。
+    -   **返回类型**: `str` - 操作结果字符串，成功时返回："已成功将电影 '标题 (年份)' 添加到Radarr，并开始搜索下载。"，失败时返回错误信息
 
 -   **`get_radarr_queue() -> str`**
     -   **功能**: 查询 Radarr 当前的活动队列，了解电影的下载状态。
     -   **实现**: 调用 `radarr_tool.get_radarr_queue_logic`。
-    -   **返回**: 一个格式化的列表，包含队列中电影的标题、状态和预计剩余时间。
+    -   **返回类型**: `str` - 格式化的队列状态字符串，包含队列项目数量、每个项目的标题、状态、队列ID、剩余时间、下载进度等信息
+
+-   **`get_all_movies() -> str`**
+    -   **功能**: 获取 Radarr 电影库中的所有电影列表。
+    -   **实现**: 调用 `radarr_tool.get_all_movies_logic`。
+    -   **返回类型**: `str` - 格式化的电影库列表字符串，包含每部电影的标题、年份、ID、监控状态（已监控/未监控）、下载状态（已下载/未下载）
+
+-   **`delete_movie(movie_id: int) -> str`**
+    -   **功能**: 从 Radarr 电影库中删除指定的电影（永久移除）。
+    -   **实现**: 调用 `radarr_tool.delete_movie_logic`。
+    -   **返回类型**: `str` - 删除操作结果字符串，成功时返回："已成功删除电影 '标题' (ID: ID)。"，失败时返回错误信息
+
+-   **`get_radarr_queue_item_details(queue_id: int) -> str`**
+    -   **功能**: 获取 Radarr 队列中特定项目的详细信息。
+    -   **实现**: 调用 `radarr_tool.get_radarr_queue_item_details_logic`。
+    -   **返回类型**: `str` - 详细的队列项目信息字符串，包含标题、状态、剩余时间、文件大小、下载进度、下载协议、索引器、状态消息、错误信息等
+
+-   **`delete_radarr_queue_item(queue_id: int) -> str`**
+    -   **功能**: 删除 Radarr 下载队列中的特定任务（停止下载，移除任务，清理相关文件）。
+    -   **实现**: 调用 `radarr_tool.delete_radarr_queue_item_logic`。
+    -   **返回类型**: `str` - 删除操作结果字符串，成功时返回："已成功删除队列项目 (队列ID: ID)。"，失败时返回错误信息或"队列项目不存在"提示
 
 ---
 
@@ -302,17 +296,37 @@ Agent 的所有功能均通过调用以下经过验证的工具来实现。这�
 -   **`search_series(query: str) -> str`**
     -   **功能**: 根据用户提供的关键词搜索电视剧。
     -   **实现**: 调用 `sonarr_tool.search_series_logic`，通过 Sonarr API 进行查找。
-    -   **返回**: 一个包含电视剧标题、年份和 TVDB ID 的格式化列表。
+    -   **返回类型**: `str` - 格式化的中文搜索结果字符串，包含电视剧标题、年份、TVDB ID，格式如："找到了 X 部电视剧:\n1. 电视剧: 标题, 年份: 年份, TVDB ID: ID\n--- 搜索结果结束 ---"
 
 -   **`download_series(tvdb_id: int, seasons: Union[str, list[int]]) -> str`**
     -   **功能**: 根据电视剧的 TVDB ID，将其添加到 Sonarr，并指定下载特定季度或全部季度。
     -   **实现**: 调用 `sonarr_tool.download_series_logic`。`seasons` 参数可以是一个季度编号的列表（如 `[1, 3]`），也可以是字符串 `'all'`。
-    -   **返回**: 操作成功或失败的确认信息。
+    -   **返回类型**: `str` - 操作结果字符串，成功时返回："成功将电视剧 '标题' 的第 X 季添加到Sonarr，并开始搜索下载。"，失败时返回错误信息或"已存在"提示
 
 -   **`get_sonarr_queue() -> str`**
     -   **功能**: 查询 Sonarr 当前的活动队列，了解剧集的下载状态。
     -   **实现**: 调用 `sonarr_tool.get_sonarr_queue_logic`。
-    -   **返回**: 一个格式化的列表，包含队列中剧集的标题、状态和预计剩余时间。
+    -   **返回类型**: `str` - 格式化的队列状态字符串，包含队列项目数量、每个项目的电视剧标题、剧集信息、状态、队列ID、剩余时间、下载进度等信息
+
+-   **`get_all_series() -> str`**
+    -   **功能**: 获取 Sonarr 电视剧库中的所有电视剧列表。
+    -   **实现**: 调用 `sonarr_tool.get_all_series_logic`。
+    -   **返回类型**: `str` - 格式化的电视剧库列表字符串，包含每部电视剧的标题、年份、ID、监控状态（已监控/未监控）、下载状态（已下载/未下载）、季度数
+
+-   **`delete_series(series_id: int) -> str`**
+    -   **功能**: 从 Sonarr 电视剧库中删除指定的电视剧（永久移除）。
+    -   **实现**: 调用 `sonarr_tool.delete_series_logic`。
+    -   **返回类型**: `str` - 删除操作结果字符串，成功时返回："已成功删除电视剧 '标题' (ID: ID)。"，失败时返回错误信息
+
+-   **`get_sonarr_queue_item_details(queue_id: int) -> str`**
+    -   **功能**: 获取 Sonarr 队列中特定项目的详细信息。
+    -   **实现**: 调用 `sonarr_tool.get_sonarr_queue_item_details_logic`。
+    -   **返回类型**: `str` - 详细的队列项目信息字符串，包含电视剧标题、剧集信息、状态、剩余时间、文件大小、下载进度、下载协议、索引器、状态消息、错误信息等
+
+-   **`delete_sonarr_queue_item(queue_id: int) -> str`**
+    -   **功能**: 删除 Sonarr 下载队列中的特定任务（停止下载，移除任务，清理相关文件）。
+    -   **实现**: 调用 `sonarr_tool.delete_sonarr_queue_item_logic`。
+    -   **返回类型**: `str` - 删除操作结果字符串，成功时返回："已成功删除队列项目 (队列ID: ID)。"，失败时返回错误信息或"队列项目不存在"提示
 
 ---
 
@@ -321,7 +335,9 @@ Agent 的所有功能均通过调用以下经过验证的工具来实现。这�
 -   **`get_torrents() -> str`**
     -   **功能**: 获取 qBittorrent 中当前所有种子任务的列表和状态。
     -   **实现**: 调用 `qbittorrent_tool.get_torrents_logic`。
-    -   **返回**: 一个格式化的列表，包含种子的名称、状态和下载进度（最多显示前10个任务）。
+    -   **返回类型**: `str` - 格式化的种子状态字符串，包含种子名称、状态、下载进度，最多显示前10个任务，格式如："当前种子列表:\n种子: 名称, 状态: 状态, 进度: XX.XX%"
+
+---
 
 ## 7. 日志与监控
 

@@ -98,6 +98,90 @@ class MediaAgent:
             return "Radarr queue checking is not yet implemented."
 
         @tool
+        def get_all_movies() -> str:
+            """
+            Gets a list of all movies in the Radarr library.
+            Returns:
+                A formatted list of all movies with their details including ID, monitoring status, and download status.
+            """
+            return radarr_tool.get_all_movies_logic()
+
+        @tool
+        def delete_movie(movie_id: int) -> str:
+            """
+            Deletes a movie from the Radarr library by its ID.
+            Args:
+                movie_id (int): The ID of the movie to delete.
+            Returns:
+                A confirmation message indicating success or failure.
+            """
+            return radarr_tool.delete_movie_logic(movie_id)
+
+        @tool
+        def get_all_series() -> str:
+            """
+            Gets a list of all TV series in the Sonarr library.
+            Returns:
+                A formatted list of all series with their details including ID, monitoring status, download status, and season count.
+            """
+            return sonarr_tool.get_all_series_logic()
+
+        @tool
+        def delete_series(series_id: int) -> str:
+            """
+            Deletes a TV series from the Sonarr library by its ID.
+            Args:
+                series_id (int): The ID of the series to delete.
+            Returns:
+                A confirmation message indicating success or failure.
+            """
+            return sonarr_tool.delete_series_logic(series_id)
+
+        @tool
+        def get_radarr_queue_item_details(queue_id: int) -> str:
+            """
+            Gets detailed information about a specific item in the Radarr download queue.
+            Args:
+                queue_id (int): The ID of the queue item to get details for.
+            Returns:
+                Detailed information about the queue item including status, progress, and download info.
+            """
+            return radarr_tool.get_radarr_queue_item_details_logic(queue_id)
+
+        @tool
+        def get_sonarr_queue_item_details(queue_id: int) -> str:
+            """
+            Gets detailed information about a specific item in the Sonarr download queue.
+            Args:
+                queue_id (int): The ID of the queue item to get details for.
+            Returns:
+                Detailed information about the queue item including status, progress, and download info.
+            """
+            return sonarr_tool.get_sonarr_queue_item_details_logic(queue_id)
+
+        @tool
+        def delete_radarr_queue_item(queue_id: int) -> str:
+            """
+            Deletes a specific item from the Radarr download queue. This will stop the download, remove the task from queue, and clean up related torrent files.
+            Args:
+                queue_id (int): The ID of the queue item to delete.
+            Returns:
+                A confirmation message indicating success or failure.
+            """
+            return radarr_tool.delete_radarr_queue_item_logic(queue_id)
+
+        @tool
+        def delete_sonarr_queue_item(queue_id: int) -> str:
+            """
+            Deletes a specific item from the Sonarr download queue. This will stop the download, remove the task from queue, and clean up related torrent files.
+            Args:
+                queue_id (int): The ID of the queue item to delete.
+            Returns:
+                A confirmation message indicating success or failure.
+            """
+            return sonarr_tool.delete_sonarr_queue_item_logic(queue_id)
+
+        @tool
         def get_torrents() -> str:
             """Gets the list and status of all current torrents."""
             return qbittorrent_tool.get_torrents_logic()
@@ -109,6 +193,14 @@ class MediaAgent:
             download_series,
             get_sonarr_queue,
             get_radarr_queue,
+            get_all_movies,
+            delete_movie,
+            get_all_series,
+            delete_series,
+            get_radarr_queue_item_details,
+            get_sonarr_queue_item_details,
+            delete_radarr_queue_item,
+            delete_sonarr_queue_item,
             get_torrents,
         ]
 
@@ -130,10 +222,35 @@ This is a strict two-turn process. When a user says they want to download someth
 - If the user's request is ambiguous and could be a movie or a series (e.g., "search Avatar"), you **MUST** call both `search_movie` and `search_series` in parallel, then present the combined results.
 - If the request is unambiguous (e.g., "find the movie Inception"), call only the single appropriate search tool and present the results.
 
+**Workflow 3: User wants to VIEW LIBRARY content**
+- When users ask to see their movie library (e.g., "show my movies", "what movies do I have"), use `get_all_movies`.
+- When users ask to see their TV series library (e.g., "show my TV shows", "what series do I have"), use `get_all_series`.
+
+**Workflow 4: User wants to CHECK DOWNLOAD QUEUES**
+- When users ask about download progress or queue status, use the appropriate queue tools:
+  - For movie downloads: `get_radarr_queue`
+  - For TV series downloads: `get_sonarr_queue`
+  - For specific queue item details: `get_radarr_queue_item_details` or `get_sonarr_queue_item_details`
+
+**Workflow 5: User wants to DELETE content**
+- When users want to delete movies or TV series from the library, use the appropriate delete tools:
+  - For movies: `delete_movie` (requires movie ID from library)
+  - For TV series: `delete_series` (requires series ID from library)
+- When users want to delete download tasks from the queue, use the appropriate queue delete tools:
+  - For movie downloads: `delete_radarr_queue_item` (requires queue item ID)
+  - For TV series downloads: `delete_sonarr_queue_item` (requires queue item ID)
+- Always confirm with the user before deleting content.
+- **IMPORTANT**: Deleting from library removes the movie/series permanently. Deleting from queue stops the download, removes the task, and cleans up torrent files.
+
+**Workflow 6: User wants to CHECK TORRENT STATUS**
+- When users ask about torrent downloads or qBittorrent status, use `get_torrents`.
+
 **CRITICAL RULES FOR ALL WORKFLOWS:**
 - **Information Handling:** Your actions must be based on the user's input and the most recent tool call results. Never use any movie or series names or IDs from the examples, and don't include them in your response—the examples are only for demonstrating how to use the tools and have no other meaning.
 - **Argument Formatting:** The `query` argument for search tools **MUST** be a simple string (the title). **DO NOT** invent complex JSON queries.
-- **Reporting:** You must fully report the entire list of movies or series returned by the search tool. Do not summarize or shorten. Present all search results to the user in full.When reporting to users which movie has been downloaded, it should be based on the movie name used when calling your download tool and never use other movie names. 
+- **Reporting:** You must fully report the entire list of movies or series returned by the search tool. Do not summarize or shorten. Present all search results to the user in full. When reporting to users which movie has been downloaded, it should be based on the movie name used when calling your download tool and never use other movie names.
+- **Safety First:** For delete operations, always confirm with the user and explain the consequences before proceeding.
+- **Queue Management:** When users ask about specific download items, first check the queue list, then provide details for specific items if requested.
 """
         
         example_messages = []
@@ -399,7 +516,10 @@ This is a strict two-turn process. When a user says they want to download someth
 
         prompt = ChatPromptTemplate.from_messages([
             ("system", system_prompt),
-        ] + example_messages + [
+        ] 
+        # + example_messages 
+        + 
+        [
             MessagesPlaceholder(variable_name="chat_history"),
             ("human", "Below is the user's input: {input}"),
             MessagesPlaceholder(variable_name="agent_scratchpad"),
