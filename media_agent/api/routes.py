@@ -142,7 +142,7 @@ def stream():
     
     agent_input = {
         "input": message_text,
-        "chat_history": history.messages
+        "chat_history": history.get_textualized_messages()
     }
 
     logging.info(f"Streaming response for session_id: {session_id} with history length: {len(history.messages)}")
